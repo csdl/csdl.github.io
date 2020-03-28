@@ -2,7 +2,7 @@
 
 This branch (src/) of the csdl.github.io repo contains the src files for building the site.
 
-To build a new version of the site:
+### Developer Workflow
 
   1. Edit the contents of the src/ directory. Within that directory, you can run `npm start` to preview the site.
 
@@ -11,3 +11,17 @@ To build a new version of the site:
   3. Use GitHub Desktop to commit your changes to the src/ branch.  The gitignore file should prevent any build artifacts from being committed to this branch.
 
 If the script fails with an authentication error, the simplest workaround is to run `git push origin master` on the command line. That will prompt you for your username and password and cache those values for a while so that the script will now succeed.
+
+### Next steps
+
+  1. Install the react-bootstrap package.
+
+  2. Make a very simple color-blocked wireframe of home page. Use Katie's gradually increasing grey values.
+
+     * Jumbotron top component
+     * Timeline
+     * Projects
+     * Publications
+     * People
+     * Affiliates
+     * Contact
