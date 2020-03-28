@@ -17,7 +17,7 @@ If the script fails with an authentication error, the simplest workaround is to 
   1. Install the react-bootstrap package.
 
   2. Make a very simple color-blocked wireframe of home page. Use Katie's gradually increasing grey values.
-
+     * Navbar with in-page links to: About Timeline Projects Publications People Affiliates Contact
      * Jumbotron top component
      * Timeline
      * Projects
@@ -25,3 +25,5 @@ If the script fails with an authentication error, the simplest workaround is to 
      * People
      * Affiliates
      * Contact
+
+Remember: even a simple version of this site will be better than what we now have. 
