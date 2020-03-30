@@ -26,4 +26,4 @@ If the script fails with an authentication error, the simplest workaround is to 
      * Affiliates
      * Contact
 
-Remember: even a simple version of this site will be better than what we now have. 
+Remember: even a simple version of this site will be better than what we now have.
