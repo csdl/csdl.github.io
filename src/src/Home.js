@@ -6,7 +6,7 @@ import Title from './Title'
 function Home(props) {
   const jumbotronStyle = {backgroundColor: "#FFFFFF", padding: 0, marginBottom: 0};
   return (
-    <div style={props.sectionStyle}>
+    <div style={props.sectionStyle} id="home">
       <Jumbotron fluid style={jumbotronStyle}>
         <Container>
           <Title title={"Welcome to CSDL"}/>

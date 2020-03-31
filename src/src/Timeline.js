@@ -11,9 +11,9 @@ import Title from './Title'
 
 function Timeline(props) {
   return (
-    <div style={props.sectionStyle}>
+    <div style={props.sectionStyle} id="News">
       <Container>
-        <Title title={"Noteworthy Events"}/>
+        <Title title={"News"}/>
       <Iframe src="//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11CwAmM3HEcDle5-IHBYvuOP4uI9mT0OP7zw8W99wwwU&amp;font=Default&amp;lang=en&amp;start_at_end=true&amp;initial_zoom=2&amp;height=450"
               width="100%"
               height="450"
