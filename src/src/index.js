@@ -5,6 +5,7 @@ import './index.css';
 import Home from './Home';
 import Timeline from './Timeline';
 import Top from './Top';
+import NewsCards from './NewsCards';
 
 const sectionStyle = {marginTop: "1em", marginBottome: "1em"};
 const borderStyle = {border: "0.5px solid #376551"}
@@ -13,6 +14,7 @@ ReactDOM.render(
     <Top/>
     <Home sectionStyle={sectionStyle}/>
     <hr style={borderStyle}/>
+    <NewsCards/>
     <Timeline sectionStyle={sectionStyle}/>
   </React.StrictMode>,
   document.getElementById('root')
