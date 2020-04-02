@@ -264,42 +264,42 @@ export default function getNewsCardsData() {
       "Headline": "OPQ wins President's Green Award",
       "Text": "Open Power Quality wins a $10,000 prize for proposed work on agile power monitoring to support UH net zero goals.",
       "URL": "http://www.hawaii.edu/news/2018/02/12/2018-presidents-green-awards/",
-      "Media": "https://i2.wp.com/www.hawaii.edu/news/wp-content/uploads/2018/02/system-greenawards-bigisland-5.jpg?w=676"
+      "Media": "images/green-awards-group.jpg"
     },
     {
       "Date": "4/12/2018",
       "Headline": "Negrashov wins ARCS fellowship",
       "Text": "Serge Negrashov receives the 2018 Martin Award for Information and Computer Science from the ARCS Foundation.",
       "URL": "http://www.ics.hawaii.edu/2018/04/sergey-negrashov-receives-arcs-fellowship/",
-      "Media": "http://www.ics.hawaii.edu/wp-content/uploads/2018/04/serge.jpg"
+      "Media": "images/serge.jpg"
     },
     {
       "Date": "9/1/2018",
       "Headline": "NSF funds RadGrad",
       "Text": "NSF awards $300,000 to assess the impact of RadGrad on engagement, retention, and diversity.",
       "URL": "https://www.hawaii.edu/news/2018/09/04/computer-science-retention-grant/",
-      "Media": "https://www.radgrad.org/img/radgrad_logo.png"
+      "Media": "images/radgrad_logo.png"
     },
     {
       "Date": "5/1/2019",
       "Headline": "Johnson receives teaching award",
       "Text": "Philip Johnson received the 2019 Board of Regents Medal for Excellence in Teaching.",
       "URL": "https://www.hawaii.edu/news/2019/05/13/bor-medal-for-excellence-2019/",
-      "Media": "https://www.hawaii.edu/news/wp-content/uploads/2015/04/bor-medal.jpg"
+      "Media": "images/bor-medal.jpg"
     },
     {
       "Date": "2/24/2020",
       "Headline": "Christe completes Ph.D. dissertation",
       "Text": "LAHA: A framework for adaptive optimization of distributed sensor frameworks\".",
       "URL": "https://openpowerquality.org/blog/2020/02/24/anthony-dissertation.html",
-      "Media": "https://openpowerquality.org/docs/assets/people/christe.png"
+      "Media": "images/christe.png"
     },
     {
       "Date": "3/10/2020",
       "Headline": "Negrashov completes Ph.D. dissertation",
       "Text": "Design, Implementation, and Evaluation of Napali: A novel distributed sensor network for improved power quality monitoring\".",
       "URL": "https://openpowerquality.org/blog/2020/03/10/serge-dissertation.html",
-      "Media": "https://www.ics.hawaii.edu/wp-content/uploads/2018/04/serge.jpg"
+      "Media": "images/serge.jpg"
     }
   ].reverse();
 }
