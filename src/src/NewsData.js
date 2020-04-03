@@ -290,14 +290,14 @@ export default function getNewsCardsData() {
     {
       "Date": "2/24/2020",
       "Headline": "Christe completes Ph.D. dissertation",
-      "Text": "LAHA: A framework for adaptive optimization of distributed sensor frameworks\".",
+      "Text": "LAHA: A framework for adaptive optimization of distributed sensor frameworks.",
       "URL": "https://openpowerquality.org/blog/2020/02/24/anthony-dissertation.html",
       "Media": "images/christe.png"
     },
     {
       "Date": "3/10/2020",
       "Headline": "Negrashov completes Ph.D. dissertation",
-      "Text": "Design, Implementation, and Evaluation of Napali: A novel distributed sensor network for improved power quality monitoring\".",
+      "Text": "Design, Implementation, and Evaluation of Napali: A novel distributed sensor network for improved power quality monitoring.",
       "URL": "https://openpowerquality.org/blog/2020/03/10/serge-dissertation.html",
       "Media": "images/serge.jpg"
     }
