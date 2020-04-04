@@ -271,7 +271,7 @@ export default function getNewsCardsData() {
       Headline: 'Negrashov wins ARCS fellowship',
       Text: 'Serge Negrashov receives the 2018 Martin Award for Information and Computer Science from the ARCS Foundation.',
       URL: 'http://www.ics.hawaii.edu/2018/04/sergey-negrashov-receives-arcs-fellowship/',
-      Media: 'images/serge.jpg',
+      Media: 'images/arcs-foundation-serge.jpg',
     },
     {
       Date: '9/1/2018',
