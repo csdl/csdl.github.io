@@ -1,20 +1,25 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container'
-import Title from './Title'
+import Container from 'react-bootstrap/Container';
+import Title from './Title';
 
 function Home(props) {
-  const jumbotronStyle = {backgroundColor: "#FFFFFF", padding: 0, marginBottom: 0};
+  const jumbotronStyle = { backgroundColor: '#FFFFFF', padding: 0, marginBottom: 0 };
   return (
+    // eslint-disable-next-line react/prop-types
     <div style={props.sectionStyle} id="home">
       <Jumbotron fluid style={jumbotronStyle}>
         <Container>
-          <Title title={"Welcome to CSDL"}/>
+          <Title title={'Welcome to CSDL'}/>
           <p>
-            The Collaborative Software Development Laboratory is led by <a href="https://philipmjohnson.org">Philip Johnson</a>, a Professor in the <a href="http://www.ics.hawaii.edu">Department of Information and Computer Sciences</a> at the <a href="https://www.hawaii.edu">University of Hawaii</a>.
+            The Collaborative Software Development Laboratory is led by <a href="https://philipmjohnson.org">Philip
+            Johnson</a>, a Professor in the <a href="http://www.ics.hawaii.edu">Department of Information and Computer
+            Sciences</a> at the <a href="https://www.hawaii.edu">University of Hawaii</a>.
           </p>
           <p>
-            Established in 1991, the Collaborative Software Development Laboratory performs research, development, and technology transfer in disciplines including software engineering, sustainability, entrepreneurship, educational technology, renewable energy, and computer-supported cooperative work.
+            Established in 1991, the Collaborative Software Development Laboratory performs research, development, and
+            technology transfer in disciplines including software engineering, sustainability, entrepreneurship,
+            educational technology, renewable energy, and computer-supported cooperative work.
           </p>
         </Container>
       </Jumbotron>

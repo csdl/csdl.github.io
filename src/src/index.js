@@ -7,8 +7,8 @@ import Top from './Top';
 import News from './News';
 import { greenColorCode } from './Constants';
 
-const sectionStyle = {marginTop: "1em", marginBottome: "1em"};
-const borderStyle = {border: `0.5px solid ${greenColorCode}`};
+const sectionStyle = { marginTop: '1em', marginBottome: '1em' };
+const borderStyle = { border: `0.5px solid ${greenColorCode}` };
 ReactDOM.render(
   <React.StrictMode>
     <Top/>
@@ -16,5 +16,6 @@ ReactDOM.render(
     <hr style={borderStyle}/>
     <News/>
   </React.StrictMode>,
-  document.getElementById('root')
+  // eslint-disable-next-line no-undef
+  document.getElementById('root'),
 );

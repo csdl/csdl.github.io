@@ -4,8 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import { greenColorCode } from './Constants';
 
-function Topp(props) {
-  const navbarStyle = { backgroundColor: greenColorCode, color: "white", fontWeight: "bold" }
+function Topp() {
+  const navbarStyle = { backgroundColor: greenColorCode, color: 'white', fontWeight: 'bold' };
   return (
     <div>
       <Navbar style={navbarStyle}>

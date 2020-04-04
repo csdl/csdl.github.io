@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import PropTypes from 'prop-types';
 import { greenColorCode } from './Constants';
 
 function NewsCard(props) {
@@ -20,5 +21,13 @@ function NewsCard(props) {
     </Card>
   );
 }
+
+NewsCard.propTypes = {
+  Date: PropTypes.String.isRequired,
+  Media: PropTypes.String.isRequired,
+  Headline: PropTypes.String.isRequired,
+  Text: PropTypes.String.isRequired,
+  URL: PropTypes.String.isRequired,
+};
 
 export default NewsCard;
