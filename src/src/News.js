@@ -15,11 +15,11 @@ class News extends React.Component {
     const selectedStyle = {...buttonStyle, fontWeight: 'bold'};
     const deselectedStyle = {...buttonStyle, fontWeight: 'normal'};
     const newsData = getNewsData();
-    const displayedData = newsData.slice(0, 3);
     const latestStyle = selectedStyle;
     const recentStyle = deselectedStyle;
     const allStyle = deselectedStyle;
-    this.state = { buttonStyle, selectedStyle, deselectedStyle, newsData, displayedData, latestStyle, recentStyle, allStyle };
+    const numDecks = 1;
+    this.state = { buttonStyle, selectedStyle, deselectedStyle, newsData, numDecks, latestStyle, recentStyle, allStyle };
   }
 
   renderNewsCard(data, idx) {
@@ -30,16 +30,35 @@ class News extends React.Component {
   onClick(buttonName) {
     const on = this.state.selectedStyle;
     const off = this.state.deselectedStyle;
-    const latestData = this.state.newsData.slice(0,3);
-    const recentData = this.state.newsData.slice(0,6);
     const allData = this.state.newsData;
     if (buttonName === 'latest') {
-      this.setState( { displayedData: latestData, latestStyle: on, recentStyle: off, allStyle: off });
+      this.setState( { numDecks: 1, latestStyle: on, recentStyle: off, allStyle: off });
     } else if (buttonName === 'recent') {
-      this.setState( { displayedData: recentData, latestStyle: off, recentStyle: on, allStyle: off });
+      this.setState( { numDecks: 2, latestStyle: off, recentStyle: on, allStyle: off });
     } else if (buttonName === 'all') {
-      this.setState( { displayedData: allData, latestStyle: off, recentStyle: off, allStyle: on });
+      this.setState( { numDecks: Math.trunc(allData.length / 3) , latestStyle: off, recentStyle: off, allStyle: on });
     }
+  }
+
+  renderDecks() {
+    let decks = [];
+    for (let i = 0; i < this.state.numDecks; i++) {
+      decks.push(this.renderDeck(i));
+    }
+    return decks;
+  }
+
+  renderDeck(deckNum) {
+    const deckStyle={ marginBottom: '1em'};
+    return (
+      <CardDeck key={deckNum} style={deckStyle}>
+        {[
+          this.renderNewsCard(this.state.newsData[(deckNum * 3)], (deckNum * 3)),
+          this.renderNewsCard(this.state.newsData[(deckNum * 3) + 1], (deckNum * 3) + 1),
+          this.renderNewsCard(this.state.newsData[(deckNum * 3) + 2], (deckNum * 3) + 2)
+        ]}
+      </CardDeck>
+    )
   }
 
   render() {
@@ -53,7 +72,7 @@ class News extends React.Component {
             <Button onClick={()=>this.onClick("all")} style={this.state.allStyle}>All</Button>
           </Row>
           <CardDeck>
-            {this.state.displayedData.map((data, idx) => this.renderNewsCard(data, idx))}
+            {this.renderDecks()}
           </CardDeck>
         </Container>
       </div>
