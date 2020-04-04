@@ -23,11 +23,11 @@ function NewsCard(props) {
 }
 
 NewsCard.propTypes = {
-  Date: PropTypes.String.isRequired,
-  Media: PropTypes.String.isRequired,
-  Headline: PropTypes.String.isRequired,
-  Text: PropTypes.String.isRequired,
-  URL: PropTypes.String.isRequired,
+  Date: PropTypes.string.isRequired,
+  Media: PropTypes.string.isRequired,
+  Headline: PropTypes.string.isRequired,
+  Text: PropTypes.string.isRequired,
+  URL: PropTypes.string.isRequired,
 };
 
 export default NewsCard;
