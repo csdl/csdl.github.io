@@ -14,16 +14,11 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  1. Install the react-bootstrap package.
-
-  2. Make a very simple color-blocked wireframe of home page. Use Katie's gradually increasing grey values.
-     * Projects
-     * Publications
-     * People
-     * Sponsors
-     * Contact
-
-  3. Replace the timeline component. Not good on mobile.
-  4. Navbar is not great. Check out: https://www.npmjs.com/package/react-anchor-link-smooth-scroll
+  1. Add all research data.
+  2. Implement "more" button.
+  3. Implement publications
+  4. Implement people
+  5. Implement partners
+  4. Fix navbar on mobile size.
 
 Remember: even a simple version of this site will be better than what we now have.
