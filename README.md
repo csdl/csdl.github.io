@@ -19,6 +19,6 @@ If the script fails with an authentication error, the simplest workaround is to 
   3. Implement publications
   4. Implement people
   5. Implement partners
-  4. Fix navbar on mobile size.
+  4. Implement a footer with contact info.
 
 Remember: even a simple version of this site will be better than what we now have.
