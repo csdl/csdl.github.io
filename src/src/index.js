@@ -5,6 +5,7 @@ import './index.css';
 import Home from './Home';
 import Top from './Top';
 import News from './News';
+import Research from './Research';
 import { greenColorCode } from './Constants';
 
 const sectionStyle = { marginTop: '1em', marginBottome: '1em' };
@@ -15,6 +16,8 @@ ReactDOM.render(
     <Home sectionStyle={sectionStyle}/>
     <hr style={borderStyle}/>
     <News/>
+    <hr style={borderStyle}/>
+    <Research/>
   </React.StrictMode>,
   // eslint-disable-next-line no-undef
   document.getElementById('root'),
