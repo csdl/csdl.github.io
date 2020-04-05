@@ -22,7 +22,7 @@ function NewsCard(props) {
     <Card style={cardStyle}>
       <Card.Header>{props.Date} </Card.Header>
       <Card.Body>
-        <img style={{ marginRight: '15px' }} className={'rounded float-left'} width='100px' src={props.Media}/>
+        <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='100px' src={props.Media}/>
         <Card.Title style={{ color: greenColorCode }}>{props.Headline}</Card.Title>
         <Card.Text>
 
