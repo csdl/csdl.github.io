@@ -14,12 +14,12 @@ class Research extends React.Component {
     const buttonStyle = { backgroundColor: greenColorCode, margin: '1em', borderColor: greenColorCode };
     const selectedStyle = { ...buttonStyle, fontWeight: 'bold' };
     const deselectedStyle = { ...buttonStyle, fontWeight: 'normal' };
-    const ResearchData = getResearchData();
+    const researchData = getResearchData();
     const latestStyle = selectedStyle;
     const recentStyle = deselectedStyle;
     const allStyle = deselectedStyle;
     const numDecks = 1;
-    this.state = { selectedStyle, deselectedStyle, ResearchData, numDecks, latestStyle, recentStyle, allStyle };
+    this.state = { selectedStyle, deselectedStyle, researchData, numDecks, latestStyle, recentStyle, allStyle };
   }
 
   renderResearchCard(data, idx) {
@@ -30,7 +30,7 @@ class Research extends React.Component {
   onClick(buttonName) {
     const on = this.state.selectedStyle;
     const off = this.state.deselectedStyle;
-    const allData = this.state.ResearchData;
+    const allData = this.state.researchData;
     if (buttonName === 'latest') {
       this.setState({ numDecks: 1, latestStyle: on, recentStyle: off, allStyle: off });
     } else if (buttonName === 'recent') {
@@ -53,9 +53,9 @@ class Research extends React.Component {
     return (
       <CardDeck key={deckNum} style={deckStyle}>
         {[
-          this.renderResearchCard(this.state.ResearchData[(deckNum * 3)], (deckNum * 3)),
-          this.renderResearchCard(this.state.ResearchData[(deckNum * 3) + 1], (deckNum * 3) + 1),
-          this.renderResearchCard(this.state.ResearchData[(deckNum * 3) + 2], (deckNum * 3) + 2),
+          this.renderResearchCard(this.state.researchData[(deckNum * 3)], (deckNum * 3)),
+          this.renderResearchCard(this.state.researchData[(deckNum * 3) + 1], (deckNum * 3) + 1),
+          this.renderResearchCard(this.state.researchData[(deckNum * 3) + 2], (deckNum * 3) + 2),
         ]}
       </CardDeck>
     );
@@ -68,9 +68,9 @@ class Research extends React.Component {
         <Container>
           <Title title={'Research'}/>
           <Row className="justify-content-center">
-            <Button onClick={() => this.onClick('latest')} style={this.state.latestStyle}>Latest</Button>
-            <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>Recent</Button>
-            <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All</Button>
+            <Button onClick={() => this.onClick('latest')} style={this.state.latestStyle}>Latest (3)</Button>
+            <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>Recent (6)</Button>
+            <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All ({this.state.researchData.length})</Button>
           </Row>
           <CardDeck>
             {this.renderDecks()}

@@ -21,5 +21,7 @@ If the script fails with an authentication error, the simplest workaround is to 
   5. Implement partners
   4. Implement a footer with contact info.
   5. Implement scroll https://github.com/ganderzz/react-scroll-to
+  6. PhD, MS, and BS "badges" for research projects?
+  7. Fix images in News items.
 
 Remember: even a simple version of this site will be better than what we now have.
