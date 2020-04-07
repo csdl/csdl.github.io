@@ -36,8 +36,9 @@ class Research extends React.Component {
     this.setState({ showOneCard: project });
   };
 
-  renderResearchCard({ date, project, text, url, media }, key) {
+  renderResearchCard({ date, project, text, url, media, bigImage, longText, moreInfo }, key) {
     return <ResearchCard key={key} date={date} project={project} text={text} url={url} media={media}
+                         bigImage={bigImage} longText={longText} moreInfo={moreInfo}
                          showOneCard={this.showOneCard} showLess={!!this.state.showOneCard}/>;
   }
 

@@ -230,6 +230,10 @@ export default function getResearchData() {
       text: 'Improve the undergraduate degree experience through increased engagement and retention.',
       url: 'https://radgrad.org/',
       media: 'images/radgrad_logo.png',
+      bigImage: 'images/radgrad-big.png',
+      // eslint-disable-next-line max-len
+      longText: 'The fundamental goal of the RadGrad Project is to provide students, faculty, and advisors with an alternative perspective on the undergraduate degree program---which traditionally boils down to a single kind of activity (coursework) and a single metric for success (grade point average). Our alternative perspective is called the Degree Experience, and it gives first class status to both curricular activities (courses) and extracurricular activities (discipline-oriented events, activities, clubs, etc.) To establish the first class status of extracurricular activities, the Degree Experience perspective replaces GPA as the single metric for success with a three component metric called ICE that assesses student development with respect to Innovation, Competency, and Experience. Each student\'s Degree Experience also includes a representation of their disciplinary interests and career goals that helps them assess the relevance of potential curricular and extracurricular activities. Finally, the Degree Experience perspective is voluntary. It complements but does not change any existing undergraduate degree requirements of a university.',
+    moreInfo: 'https://radgrad.org',
     },
   ].reverse();
 }

@@ -33,11 +33,13 @@ class News extends React.Component {
     const allData = this.state.newsData;
     if (buttonName === 'latest') {
       this.setState({ numDecks: 1, latestStyle: on, recentStyle: off, allStyle: off });
-    } else if (buttonName === 'recent') {
-      this.setState({ numDecks: 2, latestStyle: off, recentStyle: on, allStyle: off });
-    } else if (buttonName === 'all') {
-      this.setState({ numDecks: Math.trunc(allData.length / 3), latestStyle: off, recentStyle: off, allStyle: on });
-    }
+    } else
+      if (buttonName === 'recent') {
+        this.setState({ numDecks: 2, latestStyle: off, recentStyle: on, allStyle: off });
+      } else
+        if (buttonName === 'all') {
+          this.setState({ numDecks: Math.trunc(allData.length / 3), latestStyle: off, recentStyle: off, allStyle: on });
+        }
   }
 
   renderDecks() {
@@ -62,6 +64,7 @@ class News extends React.Component {
   }
 
   render() {
+    const allLen = this.state.newsData.length;
     return (
       // eslint-disable-next-line react/prop-types
       <div style={this.props.sectionStyle} id="home">
@@ -70,11 +73,9 @@ class News extends React.Component {
           <Row className="justify-content-center">
             <Button onClick={() => this.onClick('latest')} style={this.state.latestStyle}>Latest (3)</Button>
             <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>Recent (6)</Button>
-            <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All ({this.state.newsData.length})</Button>
+            <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All ({allLen})</Button>
           </Row>
-          <CardDeck>
-            {this.renderDecks()}
-          </CardDeck>
+          {this.renderDecks()}
         </Container>
       </div>
     );
