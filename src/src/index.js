@@ -9,12 +9,11 @@ import Research from './Research';
 import { greenColorCode } from './Constants';
 
 const sectionStyle = { marginTop: '1em', marginBottome: '1em' };
-const borderStyle = { border: `0.5px solid ${greenColorCode}` };
 ReactDOM.render(
   <React.StrictMode>
     <Top/>
     <Home sectionStyle={sectionStyle}/>
-    <div style={{ backgroundColor: '#e1e6df', paddingBottom: '20px', paddingTop: '20px' }}>
+    <div style={{ backgroundColor: '#ecedeb', paddingBottom: '10px', paddingTop: '10px' }}>
       <News/>
     </div>
     <Research/>
