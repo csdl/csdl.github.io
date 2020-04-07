@@ -14,9 +14,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Top/>
     <Home sectionStyle={sectionStyle}/>
-    <hr style={borderStyle}/>
-    <News/>
-    <hr style={borderStyle}/>
+    <div style={{ backgroundColor: '#e1e6df', paddingBottom: '20px', paddingTop: '20px' }}>
+      <News/>
+    </div>
     <Research/>
   </React.StrictMode>,
   // eslint-disable-next-line no-undef
