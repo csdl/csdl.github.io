@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import Markdown from 'react-markdown';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 import { greenColorCode } from './Constants';
@@ -26,15 +27,14 @@ function smallCard(date, media, project, text, showLess, showOneCard) {
 }
 
 function bigCard(date, project, bigImage, longText, moreInfo, showOneCard) {
-  console.log(bigImage);
   return (
     <Card style={cardStyle}>
-      <Card.Img variant="top" src={ bigImage }/>
       <Card.Header>{date}</Card.Header>
+      <Card.Img variant="top" src={ bigImage }/>
       <Card.Body>
         <Card.Title style={{ color: greenColorCode }}>{project}</Card.Title>
-        <Card.Text>
-          {longText}
+        <Card.Text as='div'>
+          <Markdown source={longText}/>
         </Card.Text>
       </Card.Body>
       <Card.Footer>
