@@ -19,12 +19,26 @@ class Research extends React.Component {
     const recentStyle = deselectedStyle;
     const allStyle = deselectedStyle;
     const numDecks = 1;
-    this.state = { selectedStyle, deselectedStyle, researchData, numDecks, latestStyle, recentStyle, allStyle };
+    const showOneCard = null;
+    this.state = {
+      selectedStyle,
+      deselectedStyle,
+      researchData,
+      numDecks,
+      latestStyle,
+      recentStyle,
+      allStyle,
+      showOneCard,
+    };
   }
 
-  renderResearchCard(data, idx) {
-    return <ResearchCard key={idx} Date={data.Date} Headline={data.Headline} Text={data.Text} URL={data.URL}
-                     Media={data.Media}/>;
+  showOneCard = (project) => {
+    this.setState({ showOneCard: project });
+  };
+
+  renderResearchCard({ date, project, text, url, media }, key) {
+    return <ResearchCard key={key} date={date} project={project} text={text} url={url} media={media}
+                         showOneCard={this.showOneCard} showLess={!!this.state.showOneCard}/>;
   }
 
   onClick(buttonName) {
@@ -33,11 +47,13 @@ class Research extends React.Component {
     const allData = this.state.researchData;
     if (buttonName === 'latest') {
       this.setState({ numDecks: 1, latestStyle: on, recentStyle: off, allStyle: off });
-    } else if (buttonName === 'recent') {
-      this.setState({ numDecks: 2, latestStyle: off, recentStyle: on, allStyle: off });
-    } else if (buttonName === 'all') {
-      this.setState({ numDecks: Math.trunc(allData.length / 3), latestStyle: off, recentStyle: off, allStyle: on });
-    }
+    } else
+      if (buttonName === 'recent') {
+        this.setState({ numDecks: 2, latestStyle: off, recentStyle: on, allStyle: off });
+      } else
+        if (buttonName === 'all') {
+          this.setState({ numDecks: Math.trunc(allData.length / 3), latestStyle: off, recentStyle: off, allStyle: on });
+        }
   }
 
   renderDecks() {
@@ -45,7 +61,17 @@ class Research extends React.Component {
     for (let i = 0; i < this.state.numDecks; i++) {
       decks.push(this.renderDeck(i));
     }
-    return decks;
+    return (
+      <div>
+        <Row className="justify-content-center">
+          <Button onClick={() => this.onClick('latest')} style={this.state.latestStyle}>Latest (3)</Button>
+          <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>Recent (6)</Button>
+          <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All
+            ({this.state.researchData.length})</Button>
+        </Row>
+        {decks}
+      </div>
+    );
   }
 
   renderDeck(deckNum) {
@@ -61,20 +87,18 @@ class Research extends React.Component {
     );
   }
 
+  renderOneCard(project) {
+    const cardData = this.state.researchData.find((data) => data.project === project);
+    return this.renderResearchCard(cardData, 1);
+  }
+
   render() {
     return (
       // eslint-disable-next-line react/prop-types
       <div style={this.props.sectionStyle} id="home">
         <Container>
           <Title title={'Research'}/>
-          <Row className="justify-content-center">
-            <Button onClick={() => this.onClick('latest')} style={this.state.latestStyle}>Latest (3)</Button>
-            <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>Recent (6)</Button>
-            <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All ({this.state.researchData.length})</Button>
-          </Row>
-          <CardDeck>
-            {this.renderDecks()}
-          </CardDeck>
+          {this.state.showOneCard ? this.renderOneCard(this.state.showOneCard) : this.renderDecks()}
         </Container>
       </div>
     );

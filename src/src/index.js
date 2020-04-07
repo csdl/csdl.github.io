@@ -6,17 +6,16 @@ import Home from './Home';
 import Top from './Top';
 import News from './News';
 import Research from './Research';
-import { greenColorCode } from './Constants';
+import { lightGreenColorCode } from './Constants';
 
-const sectionStyle = { marginTop: '1em', marginBottome: '1em' };
+const sectionStyle = { paddingTop: '1em', paddingBottom: '1em' };
+const sectionStyle2 = { ...sectionStyle, backgroundColor: lightGreenColorCode };
 ReactDOM.render(
   <React.StrictMode>
     <Top/>
     <Home sectionStyle={sectionStyle}/>
-    <div style={{ backgroundColor: '#ecedeb', paddingBottom: '10px', paddingTop: '10px' }}>
-      <News/>
-    </div>
-    <Research/>
+    <News sectionStyle={sectionStyle2}/>
+    <Research sectionStyle={sectionStyle}/>
   </React.StrictMode>,
   // eslint-disable-next-line no-undef
   document.getElementById('root'),
