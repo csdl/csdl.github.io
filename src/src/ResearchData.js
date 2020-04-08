@@ -560,7 +560,7 @@ For more information, please see [http://morea-framework.github.io/](http://more
       media: 'images/opqlogo.png',
       bigImage: 'images/opq-big.png',
       longText: `
-The Open Power Quality project began in 2012 with the goal of developing and evaluating technology to support three important improvements to electrical infrastructure: 
+The goal of the Open Power Quality project is to develop and evaluate technology to support three important improvements to electrical infrastructure: 
 
   1. Increase the capacity of small and large electrical grids to employ distributed, intermittent forms of renewable energy.
   
