@@ -216,6 +216,16 @@ export default function getResearchData() {
       text: 'Generate educational websites organized by Modules, Outcomes, Readings, Experiences, and Assessments.',
       url: 'http://morea-framework.github.io/',
       media: 'images/morea-module.png',
+      bigImage: 'images/morea-big.png',
+      longText: `
+Morea implements a simple pedagogical design pattern: a course is a sequence of modules, each with one or more learning outcomes. Modules can combine one or more passive readings (providing background) with one or more active experiences (in-class work or homework). Finally, a module can contain one or more assessments to help students determine if they've achieved the learning outcomes. These five representations: Modules, Outcomes, Readings, Experiences, and Assessments form the acronym "Morea". 
+
+Our experience shows that students and teachers both benefit by making this course design explicit. For example, Morea generates course websites that organize course content in multiple ways: by modules, outcomes, readings, experiences, and assessments. This makes it easier for teachers to design well structured courses, and easier for students to understand what they need to learn and how to learn it.
+
+In addition, Morea makes it possible to represent dependencies between courses at the module-level. So, instead of saying that the course ICS 311 requires the courses ICS 241, 211, and 141, you can instead explicitly represent that the ICS 311 module called "Growth of Functions" depends upon the modules "Algorithms" from ICS 141, "Big-O Notation" from ICS 211, and "Advanced Counting Techniques" from ICS 241. To see this in action, check out [the ICS 311 Growth of Functions module](http://courses.ics.hawaii.edu/ReviewICS311/modules/growth/).  Module-level dependency representation makes it easier to answer questions like "What should be the content of the core curriculum?"  The answer could be: "only those modules that are actually required by later modules in the curriculum." 
+
+For more information, please see [http://morea-framework.github.io/](http://morea-framework.github.io/).
+`
     },
     {
       date: '2013 - present',
@@ -223,6 +233,27 @@ export default function getResearchData() {
       text: 'Open source hardware and software for low-cost distributed power quality data collection, analysis, and visualization.',
       url: 'https://openpowerquality.org/',
       media: 'images/opqlogo.png',
+      bigImage: 'images/opq-big.png',
+      longText: `
+The Open Power Quality project began in 2012 with the goal of developing and evaluating technology to support three important improvements to electrical infrastructure: 
+
+  1. Increase the capacity of small and large electrical grids to employ distributed, intermittent forms of renewable energy.
+  
+  2. Gain insight into lifespan and failure rate problems in consumer electronics due to poor power quality.
+  
+  3. Provide an independent, low cost source of useful power quality data to consumers, researchers, and public policy makers.
+
+The OPQ system architecture consists of four major open source hardware and software components that provide end-to-end support for the capture, triggering, analysis, and reporting of consumer level local and global PQ events.
+
+  * OPQ Box is a hardware device that detects the electrical waveform from a standard residential outlet and communicates both low and high fidelity representations of the waveform to other OPQ system components.
+
+  * OPQ Makai monitors incoming low fidelity data from OPQ Boxes, requests high fidelity data when necessary, and stores the results in a MongoDB database.
+  
+  * OPQ Mauka analyzes data, creates "events" when it detects anomolies, and can tell OPQ Makai to request high fidelity data from one or more OPQ Boxes to facilitate analysis.
+
+  * OPQ View is a visualization platform for displaying the results for data capture and analysis.
+
+For more information, see [https://openpowerquality.org](https://openpowerquality.org).`,
     },
     {
       date: '2015 - present',
@@ -231,9 +262,12 @@ export default function getResearchData() {
       url: 'https://radgrad.org/',
       media: 'images/radgrad_logo.png',
       bigImage: 'images/radgrad-big.png',
-      // eslint-disable-next-line max-len
-      longText: 'The fundamental goal of the RadGrad Project is to provide students, faculty, and advisors with an alternative perspective on the undergraduate degree program---which traditionally boils down to a single kind of activity (coursework) and a single metric for success (grade point average). Our alternative perspective is called the Degree Experience, and it gives first class status to both curricular activities (courses) and extracurricular activities (discipline-oriented events, activities, clubs, etc.) \n\n To establish the first class status of extracurricular activities, the Degree Experience perspective replaces GPA as the single metric for success with a three component metric called ICE that assesses student development with respect to Innovation, Competency, and Experience. Each student\'s Degree Experience also includes a representation of their disciplinary interests and career goals that helps them assess the relevance of potential curricular and extracurricular activities. Finally, the Degree Experience perspective is voluntary. It complements but does not change any existing undergraduate degree requirements of a university.\n\n For more information, see [https://radgrad.org](https://radgrad.org)',
-    moreInfo: 'https://radgrad.org',
+      longText: `
+The fundamental goal of the RadGrad Project is to provide students, faculty, and advisors with an alternative perspective on the undergraduate degree program---which traditionally boils down to a single kind of activity (coursework) and a single metric for success (grade point average). Our alternative perspective is called the Degree Experience, and it gives first class status to both curricular activities (courses) and extracurricular activities (discipline-oriented events, activities, clubs, etc.)
+
+To establish the first class status of extracurricular activities, the Degree Experience perspective replaces GPA as the single metric for success with a three component metric called ICE that assesses student development with respect to Innovation, Competency, and Experience. Each student's Degree Experience also includes a representation of their disciplinary interests and career goals that helps them assess the relevance of potential curricular and extracurricular activities. Finally, the Degree Experience perspective is voluntary. It complements but does not change any existing undergraduate degree requirements of a university.
+
+For more information, see [https://radgrad.org](https://radgrad.org)`,
     },
   ].reverse();
 }

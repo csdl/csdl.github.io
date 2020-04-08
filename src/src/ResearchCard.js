@@ -26,7 +26,7 @@ function smallCard(date, media, project, text, showLess, showOneCard) {
   );
 }
 
-function bigCard(date, project, bigImage, longText, moreInfo, showOneCard) {
+function bigCard(date, project, bigImage, longText, showOneCard) {
   return (
     <Card style={cardStyle}>
       <Card.Header>{date}</Card.Header>
@@ -45,10 +45,10 @@ function bigCard(date, project, bigImage, longText, moreInfo, showOneCard) {
 }
 
 function ResearchCard(props) {
-  const { date, media, project, text, url, showOneCard, showLess, bigImage, longText, moreInfo } = props;
+  const { date, media, project, text, url, showOneCard, showLess, bigImage, longText } = props;
   return (
     showLess ?
-      bigCard(date, project, bigImage, longText, moreInfo, showOneCard) :
+      bigCard(date, project, bigImage, longText, showOneCard) :
       smallCard(date, media, project, text, url, showOneCard, showLess)
   );
 }
@@ -63,7 +63,6 @@ ResearchCard.propTypes = {
   showLess: PropTypes.bool.isRequired,
   bigImage: PropTypes.string,
   longText: PropTypes.string,
-  moreInfo: PropTypes.string,
 };
 
 export default ResearchCard;
