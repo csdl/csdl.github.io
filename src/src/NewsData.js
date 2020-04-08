@@ -1,18 +1,11 @@
 export default function getNewsCardsData() {
   return [
     {
-      Date: '5/1/1991',
-      Headline: 'CSDL Begins!',
-      Text: 'The Collaborative Software Development Laboratory was founded in the Spring of 1991.',
-      URL: '',
-      Media: '',
-    },
-    {
       Date: '5/1/1994',
       Headline: 'CLARE',
       Text: 'Dadong Wan completes Ph.D. research: CLARE: A Computer-Supported Collaborative Learning Environment Based on the Thematic Structure of Scientific Text.',
       URL: 'http://csdl.ics.hawaii.edu/research/clare',
-      Media: '',
+      Media: 'images/clare-small.png',
     },
     {
       Date: '6/1/1995',
@@ -26,7 +19,7 @@ export default function getNewsCardsData() {
       Headline: 'WWW',
       Text: 'Rosemary Andrada Sumajit completes M.S. research:  Building Community through the World Wide Web.',
       URL: '',
-      Media: '',
+      Media: 'images/www.png',
     },
     {
       Date: '8/1/1996',
@@ -47,7 +40,7 @@ export default function getNewsCardsData() {
       Headline: 'PSP Data Quality',
       Text: 'Anne Disney completes M.S. research:  Data Quality Problems in the Personal Software Process.',
       URL: 'http://csdl.ics.hawaii.edu/research/psp-data-quality',
-      Media: '',
+      Media: 'images/psp-data-quality-small.png',
     },
     {
       Date: '12/1/1999',
@@ -61,7 +54,7 @@ export default function getNewsCardsData() {
       Headline: 'MCS',
       Text: 'Robert Brewer completes M.S. research:  Improving Mailing List Archives Through Condensation.',
       URL: 'http://csdl.ics.hawaii.edu/research/mcs',
-      Media: '',
+      Media: 'images/mcs-small.png',
     },
     {
       Date: '8/1/2000',
@@ -82,7 +75,7 @@ export default function getNewsCardsData() {
       Headline: 'Dolphin Whistles',
       Text: 'Timothy Burgess completes M.S. research:  An artificial neural network for recognition of simulated dolphin whistles.',
       URL: '',
-      Media: '',
+      Media: 'images/dolphin.png',
     },
     {
       Date: '6/1/2001',
@@ -96,7 +89,7 @@ export default function getNewsCardsData() {
       Headline: 'INCA',
       Text: 'Jitender Miglani completes M.S. research:  The design, implementation, and evaluation of INCA: an automated system for approval code allocation.',
       URL: 'http://csdl.ics.hawaii.edu/research/inca',
-      Media: '',
+      Media: 'images/inca-small.png',
     },
     {
       Date: '5/1/2003',

@@ -71,8 +71,7 @@ class News extends React.Component {
         <Container>
           <Title title={'News'}/>
           <Row className="justify-content-center">
-            <Button onClick={() => this.onClick('latest')} style={this.state.latestStyle}>Latest (3)</Button>
-            <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>Recent (6)</Button>
+            <Button onClick={() => this.onClick('latest')} style={this.state.latestStyle}>Latest</Button>
             <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All ({allLen})</Button>
           </Row>
           {this.renderDecks()}

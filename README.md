@@ -14,15 +14,11 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  1. Add all research data.
-  2. Implement "more" button.
   3. Implement publications
   4. Implement people
   5. Implement partners
   4. Implement a footer with contact info.
   5. Implement scroll https://github.com/ganderzz/react-scroll-to
   6. PhD, MS, and BS "badges" for research projects?
-  7. Fix images in News items.
-  8. Use light green background color, not hr elements.
 
 Remember: even a simple version of this site will be better than what we now have.

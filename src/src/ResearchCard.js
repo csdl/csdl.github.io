@@ -29,10 +29,9 @@ function smallCard(date, media, project, text, showLess, showOneCard) {
 function bigCard(date, project, bigImage, longText, showOneCard) {
   return (
     <Card style={cardStyle}>
-      <Card.Header>{date}</Card.Header>
       <Card.Img variant="top" src={ bigImage }/>
       <Card.Body>
-        <Card.Title style={{ color: greenColorCode }}>{project}</Card.Title>
+        <Card.Title style={{ color: greenColorCode }}>{project} ({date})</Card.Title>
         <Card.Text as='div'>
           <Markdown source={longText}/>
         </Card.Text>
