@@ -20,5 +20,13 @@ If the script fails with an authentication error, the simplest workaround is to 
   4. Implement a footer with contact info.
   5. Implement scroll https://github.com/ganderzz/react-scroll-to
   6. PhD, MS, and BS "badges" for research projects?
-
-Remember: even a simple version of this site will be better than what we now have.
+  7. Compute descriptive statistics to place in first section.
+  8. bibtex processor script in scripts/ directory.
+     - Reads in csdl-trs.bib at top level.
+     - writes JSON files to _data directory.
+        - csdl-trs.master.array.json  (array of citations in descending order by key. Makes it easy to get most recent events)
+        - csdl-trs.author.map.json (object: fields are author names, values are array of bibtex keys)
+        - csdl-trs.keyword.map.json (object fields are keyword names, values are array of bibtex keys)
+  9. TechReport class
+     - constructor reads in JSON files from _data directory.
+     - methods provide lookup and formatting functions to respond to home page form
