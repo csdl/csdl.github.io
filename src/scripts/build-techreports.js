@@ -1,25 +1,34 @@
 #! /usr/bin/env node
 
-console.log('Starting build-techreports');
-
 const fs = require('fs');
 const _ = require('lodash');
 const bibtex = require('bibtex');
+const jsonfile = require('jsonfile');
 
 class CsdlTechReports {
   constructor() {
-    // const masterFile = 'src/_data/csdl-trs.master.array.json';
+    this.masterFile = 'src/_data/csdl-trs.master.array.json';
     const bibFileName = 'csdl-trs.bib';
     const bibString = fs.readFileSync(bibFileName, 'utf8');
     this.bibFile = bibtex.parseBibFile(bibString);
     this.citeKeys = _.keys(this.bibFile.entries$);
-    this.techreportKey = 'csdl-91-01';
-    this.inproceedingsKey = 'csdl-91-03';
-    this.articleKey = 'csdl-92-09'; // csdl-94-04
-    this.phdthesisKey = 'csdl-93-14';
-    this.mastersthesisKey = 'csdl-98-01';
-    this.inbookKey = 'csdl2-16-03';
-    this.miscKey = 'csdl2-10-12';
+    // fields common to all: key, title, author, year, month, keywords, note, abstract, summary
+    this.specialFieldMap = {
+      techreport: ['institution', 'number'],
+      inproceedings: ['booktitle', 'address'],
+      article: ['journal'],
+      phdthesis: ['school'],
+      mastersthesis: ['school'],
+      misc: ['howpublished'],
+      inbook: ['editor', 'chapter', 'publisher']
+    };
+  }
+
+  writeFiles() {
+    jsonfile.spaces = 2;
+    const masterList = _.map(this.citeKeys, key => this.getEntryObject(key));
+    console.log(`Writing ${this.masterFile}`);
+    jsonfile.writeFile(this.masterFile, masterList, { spaces: 2 }, err => { if (err != null) console.error(err); });
   }
 
   authorStrings(entry) {
@@ -35,28 +44,34 @@ class CsdlTechReports {
     return this.bibFile.getEntry(citeKey);
   }
 
-  getCiteKeys(type) {
-    const citeKeysofType = [];
-    const bibFile = this.bibFile;
-    _.each(this.citeKeys, function (citeKey) {
-        if (bibFile.getEntry(citeKey).type === type) {
-          citeKeysofType.push(citeKey);
-        }
-    });
-    return citeKeysofType;
+  getFields(citeKey) {
+    const entry = this.bibFile.getEntry(citeKey);
+    const entryFields = entry.fields;
+    return entryFields;
   }
 
-  getTypeList() {
-    const bibFile = this.bibFile;
-    const typeList = _.map(this.citeKeys, citeKey => bibFile.getEntry(citeKey).type);
-    return _.uniq(typeList);
+  normalizedField(entry, field) {
+    return (entry.getField(field)) ? bibtex.normalizeFieldValue(entry.getField(field)) : '';
+  }
+
+  getEntryObject(citeKey) {
+    const obj = {};
+    const entry = this.bibFile.getEntry(citeKey);
+    const type = this.bibFile.getEntry(citeKey).type;
+    obj.key = citeKey;
+    obj.type = type;
+    // process regular fields
+    const processField = field => { if (entry.getField(field)) obj[field] = this.normalizedField(entry, field); };
+    const defaultFields = ['title', 'year', 'month', 'note', 'abstract', 'summary'];
+    _.each(defaultFields, processField);
+    _.each(this.specialFieldMap[type], processField);
+    obj.authors = this.authorStrings(entry);
+    obj.keywords = this.normalizedField(entry, 'keywords').split(',').map(str => str.trim());
+    return obj;
   }
 }
 
+console.log('Starting build-techreports');
 const techreports = new CsdlTechReports();
-console.log('total', techreports.totalEntries());
-console.log('techreports', techreports.getCiteKeys('techreport').length);
-console.log('types', techreports.getTypeList());
-
-
+techreports.writeFiles();
 console.log('Finished build-techreports');
