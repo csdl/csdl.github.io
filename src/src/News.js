@@ -15,10 +15,6 @@ class News extends React.Component {
     this.state = { numDecks: 1 };
   }
 
-  renderNewsCard = (data, idx) => (
-    <NewsCard key={idx} Date={data.Date} Headline={data.Headline} Text={data.Text} URL={data.URL} Media={data.Media}/>
-  );
-
   onClickSectionButton = (buttonName) => {
     if (buttonName === 'recent') {
       this.setState({ numDecks: 1 });
@@ -48,6 +44,11 @@ class News extends React.Component {
       </CardDeck>
     );
   }
+
+  renderNewsCard = (data, idx) => (
+    <NewsCard key={idx} Date={data.Date} Headline={data.Headline} Text={data.Text} URL={data.URL} Media={data.Media}/>
+  );
+
 
   render = () => (
     <div style={this.props.sectionStyle} id="home">
