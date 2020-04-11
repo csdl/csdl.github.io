@@ -6,6 +6,7 @@ import Home from './Home';
 import Top from './Top';
 import News from './News';
 import Research from './Research';
+import Papers from './Papers';
 import { lightGreenColorCode } from './Constants';
 
 const sectionStyle = { paddingTop: '1em', paddingBottom: '1em' };
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Home sectionStyle={sectionStyle}/>
     <News sectionStyle={sectionStyle2}/>
     <Research sectionStyle={sectionStyle}/>
+    <Papers sectionStyle={sectionStyle2}/>
   </React.StrictMode>,
   // eslint-disable-next-line no-undef
   document.getElementById('root'),
