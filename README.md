@@ -23,11 +23,7 @@ If the script fails with an authentication error, the simplest workaround is to 
   7. Compute descriptive statistics to place in first section.
   8. Publications processing
   9. TechReport class
-     - constructor reads in JSON file from _data directory.
+     - constructor reads in JSON file from data directory.
      - build various data structures: master list, author map, keyword map.
      - methods provide lookup and formatting functions to respond to home page form
      - produce markdown for use by research project expanded page.
-  11. SectionButtons component
-      - callback for onClick, will be passed "recent" or "all".
-      - allow relabeling of the buttons.
-      - pass in the number to associate with "all".

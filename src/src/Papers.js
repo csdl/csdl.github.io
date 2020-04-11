@@ -11,23 +11,23 @@ class Papers extends React.Component {
     this.state = { display: 'recent' };
   }
 
-  onClickSectionButton = (buttonName) => {
-    if (buttonName === 'recent') {
+  onClickSectionButton = (pushedButton) => {
+    if (pushedButton === 'recent') {
       this.setState({ display: 'recent' });
     } else
-      if (buttonName === 'all') {
+      if (pushedButton === 'all') {
         this.setState({ display: 'all' });
       }
   }
 
   render = () => (
-      <div style={this.props.sectionStyle} id="home">
-        <Container>
-          <Title title={'Papers'}/>
-          <SectionButtons onClick={this.onClickSectionButton} total={paperData.length}/>
-        </Container>
-      </div>
-    );
+    <div style={this.props.sectionStyle} id="home">
+      <Container>
+        <Title title={'Papers'}/>
+        <SectionButtons onClick={this.onClickSectionButton} total={paperData.length}/>
+      </Container>
+    </div>
+  );
 }
 
 Papers.propTypes = {

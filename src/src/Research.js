@@ -26,11 +26,11 @@ class Research extends React.Component {
       showOneCard={this.showOneCard} showLess={!!this.state.showOneCard}/>
   );
 
-  onClickSectionButton = (buttonName) => {
-    if (buttonName === 'recent') {
+  onClickSectionButton = (pushedButton) => {
+    if (pushedButton === 'recent') {
       this.setState({ numDecks: 1 });
     } else
-      if (buttonName === 'all') {
+      if (pushedButton === 'all') {
         this.setState({ numDecks: this.totalDecks });
       }
   }

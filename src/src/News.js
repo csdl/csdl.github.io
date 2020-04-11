@@ -15,11 +15,11 @@ class News extends React.Component {
     this.state = { numDecks: 1 };
   }
 
-  onClickSectionButton = (buttonName) => {
-    if (buttonName === 'recent') {
+  onClickSectionButton = (pushedButton) => {
+    if (pushedButton === 'recent') {
       this.setState({ numDecks: 1 });
     } else
-      if (buttonName === 'all') {
+      if (pushedButton === 'all') {
         this.setState({ numDecks: this.totalDecks });
       }
   }
