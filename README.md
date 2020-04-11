@@ -21,8 +21,18 @@ If the script fails with an authentication error, the simplest workaround is to 
   5. Implement scroll https://github.com/ganderzz/react-scroll-to
   6. PhD, MS, and BS "badges" for research projects?
   7. Compute descriptive statistics to place in first section.
-  8. Publications processing:
+  8. Publications processing
   9. TechReport class
      - constructor reads in JSON file from _data directory.
      - build various data structures: master list, author map, keyword map.
      - methods provide lookup and formatting functions to respond to home page form
+     - produce markdown for use by research project expanded page.
+  10. Data directory
+     - data/
+     - Move data.js files in there.
+     - move csdl-trs.bib in there.
+     - produce csdl-trs.json from it.
+  11. SectionButtons component
+      - callback for onClick, will be passed "recent" or "all".
+      - allow relabeling of the buttons.
+      - pass in the number to associate with "all".
