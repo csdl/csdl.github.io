@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Title from './Title';
 import { greenColorCode } from './Constants';
-import trJson from './data/csdl-trs.json';
+import trJson from './data/PaperData';
 
 class Papers extends React.Component {
   constructor(props) {

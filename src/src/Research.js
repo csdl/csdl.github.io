@@ -1,33 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import CardDeck from 'react-bootstrap/CardDeck';
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
 import Title from './Title';
+import SectionButtons from './SectionButtons';
 import getResearchData from './data/ResearchData';
 import ResearchCard from './ResearchCard';
-import { greenColorCode } from './Constants';
 
 class Research extends React.Component {
   constructor(props) {
     super(props);
-    const buttonStyle = { backgroundColor: greenColorCode, margin: '1em', borderColor: greenColorCode };
-    const selectedStyle = { ...buttonStyle, fontWeight: 'bold' };
-    const deselectedStyle = { ...buttonStyle, fontWeight: 'normal' };
     const researchData = getResearchData();
-    const latestStyle = selectedStyle;
-    const recentStyle = deselectedStyle;
-    const allStyle = deselectedStyle;
+    this.totalDecks = Math.trunc(researchData.length / 3);
     const numDecks = 1;
     const showOneCard = null;
     this.state = {
-      selectedStyle,
-      deselectedStyle,
       researchData,
       numDecks,
-      latestStyle,
-      recentStyle,
-      allStyle,
       showOneCard,
     };
   }
@@ -36,45 +25,36 @@ class Research extends React.Component {
     this.setState({ showOneCard: project });
   };
 
-  renderResearchCard({ date, project, text, url, media, bigImage, longText, moreInfo }, key) {
-    return <ResearchCard key={key} date={date} project={project} text={text} url={url} media={media}
-                         bigImage={bigImage} longText={longText} moreInfo={moreInfo}
-                         showOneCard={this.showOneCard} showLess={!!this.state.showOneCard}/>;
-  }
+  renderResearchCard = ({ date, project, text, url, media, bigImage, longText, moreInfo }, key) => (
+    <ResearchCard
+      key={key} date={date} project={project} text={text} url={url} media={media}
+      bigImage={bigImage} longText={longText} moreInfo={moreInfo}
+      showOneCard={this.showOneCard} showLess={!!this.state.showOneCard}/>
+  );
 
-  onClick(buttonName) {
-    const on = this.state.selectedStyle;
-    const off = this.state.deselectedStyle;
-    const allData = this.state.researchData;
-    if (buttonName === 'latest') {
-      this.setState({ numDecks: 1, latestStyle: on, recentStyle: off, allStyle: off });
+  onClickSectionButton = (buttonName) => {
+    if (buttonName === 'recent') {
+      this.setState({ numDecks: 1 });
     } else
-      if (buttonName === 'recent') {
-        this.setState({ numDecks: 2, latestStyle: off, recentStyle: on, allStyle: off });
-      } else
-        if (buttonName === 'all') {
-          this.setState({ numDecks: Math.trunc(allData.length / 3), latestStyle: off, recentStyle: off, allStyle: on });
-        }
+      if (buttonName === 'all') {
+        this.setState({ numDecks: this.totalDecks });
+      }
   }
 
-  renderDecks() {
+  renderDecks = () => {
     const decks = [];
     for (let i = 0; i < this.state.numDecks; i++) {
       decks.push(this.renderDeck(i));
     }
     return (
       <div>
-        <Row className="justify-content-center">
-          <Button onClick={() => this.onClick('latest')} style={this.state.latestStyle}>Latest</Button>
-          <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All
-            ({this.state.researchData.length})</Button>
-        </Row>
+        <SectionButtons onClick={this.onClickSectionButton} total={this.state.researchData.length}/>
         {decks}
       </div>
     );
   }
 
-  renderDeck(deckNum) {
+  renderDeck = (deckNum) => {
     const deckStyle = { marginBottom: '1em' };
     return (
       <CardDeck key={deckNum} style={deckStyle}>
@@ -87,22 +67,23 @@ class Research extends React.Component {
     );
   }
 
-  renderOneCard(project) {
+  renderOneCard = (project) => {
     const cardData = this.state.researchData.find((data) => data.project === project);
     return this.renderResearchCard(cardData, 1);
   }
 
-  render() {
-    return (
-      // eslint-disable-next-line react/prop-types
-      <div style={this.props.sectionStyle} id="home">
-        <Container>
-          <Title title={'Research'}/>
-          {this.state.showOneCard ? this.renderOneCard(this.state.showOneCard) : this.renderDecks()}
-        </Container>
-      </div>
-    );
-  }
+  render = () => (
+    <div style={this.props.sectionStyle} id="home">
+      <Container>
+        <Title title={'Research'}/>
+        {this.state.showOneCard ? this.renderOneCard(this.state.showOneCard) : this.renderDecks()}
+      </Container>
+    </div>
+  );
 }
+
+Research.propTypes = {
+  sectionStyle: PropTypes.object.isRequired,
+};
 
 export default Research;
