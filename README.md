@@ -22,8 +22,7 @@ If the script fails with an authentication error, the simplest workaround is to 
   6. PhD, MS, and BS "badges" for research projects?
   7. Compute descriptive statistics to place in first section.
   8. Publications processing
-  9. TechReport class
-     - constructor reads in JSON file from data directory.
-     - build various data structures: master list, author map, keyword map.
-     - methods provide lookup and formatting functions to respond to home page form
-     - produce markdown for use by research project expanded page.
+     - edit csdl-trs.bib so that all entries have an 'abstract' field, no summary field.
+     - Use the accordion class to provide toggle display of abstract.
+  10. Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat
+  11. Backup source. Then copy entire TR library into public directory. See if it wipes it on deploy. Check out deploy script
