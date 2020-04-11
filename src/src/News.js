@@ -4,7 +4,7 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Title from './Title';
-import getNewsData from './NewsData';
+import getNewsData from './data/NewsData';
 import NewsCard from './NewsCard';
 import { greenColorCode } from './Constants';
 

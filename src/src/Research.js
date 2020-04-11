@@ -4,7 +4,7 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Title from './Title';
-import getResearchData from './ResearchData';
+import getResearchData from './data/ResearchData';
 import ResearchCard from './ResearchCard';
 import { greenColorCode } from './Constants';
 

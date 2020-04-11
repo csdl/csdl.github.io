@@ -4,11 +4,12 @@ const fs = require('fs');
 const _ = require('lodash');
 const bibtex = require('bibtex');
 const jsonfile = require('jsonfile');
+const argv = require('minimist')(process.argv.slice(2));
 
 class CsdlTechReports {
   constructor() {
-    this.masterFile = 'src/_data/csdl-trs.master.array.json';
-    const bibFileName = 'csdl-trs.bib';
+    this.outFile = 'src/data/PaperData.json';
+    const bibFileName = argv.bibfile;
     const bibString = fs.readFileSync(bibFileName, 'utf8');
     this.bibFile = bibtex.parseBibFile(bibString);
     this.citeKeys = _.keys(this.bibFile.entries$);
@@ -27,8 +28,8 @@ class CsdlTechReports {
   writeFiles() {
     jsonfile.spaces = 2;
     const masterList = _.map(this.citeKeys, key => this.getEntryObject(key));
-    console.log(`Writing ${this.masterFile}`);
-    jsonfile.writeFile(this.masterFile, masterList, { spaces: 2 }, err => { if (err != null) console.error(err); });
+    console.log(`Writing ${this.outFile}`);
+    jsonfile.writeFile(this.outFile, masterList, { spaces: 2 }, err => { if (err != null) console.error(err); });
   }
 
   authorStrings(entry) {

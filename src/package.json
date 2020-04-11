@@ -29,7 +29,8 @@
     "eslint-plugin-meteor": "^6.0.0",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "eslint-utils": "^2.0.0"
+    "eslint-utils": "^2.0.0",
+    "minimist": "^1.2.5"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -39,7 +40,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --quiet --ext .jsx --ext .js ./src",
-    "build-techreports": "scripts/build-techreports.js"
+    "build-techreports": "scripts/build-techreports.js --bibfile csdl-trs.bib"
   },
   "eslintConfig": {
     "extends": "react-app"
