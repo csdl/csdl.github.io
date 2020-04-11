@@ -10,15 +10,9 @@ import ResearchCard from './ResearchCard';
 class Research extends React.Component {
   constructor(props) {
     super(props);
-    const researchData = getResearchData();
-    this.totalDecks = Math.trunc(researchData.length / 3);
-    const numDecks = 1;
-    const showOneCard = null;
-    this.state = {
-      researchData,
-      numDecks,
-      showOneCard,
-    };
+    this.researchData = getResearchData();
+    this.totalDecks = Math.trunc(this.researchData.length / 3);
+    this.state = { numDecks: 1, showOneCard: null };
   }
 
   showOneCard = (project) => {
@@ -48,7 +42,7 @@ class Research extends React.Component {
     }
     return (
       <div>
-        <SectionButtons onClick={this.onClickSectionButton} total={this.state.researchData.length}/>
+        <SectionButtons onClick={this.onClickSectionButton} total={this.researchData.length}/>
         {decks}
       </div>
     );
@@ -59,16 +53,16 @@ class Research extends React.Component {
     return (
       <CardDeck key={deckNum} style={deckStyle}>
         {[
-          this.renderResearchCard(this.state.researchData[(deckNum * 3)], (deckNum * 3)),
-          this.renderResearchCard(this.state.researchData[(deckNum * 3) + 1], (deckNum * 3) + 1),
-          this.renderResearchCard(this.state.researchData[(deckNum * 3) + 2], (deckNum * 3) + 2),
+          this.renderResearchCard(this.researchData[(deckNum * 3)], (deckNum * 3)),
+          this.renderResearchCard(this.researchData[(deckNum * 3) + 1], (deckNum * 3) + 1),
+          this.renderResearchCard(this.researchData[(deckNum * 3) + 2], (deckNum * 3) + 2),
         ]}
       </CardDeck>
     );
   }
 
   renderOneCard = (project) => {
-    const cardData = this.state.researchData.find((data) => data.project === project);
+    const cardData = this.researchData.find((data) => data.project === project);
     return this.renderResearchCard(cardData, 1);
   }
 

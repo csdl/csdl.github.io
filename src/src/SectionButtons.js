@@ -17,7 +17,7 @@ class SectionButtons extends React.Component {
     };
   }
 
-  onClick(buttonName) {
+  onClick = (buttonName) => {
     const selectedStyle = this.selectedStyle;
     const deselectedStyle = this.deselectedStyle;
     if (buttonName === 'recent') {
@@ -30,7 +30,7 @@ class SectionButtons extends React.Component {
       }
   }
 
-  render() {
+  render = () => {
     return (
       <Row className="justify-content-center">
         <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>Recent</Button>
