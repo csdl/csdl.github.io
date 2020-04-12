@@ -6,6 +6,7 @@ import Markdown from 'react-markdown';
 import Title from './Title';
 import TechReports from './TechReports';
 import SectionButtons from './SectionButtons';
+import PaperCard from './PaperCard';
 
 class Papers extends React.Component {
   constructor(props) {
@@ -29,12 +30,11 @@ class Papers extends React.Component {
     return `${entry.authors.join(', ')},  **${entry.title}**, Technical Report ${entry.number}, ${entry.month} ${entry.year}, ${entry.institution} \n\n ${abstractLabel}: ${abstractText}`;
   }
 
-
   renderPaper = (key, idx) => {
     const entry = this.techreports.getEntry(key);
     if (entry.type === 'techreport') {
       return (
-        <Markdown key={idx} source={this.formatTechReport(entry)}/>
+        <PaperCard key={idx} entry={entry}/>
       );
     }
     return (
@@ -47,6 +47,7 @@ class Papers extends React.Component {
       <Container>
         <Title title={'Papers'}/>
         <SectionButtons onClick={this.onClickSectionButton} total={this.techreports.total()}/>
+        <p style={{ textAlign: 'center' }}>Click an entry to toggle view of abstract.</p>
         {_.map(this.techreports.getKeys('techreport'), (key, idx) => this.renderPaper(key, idx))}
       </Container>
     </div>

@@ -5,7 +5,7 @@
     "title": "Introduction to the Collaborative Software Development Laboratory",
     "year": 1991,
     "month": "February",
-    "summary": "Obsolete. See technical reports 97-05 and 98-03.",
+    "abstract": "Obsolete. See technical reports 97-05 and 98-03.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-91-01",
     "authors": [
@@ -21,7 +21,7 @@
     "title": "EGRET Design Specification: Version 2.0",
     "year": 1991,
     "month": "July",
-    "summary": "Obsolete.  See current Egret system documentation for design information",
+    "abstract": "Obsolete.  See current Egret system documentation for design information",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-91-02",
     "authors": [
@@ -39,7 +39,7 @@
     "title": "The EGRET Project: Exploring Open, Evolutionary, and Emergent Collaborative Systems",
     "year": 1991,
     "month": "September",
-    "summary": "The EGRET Project at the University of Hawaii is pursuing a research\r\nprogram designed to investigate evolution in collaborative systems.\r\nEvolution is of central concern due to the exploratory nature of many\r\nCSCW application areas, including software development, document\r\npreparation, issue generation and discussion, and so forth.  In\r\nexploratory domains, the ill-defined or changing nature of both the\r\nproblem and an acceptable solution to it impose special demands.  For\r\nexample, the criteria for an acceptable solution, or the solution\r\ngeneration method may be an an emergent property of the exploratory\r\nprocess.  This paper discusses our research paradigm and initial progress.",
+    "abstract": "The EGRET Project at the University of Hawaii is pursuing a research\r\nprogram designed to investigate evolution in collaborative systems.\r\nEvolution is of central concern due to the exploratory nature of many\r\nCSCW application areas, including software development, document\r\npreparation, issue generation and discussion, and so forth.  In\r\nexploratory domains, the ill-defined or changing nature of both the\r\nproblem and an acceptable solution to it impose special demands.  For\r\nexample, the criteria for an acceptable solution, or the solution\r\ngeneration method may be an an emergent property of the exploratory\r\nprocess.  This paper discusses our research paradigm and initial progress.",
     "booktitle": "Proceedings of the 1991 ECSCW Developer's Workshop",
     "authors": [
       "Philip M. Johnson"
@@ -71,7 +71,7 @@
     "title": "Co2ReView: A Collaborative Code Inspection and Review Environment",
     "year": 1992,
     "month": "April",
-    "summary": "This is an early paper articulating ideas that were later\r\n  elaborated and refined in research on CSRS.",
+    "abstract": "This is an early paper articulating ideas that were later\r\n  elaborated and refined in research on CSRS.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-92-02",
     "authors": [
@@ -106,7 +106,7 @@
     "year": 1992,
     "month": "July",
     "note": "http://csdl.ics.hawaii.edu/techreports/1992/92-04/92-04.ps",
-    "summary": "This paper discusses connections between\r\ncollaborative software review and design rationale.  Not\r\nsurprisingly, collaborative software review activities provide an\r\nexcellent source of design rationale information, since analysis of\r\nartifacts under review often involves design justifications and\r\nalternatives.  Also, software reviews form an interesting point\r\nat which to take a discrete \\`\\`snapshot'' in the historical record of\r\ndesign, since they tend to take place only when the software is in a\r\nrelatively consistent and coherent state.  Finally, an exploratory\r\nfocus upon collaborative software review leads to a interesting variation on concurrent orientations\r\ntoward design and implementation.",
+    "abstract": "This paper discusses connections between\r\ncollaborative software review and design rationale.  Not\r\nsurprisingly, collaborative software review activities provide an\r\nexcellent source of design rationale information, since analysis of\r\nartifacts under review often involves design justifications and\r\nalternatives.  Also, software reviews form an interesting point\r\nat which to take a discrete \\`\\`snapshot'' in the historical record of\r\ndesign, since they tend to take place only when the software is in a\r\nrelatively consistent and coherent state.  Finally, an exploratory\r\nfocus upon collaborative software review leads to a interesting variation on concurrent orientations\r\ntoward design and implementation.",
     "booktitle": "Proceedings of the AAAI 1992 Workshop on Design Rationale",
     "authors": [
       "Philip M. Johnson"
@@ -122,7 +122,7 @@
     "title": "Supporting Collaborative Learning Through Research Reviews",
     "year": 1992,
     "month": "May",
-    "summary": "Research literature is not merely a formal vehicle for disseminating the\r\nresults of scientific research; it is also an important learning resource\r\nfor advanced learners (e.g., graduate students) and beginning researchers.\r\nThe purpose of this research is to investigate the structural and\r\nprocess-level characteristics of research review as a collaborative\r\nactivity, and to develop computational mechanisms to facilitate such a\r\nprocess. This paper briefly summarizes our ongoing efforts of developing a\r\nsoftware environment, called COREVIEW, for supporting collaborative\r\nresearch review.",
+    "abstract": "Research literature is not merely a formal vehicle for disseminating the\r\nresults of scientific research; it is also an important learning resource\r\nfor advanced learners (e.g., graduate students) and beginning researchers.\r\nThe purpose of this research is to investigate the structural and\r\nprocess-level characteristics of research review as a collaborative\r\nactivity, and to develop computational mechanisms to facilitate such a\r\nprocess. This paper briefly summarizes our ongoing efforts of developing a\r\nsoftware environment, called COREVIEW, for supporting collaborative\r\nresearch review.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-92-05",
     "authors": [
@@ -171,7 +171,7 @@
     "year": 1992,
     "month": "November",
     "note": "http://csdl.ics.hawaii.edu/techreports/1992/92-08/92-08.ps",
-    "summary": "This paper provides an introduction to the internal\r\narchitecture of EGRET, including the client-server model,\r\nthe inverted hypertext-relational database process model,\r\nthe design of locally cached, event-updated global\r\ntables, and various forms of interoperability provided\r\nin the system.",
+    "abstract": "This paper provides an introduction to the internal\r\narchitecture of EGRET, including the client-server model,\r\nthe inverted hypertext-relational database process model,\r\nthe design of locally cached, event-updated global\r\ntables, and various forms of interoperability provided\r\nin the system.",
     "booktitle": "Proceedings of the 1992 CSCW Workshop on Tools and Technologies",
     "authors": [
       "Philip M. Johnson"
@@ -203,7 +203,7 @@
     "year": 1992,
     "month": "December",
     "note": "http://csdl.ics.hawaii.edu/techreports/1992/92-10/92-10.text",
-    "summary": "This plain-text file, which was posted to USENET, contains an\r\n\"alpha-level\" proposal concerning a \"reverse-engineering\"\r\napproach to improving the collaborative nature of\r\nUSENET.",
+    "abstract": "This plain-text file, which was posted to USENET, contains an\r\n\"alpha-level\" proposal concerning a \"reverse-engineering\"\r\napproach to improving the collaborative nature of\r\nUSENET.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-92-10",
     "authors": [
@@ -219,7 +219,7 @@
     "title": "CSRS Design Specification",
     "year": 1993,
     "month": "December",
-    "summary": "Obsolete: See the CSRS system release for current design documentation.",
+    "abstract": "Obsolete: See the CSRS system release for current design documentation.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-92-11",
     "authors": [
@@ -254,7 +254,7 @@
     "year": 1993,
     "month": "April",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-02/93-02.ps",
-    "summary": "This document presents an general overview of the software engineering\r\nprinciples underlying the Egret system and its applications. It is an\r\nintroduction and a companion to the more detailed Design Specification\r\ndocument for Egret which is generated by the DSB system.",
+    "abstract": "This document presents an general overview of the software engineering\r\nprinciples underlying the Egret system and its applications. It is an\r\nintroduction and a companion to the more detailed Design Specification\r\ndocument for Egret which is generated by the DSB system.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-02",
     "authors": [
@@ -275,7 +275,7 @@
     "year": 1993,
     "month": "May",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-03/93-03.ps.gz",
-    "summary": "This paper concerns collaborative learning as an active knowledge\r\nconstruction processes. It asserts an essential role of knowledge\r\nrepresentation in achieving a high-level collaborative support. Our central\r\nclaim is that the presence of an expressive and usable representation,\r\ncombined with necessary computational support, can significantly enhance\r\nthe learners' performance in understanding the subject content of learning\r\nartifacts, integrating various classroom activities, and relating different\r\nviewpoints held by other learners. First, we propose a representational\r\nframework, called RESRA, which characterizes the thematic structure of\r\nlearning and research artifacts. We then develop a computer-based tool,\r\ncalled CLARE, that facilitates the use of RESRA for various collaborative\r\nlearning tasks, such as evaluating existing work (e.g., papers, programs,\r\ndesign) or constructing new work. We also design a set of experiments which\r\nwill allow us to empirically assess the effectiveness of CLARE and our\r\nresearch claims.",
+    "abstract": "This paper concerns collaborative learning as an active knowledge\r\nconstruction processes. It asserts an essential role of knowledge\r\nrepresentation in achieving a high-level collaborative support. Our central\r\nclaim is that the presence of an expressive and usable representation,\r\ncombined with necessary computational support, can significantly enhance\r\nthe learners' performance in understanding the subject content of learning\r\nartifacts, integrating various classroom activities, and relating different\r\nviewpoints held by other learners. First, we propose a representational\r\nframework, called RESRA, which characterizes the thematic structure of\r\nlearning and research artifacts. We then develop a computer-based tool,\r\ncalled CLARE, that facilitates the use of RESRA for various collaborative\r\nlearning tasks, such as evaluating existing work (e.g., papers, programs,\r\ndesign) or constructing new work. We also design a set of experiments which\r\nwill allow us to empirically assess the effectiveness of CLARE and our\r\nresearch claims.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-03",
     "authors": [
@@ -291,7 +291,7 @@
     "title": "CSRS: a New Approach to Software Review",
     "year": 1993,
     "month": "May",
-    "summary": "This research concerns problems in collaborative software review.\r\nThis paper introduces a review system called CSRS (Collaborative Software\r\nReview System) that allows one to\r\nexperiment with  various aspects of review process, to compare\r\ndifferent review methods,  and at the same\r\ntime to use it as practical tools for supporting review activities.\r\nThe system also allows the user's organization to analyze and\r\nto improve their review process based upon metrics data collected by\r\nthe system automatically.",
+    "abstract": "This research concerns problems in collaborative software review.\r\nThis paper introduces a review system called CSRS (Collaborative Software\r\nReview System) that allows one to\r\nexperiment with  various aspects of review process, to compare\r\ndifferent review methods,  and at the same\r\ntime to use it as practical tools for supporting review activities.\r\nThe system also allows the user's organization to analyze and\r\nto improve their review process based upon metrics data collected by\r\nthe system automatically.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-04",
     "authors": [
@@ -308,7 +308,7 @@
     "year": 1993,
     "month": "May",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-05/Dsb-TR.pdf",
-    "summary": "During the development of software projects, there\r\n   always exists the problem of design specification\r\n   maintenance.  As the project team surges ahead\r\n   with the development process, there is a strong\r\n   need to maintain an up-to-date documentation of\r\n   the current system.  This requires an additional\r\n   effort on each team member to maintain a\r\n   consistent report of the modifications and\r\n   additions they make on the system.\r\n\r\nThis Designbase project attempts to reduce the overhead involved in\r\nthe maintenance of ever changing design specifications, by generating\r\nautomatically, a design documentation from the source code and the\r\noverview files that are maintained along with the system.",
+    "abstract": "During the development of software projects, there\r\n   always exists the problem of design specification\r\n   maintenance.  As the project team surges ahead\r\n   with the development process, there is a strong\r\n   need to maintain an up-to-date documentation of\r\n   the current system.  This requires an additional\r\n   effort on each team member to maintain a\r\n   consistent report of the modifications and\r\n   additions they make on the system.\r\n\r\nThis Designbase project attempts to reduce the overhead involved in\r\nthe maintenance of ever changing design specifications, by generating\r\nautomatically, a design documentation from the source code and the\r\noverview files that are maintained along with the system.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-05",
     "authors": [
@@ -325,7 +325,7 @@
     "year": 1993,
     "month": "May",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-06/TR1.7.pdf",
-    "summary": "This document presents an overview of the URN project. It is intended\r\nto show the motivation behind the project as well as describing the\r\ncurrent status of the research.\r\n\r\nThe URN project is an Egret application that implements a new paradigm for\r\nutilizing the massive, ever-changing data stream that is Usenet.  The\r\nacronym URN stands for Ultimate Read News, but it can also be thought of\r\nmore symbolically as a repository for knowledge. The goal of URN is to\r\nmake the information available through Usenet more useful by using different\r\nperspectives on Usenet and new ways to extract useful data from Usenet.\r\nThis paper describes problems with USENET, the way URN is intended to\r\n  address\r\nthese problems, and the current status and future directions of the\r\n  project.",
+    "abstract": "This document presents an overview of the URN project. It is intended\r\nto show the motivation behind the project as well as describing the\r\ncurrent status of the research.\r\n\r\nThe URN project is an Egret application that implements a new paradigm for\r\nutilizing the massive, ever-changing data stream that is Usenet.  The\r\nacronym URN stands for Ultimate Read News, but it can also be thought of\r\nmore symbolically as a repository for knowledge. The goal of URN is to\r\nmake the information available through Usenet more useful by using different\r\nperspectives on Usenet and new ways to extract useful data from Usenet.\r\nThis paper describes problems with USENET, the way URN is intended to\r\n  address\r\nthese problems, and the current status and future directions of the\r\n  project.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-06",
     "authors": [
@@ -379,7 +379,7 @@
     "year": 1993,
     "month": "July",
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-93-16.pdf",
-    "summary": "This document provides an illustrated user guide to CSRS\r\n  Version 2.x",
+    "abstract": "This document provides an illustrated user guide to CSRS\r\n  Version 2.x",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-11",
     "authors": [
@@ -397,7 +397,7 @@
     "year": 1993,
     "month": "October",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-12/ftr-agenda93.ps",
-    "summary": "Formal technical review (FTR) encompasses a range of structured,\r\ncollaborative methods employing technical personnel to improve the quality\r\nof a software development artifact.  Research shows that FTR, when\r\nappropriately practiced, provides significant benefits. However, research\r\nalso shows that FTR introduces substantial new overhead, and that its\r\ncost-effectiveness is easily compromised by a variety of group process\r\nobstacles.  In addition, current FTR practice is difficult and costly to\r\ninvestigate effectively, and thus many important questions about its nature\r\nand comparative effectiveness remain unanswered.\r\n\r\nThis document presents a research agenda intended to address problems in\r\nboth the practice and research of FTR through CSRS (Collaborative\r\nSoftware Review System), an instrumented, computer-supported cooperative\r\nwork environment. CSRS provides automated support for many time consuming\r\naspects of FTR, avoids many group process problems inherent in traditional,\r\nmanual review, and captures unique, high quality empirical data about the\r\nprocess and products of FTR.\r\n\r\nThe research agenda includes:\r\n(1) Controlled experimental laboratory studies on automated FTR support.\r\n(2) Technology transfer of CSRS to selected industrial sites.\r\n(3) Development of a domain-specific version of CSRS for C++ software.\r\n(4) Creation of a CSRS consortium for collaborative FTR research between\r\n  industry and academia.",
+    "abstract": "Formal technical review (FTR) encompasses a range of structured,\r\ncollaborative methods employing technical personnel to improve the quality\r\nof a software development artifact.  Research shows that FTR, when\r\nappropriately practiced, provides significant benefits. However, research\r\nalso shows that FTR introduces substantial new overhead, and that its\r\ncost-effectiveness is easily compromised by a variety of group process\r\nobstacles.  In addition, current FTR practice is difficult and costly to\r\ninvestigate effectively, and thus many important questions about its nature\r\nand comparative effectiveness remain unanswered.\r\n\r\nThis document presents a research agenda intended to address problems in\r\nboth the practice and research of FTR through CSRS (Collaborative\r\nSoftware Review System), an instrumented, computer-supported cooperative\r\nwork environment. CSRS provides automated support for many time consuming\r\naspects of FTR, avoids many group process problems inherent in traditional,\r\nmanual review, and captures unique, high quality empirical data about the\r\nprocess and products of FTR.\r\n\r\nThe research agenda includes:\r\n(1) Controlled experimental laboratory studies on automated FTR support.\r\n(2) Technology transfer of CSRS to selected industrial sites.\r\n(3) Development of a domain-specific version of CSRS for C++ software.\r\n(4) Creation of a CSRS consortium for collaborative FTR research between\r\n  industry and academia.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-12",
     "authors": [
@@ -449,7 +449,7 @@
     "year": 1993,
     "month": "September",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-15/user-guide.ps.gz",
-    "summary": "This document provides an illustrated user's guide to the\r\n  CLARE system.",
+    "abstract": "This document provides an illustrated user's guide to the\r\n  CLARE system.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-15",
     "authors": [
@@ -498,7 +498,7 @@
     "year": 1993,
     "month": "October",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-18/TR-93-18.pdf",
-    "summary": "This document provides obsolete reference material on\r\n  HBS. See Egret system documentation or ICS Technical\r\n  Report 94-14 for current HBS 3.x interface\r\n  specifications.",
+    "abstract": "This document provides obsolete reference material on\r\n  HBS. See Egret system documentation or ICS Technical\r\n  Report 94-14 for current HBS 3.x interface\r\n  specifications.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-18",
     "authors": [
@@ -533,7 +533,7 @@
     "year": 1993,
     "month": "November",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-20/93-20.ps",
-    "summary": "This document describes the current design of the server subsystem class\r\ns*gtable, which provides an efficient and high-level mechanism for the\r\nimplementation and maintenance of global tables.  The purpose of this\r\ndocumentation is to serve as a basis for the redesign and reimplementation\r\nof gtables in Egret-3.0.x.",
+    "abstract": "This document describes the current design of the server subsystem class\r\ns*gtable, which provides an efficient and high-level mechanism for the\r\nimplementation and maintenance of global tables.  The purpose of this\r\ndocumentation is to serve as a basis for the redesign and reimplementation\r\nof gtables in Egret-3.0.x.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-20",
     "authors": [
@@ -589,7 +589,7 @@
     "year": 1994,
     "month": "April",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-23/93-23.text",
-    "summary": "This plain-text file provides a brief summary of the\r\n  workshop.",
+    "abstract": "This plain-text file provides a brief summary of the\r\n  workshop.",
     "booktitle": "SIGOIS Bulletin",
     "authors": [
       "Philip M. Johnson"
@@ -606,7 +606,7 @@
     "year": 1993,
     "month": "September",
     "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-24/cla-1.4.7.ps.gz",
-    "summary": "This document provides an overview of the design of CLARE\r\n  Version 1.4.7",
+    "abstract": "This document provides an overview of the design of CLARE\r\n  Version 1.4.7",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-24",
     "authors": [
@@ -743,7 +743,7 @@
     "title": "ECS Design Reference",
     "year": 1994,
     "month": "January",
-    "summary": "See the current ECS System release for the current version of\r\n  this documentation.",
+    "abstract": "See the current ECS System release for the current version of\r\n  this documentation.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-94-13",
     "authors": [
@@ -779,7 +779,7 @@
     "year": 1994,
     "month": "October",
     "note": "http://csdl.ics.hawaii.edu/techreports/1994/94-15/citl.ps",
-    "summary": "This paper defines two endpoints in a spectrum of\r\n  collaboration organized by scale (from dozens to millions\r\n  of users), and discusses architectural implications of\r\n    scale in the design of collaborative systems.",
+    "abstract": "This paper defines two endpoints in a spectrum of\r\n  collaboration organized by scale (from dozens to millions\r\n  of users), and discusses architectural implications of\r\n    scale in the design of collaborative systems.",
     "booktitle": "Proceedings of the 1994 CSCW Workshop on Software\r\n  Architectures for Cooperative Systems",
     "address": "Chapel Hill, N.C.",
     "authors": [
@@ -797,7 +797,7 @@
     "year": 1994,
     "month": "December",
     "note": "http://csdl.ics.hawaii.edu/techreports/1994/94-16/objective.ps",
-    "summary": "This research is concerned with how people collaboratively author and\r\nlearn.  More specifically, it is concerned with how to design and implement\r\na hypertext system to support collaborative authoring and learning.\r\nWe are investigating these issues through the design, implementation, and\r\nevaluation of AEN, a hypertext collaborative authoring and learning tool.",
+    "abstract": "This research is concerned with how people collaboratively author and\r\nlearn.  More specifically, it is concerned with how to design and implement\r\na hypertext system to support collaborative authoring and learning.\r\nWe are investigating these issues through the design, implementation, and\r\nevaluation of AEN, a hypertext collaborative authoring and learning tool.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-94-16",
     "authors": [
@@ -919,7 +919,7 @@
     "year": "1995",
     "month": "June",
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-95-10.pdf",
-    "summary": "This book\r\n  introduces you to Egret,  a distributed, hypertext, client-server-agent\r\nframework that has been used since 1990 to develop collaborative applications\r\nfor learning, authoring, software review, news reading, and other areas.\r\nThe book is structured as a programmatic\r\nguided tour of Egret, which  teaches you to build collaborative systems of slowly\r\nincreasing complexity, sophistication, and power.",
+    "abstract": "This book\r\n  introduces you to Egret,  a distributed, hypertext, client-server-agent\r\nframework that has been used since 1990 to develop collaborative applications\r\nfor learning, authoring, software review, news reading, and other areas.\r\nThe book is structured as a programmatic\r\nguided tour of Egret, which  teaches you to build collaborative systems of slowly\r\nincreasing complexity, sophistication, and power.",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-95-10",
     "authors": [
@@ -1142,7 +1142,7 @@
     "year": 1996,
     "month": "February",
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-96-01.pdf",
-    "summary": "This document contains a reference manual for Version 3.5.0\r\n  of the CSRS\r\n  collaborative software review environment",
+    "abstract": "This document contains a reference manual for Version 3.5.0\r\n  of the CSRS\r\n  collaborative software review environment",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-96-01",
     "authors": [
@@ -1849,7 +1849,7 @@
     "year": "2000",
     "month": "December",
     "note": "http://csdl.ics.hawaii.edu/techreports/2000/00-03/00-03.pdf",
-    "summary": "\r\nFor several years, we have pursued an initiative called Project LEAP, whose\r\ngoal is the improvement of individual developers though lightweight,\r\nempirical, anti-measurement dysfunction, and portable software engineering\r\ntools and methods.\r\nDuring the Fall of 1999, we performed a case study using the LEAP toolkit\r\nin a graduate software engineering class.  One of the goals of the study\r\nwas to evaluate the various analytical estimation methods made available by\r\nthe toolkit.  We were curious as to whether a single method would prove\r\nmost accurate, or whether the most accurate method would depend upon the\r\ntype of project or the specific developer.  To our surprise, we found that,\r\nin most cases, the developer-generated \\`\\`guesstimates'' were more accurate\r\nthan the analytical estimates.\r\nWe also found that the PROBE method of the\r\nPersonal Software Process, perhaps the most widely\r\npublicized analytical approach to personal effort estimation, was the sixth\r\nmost accurate method.  Finally, we found that access to a range of\r\nanalytical estimation methods appeared to be useful to developers in\r\ngenerating their guesstimates and improving them over time. ",
+    "abstract": "\r\nFor several years, we have pursued an initiative called Project LEAP, whose\r\ngoal is the improvement of individual developers though lightweight,\r\nempirical, anti-measurement dysfunction, and portable software engineering\r\ntools and methods.\r\nDuring the Fall of 1999, we performed a case study using the LEAP toolkit\r\nin a graduate software engineering class.  One of the goals of the study\r\nwas to evaluate the various analytical estimation methods made available by\r\nthe toolkit.  We were curious as to whether a single method would prove\r\nmost accurate, or whether the most accurate method would depend upon the\r\ntype of project or the specific developer.  To our surprise, we found that,\r\nin most cases, the developer-generated \\`\\`guesstimates'' were more accurate\r\nthan the analytical estimates.\r\nWe also found that the PROBE method of the\r\nPersonal Software Process, perhaps the most widely\r\npublicized analytical approach to personal effort estimation, was the sixth\r\nmost accurate method.  Finally, we found that access to a range of\r\nanalytical estimation methods appeared to be useful to developers in\r\ngenerating their guesstimates and improving them over time. ",
     "journal": "IEEE Software",
     "authors": [
       "Philip M. Johnson",
