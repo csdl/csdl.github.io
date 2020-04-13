@@ -42,11 +42,11 @@ class Papers extends React.Component {
   }
 
   render = () => (
-    <div style={this.props.sectionStyle} id="home">
+    <div style={this.props.sectionStyle} id="papers">
       <Container>
         <Title title={'Papers'}/>
         <SectionButtons onClick={this.onClickSectionButton} total={this.techreports.total()}/>
-        <p style={{ textAlign: 'center' }}>Click (or tap) an entry to toggle view of abstract.</p>
+        <p style={{ textAlign: 'center' }}>Click (or tap) an entry to display (or hide) the abstract.</p>
         {this.state.display === 'recent' ? this.renderRecent() : this.renderAll()}
       </Container>
     </div>

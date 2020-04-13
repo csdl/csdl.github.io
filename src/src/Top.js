@@ -11,12 +11,11 @@ function Topp() {
       <Navbar style={navbarStyle}>
         <Container className="justify-content-center">
           <Nav>
-            <Nav.Item><Nav.Link href="#home" style={navbarStyle}>Home</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="#news" style={navbarStyle}>News</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="#people" style={navbarStyle}>Research</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="#projects" style={navbarStyle}>Papers</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="#publications" style={navbarStyle}>People</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="#sponsors" style={navbarStyle}>Partners</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="#research" style={navbarStyle}>Research</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="#papers" style={navbarStyle}>Papers</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="#people" style={navbarStyle}>People</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="#partners" style={navbarStyle}>Partners</Nav.Link></Nav.Item>
           </Nav>
         </Container>
       </Navbar>

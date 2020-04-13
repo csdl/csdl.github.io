@@ -51,7 +51,7 @@ class News extends React.Component {
 
 
   render = () => (
-    <div style={this.props.sectionStyle} id="home">
+    <div style={this.props.sectionStyle} id="news">
       <Container>
         <Title title={'News'}/>
         <SectionButtons onClick={this.onClickSectionButton} total={this.newsData.length}/>

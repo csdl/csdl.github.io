@@ -67,7 +67,7 @@ class Research extends React.Component {
   }
 
   render = () => (
-    <div style={this.props.sectionStyle} id="home">
+    <div style={this.props.sectionStyle} id="research">
       <Container>
         <Title title={'Research'}/>
         {this.state.showOneCard ? this.renderOneCard(this.state.showOneCard) : this.renderDecks()}
