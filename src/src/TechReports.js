@@ -5,7 +5,9 @@ class TechReports {
 
   total = () => paperData.length;
 
-  getPapers = () => this.recentPapers;
+  extractKey = entries => _.map(entries, entry => entry.key);
+
+  getRecentKeys = () => this.getKeys().reverse().slice(0, 3);
 
   getTypes = () => {
     const types = [];
@@ -14,11 +16,10 @@ class TechReports {
   }
 
   getKeys = (type) => {
-    const extractKey = entries => _.map(entries, entry => entry.key);
     if (type === undefined) {
-      return extractKey(paperData);
+      return this.extractKey(paperData);
     }
-    return extractKey(_.filter(paperData, entry => entry.type === type));
+    return this.extractKey(_.filter(paperData, entry => entry.type === type));
   }
 
   getEntry(key) {

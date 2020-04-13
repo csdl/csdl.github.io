@@ -36,7 +36,7 @@ function PaperCard(props) {
     <Accordion>
       <Card style={cardStyle}>
         <Accordion.Toggle as={Card.Header} eventKey="0">
-          <Markdown>
+          <Markdown style={{marginBottom: 0}}>
             {formatMap[props.entry.type](props.entry)}
           </Markdown>
         </Accordion.Toggle>

@@ -23,13 +23,31 @@ class Papers extends React.Component {
       }
   }
 
+  renderRecent = () => {
+    const keys = this.techreports.getRecentKeys();
+    return (
+      <div>
+        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={this.techreports.getEntry(key)}/>)}
+      </div>
+    );
+  }
+
+  renderAll = () => {
+    const keys = this.techreports.getKeys().reverse();
+    return (
+      <div>
+        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={this.techreports.getEntry(key)}/>)}
+      </div>
+    );
+  }
+
   render = () => (
     <div style={this.props.sectionStyle} id="home">
       <Container>
         <Title title={'Papers'}/>
         <SectionButtons onClick={this.onClickSectionButton} total={this.techreports.total()}/>
         <p style={{ textAlign: 'center' }}>Click an entry to toggle view of abstract.</p>
-        {_.map(this.techreports.getKeys().reverse(), (key, idx) => <PaperCard key={idx} entry={this.techreports.getEntry(key)}/>)}
+        {this.state.display === 'recent' ? this.renderRecent() : this.renderAll()}
       </Container>
     </div>
   );
