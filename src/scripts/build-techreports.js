@@ -17,11 +17,11 @@ class CsdlTechReports {
     this.specialFieldMap = {
       techreport: ['institution', 'number'],
       inproceedings: ['booktitle', 'address'],
-      article: ['journal'],
+      article: ['journal', 'volume', 'number'],
       phdthesis: ['school'],
       mastersthesis: ['school'],
       misc: ['howpublished'],
-      inbook: ['editor', 'chapter', 'publisher']
+      inbook: ['editor', 'chapter', 'publisher'],
     };
   }
 

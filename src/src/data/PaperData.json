@@ -364,6 +364,8 @@
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-93-18.pdf",
     "abstract": "Exploratory collaboration occurs in domains where the structure and process\r\nof group work evolves as an intrinsic part of the collaborative activity.\r\nTraditional database and hypertext structural models do not provide\r\nexplicit support for collaborative exploration.  EGRET is an implemented\r\nenvironment for the development of domain-specific collaborative systems\r\nthat defines a novel data and a process model along with services for\r\nexploratory collaboration.  To accomplish this, EGRET departs from\r\ntraditional notions of the relationship between schema and instance\r\nstructure.  In EGRET, schema structure is viewed as a representation of the\r\ncurrent state of consensus among collaborators, from which instance\r\nstructure is allowed to depart in a controlled fashion.  To provide such\r\nexploratory services in a responsive interactive environment, EGRET\r\nimplements specialized architectural mechanisms. This paper presents the\r\nconcepts and implications of exploratory collaboration, followed by the\r\ndesign and implementation of EGRET.  The paper concludes with our results\r\nto date, which demonstrate that EGRET succeeds in providing useful services\r\nfor exploratory collaboration, through interesting technical and cultural\r\nissues remain to be addressed before exploratory collaboration can become\r\ncommonplace in CSCW systems.",
     "journal": "Collaborative Computing",
+    "volume": "1",
+    "number": "1",
     "authors": [
       "Philip M. Johnson"
     ],
@@ -574,6 +576,8 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/1994/94-21/94-21.pdf",
     "abstract": "All current software quality assurance methods incorporate some form of\r\n  formal technical review (FTR), because structured analysis of software\r\n  artifacts by a team of skilled technical personnel has demonstrated\r\n  ability to improve quality.  However, FTR methods come in a wide\r\n  variety of forms with varying effectiveness, incur significant\r\n  overhead on technical staff, and have little computer support.\r\n  Measurements of these FTR methods are coarse-grained, frequently low\r\n  quality, and expensive to obtain.\r\n\r\n  This paper describes CSRS, a highly instrumented, computer-supported\r\n  system for formal technical review, and shows how it is designed to\r\n  collect high quality, fine-grained measures of FTR process and products\r\n  automatically.  The paper also discusses some results from over one year\r\n  of experimentation with CSRS; describes how CSRS improves current\r\n  process improvement approaches to FTR; and overviews several novel\r\n  research projects on FTR that are made possible by this system. ",
     "journal": "Software Quality Journal",
+    "volume": 5,
+    "number": 3,
     "authors": [
       "Philip M. Johnson"
     ],
@@ -661,6 +665,7 @@
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-94-04.pdf",
     "abstract": "Current collaborative learning systems focus on maximizing shared\r\n  information. However, \\`\\`meaningful learning'' is not simply information\r\n  sharing but also knowledge construction.  CLARE is a computer-supported\r\n  learning environment that facilitates meaningful learning through\r\n  collaborative knowledge construction. It provides a semi-formal\r\n  representation language called RESRA and an explicit process model\r\n  called SECAI. Experimental evaluation through 300 hours of classroom\r\n  usage indicates that CLARE does support meaningful learning. It also\r\n  shows that a major bottleneck to computer-mediated knowledge\r\n  construction is summarization.  Lessons learned through the design and\r\n  evaluation of CLARE provide new insights into both collaborative\r\n  learning systems and collaborative learning theories.",
     "journal": "International Journal of Human-Computer Systems",
+    "volume": 41,
     "authors": [
       "Dadong Wan",
       "Philip M. Johnson"
@@ -845,14 +850,13 @@
   },
   {
     "key": "csdl-95-04",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Supporting authoring and learning in a strongly\r\n  collaborative hypertext system: The Annotated Egret Navigator",
     "year": "1995",
     "month": "July",
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-95-04.pdf",
     "abstract": "With the increased use of hypertext, the issues behind collaborative\r\nauthoring of hypertext are becoming more important.  This thesis presents\r\nthe Annotated Egret Navigator (AEN), a system designed to support\r\nstrong collaboration among a group as they cooperatively build, review,\r\nrevise, improve and learn from a structured hypertext document.  AEN\r\naddresses how strong collaboration can be supported through computer\r\nmediation.  It is designed to support collaborative creation of hypertext\r\nand to instrument the actions of its users in order to understand how such\r\ncreation occurs.",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-95-04",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Carleton A. Moore"
     ],
@@ -931,14 +935,13 @@
   },
   {
     "key": "csdl-95-11",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Building Community through the World Wide Web",
     "year": "1995",
     "month": "July",
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-95-11.pdf",
     "abstract": "This thesis presents a case study designed to assess the strengths and\r\nweaknesses of a computer-based approach to improving the sense of community\r\nwithin one organization, the Department of Information and Computer Sciences at\r\nthe University of Hawaii.  The case study used a pretest-posttest design.\r\nFirst, several measures of the sense of community within the department were\r\nobtained via a questionnaire.  Second, a World Wide Web information system was\r\nintroduced in an effort to affect the level of community within the department.\r\nThird, a similar questionnaire was administered after a period of four months.\r\nAnalysis of the survey responses and system logs showed that the information\r\nsystem designed to promote community in this organization had instead polarized\r\nit.  However, these systems can also serve as a diagnostic tool for discovering\r\nwhat factors may help promote or inhibit community building.",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-95-11",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Rosemary Andrada"
     ],
@@ -1110,6 +1113,8 @@
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-95-23.pdf",
     "abstract": "\r\nEgret is a publically available, advanced framework for construction of\r\ncomputer-supported cooperative work applications.  Egret provides an\r\napproach to multi-user, interactive application development that differs\r\nmarkedly from other frameworks or infrastructures, such as Groupkit, WWW,\r\nor Lotus Notes.  This short paper introduces Egret, its architecture,\r\ndesign philosophy, selected applications, and interest groups within the\r\nsoftware engineering community. It concludes with information on how Egret's sources,\r\nbinaries, and documentation may be obtained free of charge using the\r\nInternet.",
     "journal": "ACM Software Engineering Notes",
+    "volume": "21",
+    "number": "2",
     "authors": [
       "Philip M. Johnson"
     ],
@@ -1127,6 +1132,8 @@
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-95-24.pdf",
     "abstract": "  Formal technical review is acknowledged as a preeminant software\r\n  quality improvement method. The \\`\\`inspection'' review method, first\r\n  introduced by Michael Fagan twenty years ago, has led to dramatic\r\n  improvements in software quality. It has also led to a myopia within\r\n  the review community, which tends to view inspection-based methods as\r\n  not just effective, but as the optimal approach to formal\r\n  technical review.  This article challenges this view by presenting a\r\n  taxonomy of software review that shows inspection to be just one among\r\n  many valid approaches. The article then builds upon this framework to propose\r\n  seven guidelines for the radical redesign and improvement of formal\r\n  technical review during the next twenty years.",
     "journal": "Communications of the ACM",
+    "volume": 41,
+    "number": 2,
     "authors": [
       "Philip M. Johnson"
     ],
@@ -1234,6 +1241,8 @@
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-96-14.ps.Z",
     "abstract": "\r\n  Software review is a fundamental component of the software quality\r\n  assurance process, yet significant controversies surround the most\r\n  efficient and effective review method. A central question surrounds the\r\n  use of meetings; traditional review practice views them as essential,\r\n  while more recent findings question their utility.  To provide insight\r\n  into this question, we conducted a controlled experiment to\r\n  assess several measures of cost and effectiveness for a meeting and\r\n  non-meeting-based review method.  The experiment used CSRS, a computer\r\n  mediated collaborative software review environment, and 24 three person\r\n  groups.  We found that the meeting-based review method studied was\r\n  significantly more costly than the non-meeting-based method, but that\r\n  meeting-based review did not find significantly more defects than the\r\n  non-meeting-based method. However, the meeting-based review method was\r\n  significantly better at reducing the level of false positives, and\r\n  subjects subjectively preferred meeting-based review over\r\n  non-meeting-based review.  This paper presents the motivation for this\r\n  experiment, its design and implementation, our empirical findings,\r\n  pointers to Internet repositories for replication or additional analysis\r\n  of this experiment, conclusions, and future directions. ",
     "journal": "Journal of Empirical Software Engineering",
+    "volume": "4",
+    "number": "1",
     "authors": [
       "Philip M. Johnson",
       "Danu Tjahjono"
@@ -1286,6 +1295,8 @@
     "month": "March",
     "abstract": "Software review is a fundamental tool for software quality assurance.\r\nNevertheless, there are significant controversies as to the\r\nmost efficient and effective review method. One of the most\r\nimportant questions currently being debated is the utility\r\nof meetings.  Although almost all industrial review methods\r\nare centered around the inspection meeting, recent findings\r\ncall their value into question. In prior research the authors\r\nof this paper separately and independently conducted controlled\r\nexperimental studies to explore this issue.\r\n\r\nThis paper presents new research to understand the\r\nbroader implications of these two studies. To do this,\r\nwe designed and carried out a process of \\`\\`reconciliation''\r\nin which we established a common framework\r\nfor the comparison of the two experimental studies,\r\nre-analyzed the experimental data with respect to this\r\ncommon framework, and compared the results. Through\r\nthis process we found many striking similarities between\r\nthe results of the two studies, strengthening their\r\nindividual conclusions. It also revealed interesting\r\ndifferences between the two experiments, suggesting\r\nimportant avenues for future research.",
     "journal": "IEEE Transactions on Software Engineering",
+    "volume": "23",
+    "number": "3",
     "authors": [
       "Adam A. Porter",
       "Philip M. Johnson"
@@ -1518,6 +1529,8 @@
     "month": "November",
     "abstract": "\r\nIn 1995, Watts Humphrey introduced the Personal Software Process in\r\nhis book, A Discipline for Software Engineering.\r\nProgrammers who use the PSP gather measurements related to\r\ntheir own work products and the process by which they were developed,\r\nthen use these measures to drive changes to their development\r\nbehavior.\r\nAfter almost three years of\r\nteaching and using the PSP, we have experienced the educational\r\nbenefits of the PSP. As researchers, however, we have also uncovered\r\nevidence of certain limitations, which we believe can help improve\r\nappropriate adoption and evaluation of the method by industrial\r\nand academic practitioners. This paper presents an overview of\r\na case study we performed that presents evidence\r\nof potential data quality problems, along with\r\nrecommendations for those interested in adopting\r\nPSP within industry or academia.",
     "journal": "IEEE Software",
+    "volume": "15",
+    "number": "6",
     "authors": [
       "Philip M. Johnson",
       "Anne M. Disney"
@@ -1799,6 +1812,8 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/1999/99-14/99-14.pdf",
     "abstract": "\r\nProject LEAP investigates the use of lightweight, empirical,\r\nanti-measurement dysfunction, and portable approaches to software developer\r\nimprovement. This document provides a one-page progress report on\r\nProject Leap for inclusion in the \"Millenium\" issue of Software\r\nEngineering Notes.\r\n\r\n",
     "journal": "ACM Software Engineering Notes",
+    "volume": "24",
+    "number": "6",
     "authors": [
       "Philip M. Johnson"
     ],
@@ -1851,6 +1866,8 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/2000/00-03/00-03.pdf",
     "abstract": "\r\nFor several years, we have pursued an initiative called Project LEAP, whose\r\ngoal is the improvement of individual developers though lightweight,\r\nempirical, anti-measurement dysfunction, and portable software engineering\r\ntools and methods.\r\nDuring the Fall of 1999, we performed a case study using the LEAP toolkit\r\nin a graduate software engineering class.  One of the goals of the study\r\nwas to evaluate the various analytical estimation methods made available by\r\nthe toolkit.  We were curious as to whether a single method would prove\r\nmost accurate, or whether the most accurate method would depend upon the\r\ntype of project or the specific developer.  To our surprise, we found that,\r\nin most cases, the developer-generated \\`\\`guesstimates'' were more accurate\r\nthan the analytical estimates.\r\nWe also found that the PROBE method of the\r\nPersonal Software Process, perhaps the most widely\r\npublicized analytical approach to personal effort estimation, was the sixth\r\nmost accurate method.  Finally, we found that access to a range of\r\nanalytical estimation methods appeared to be useful to developers in\r\ngenerating their guesstimates and improving them over time. ",
     "journal": "IEEE Software",
+    "volume": 17,
+    "number": 6,
     "authors": [
       "Philip M. Johnson",
       "Carleton A. Moore",
@@ -2042,14 +2059,13 @@
   },
   {
     "key": "csdl2-01-01",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "The Hardware Subroutine Approach to Developing Custom Co-Processors",
     "year": "2001",
     "month": "May",
     "note": "http://csdl.ics.hawaii.edu/techreports/2001/01-01/01-01.pdf",
     "abstract": "\r\nThe Hardware Subroutine Approach to developing a reconfigurable, custom\r\nco-processor is an architecture and a process for implementing a hardware\r\nsubsystem as a direct replacement for a subroutine in a larger program.\r\nThe approach provides a framework that helps the developer analyze the\r\ntradeoffs of using hardware acceleration, and a design procedure to guide\r\nthe implementation process.  To illustrate the design process a HWS\r\nimplementation of a derivative estimation subroutine is described.  In this\r\ncontext I show how key performance parameters of the HWS can be estimated\r\nin advance of complete implementation and decisions made regarding the\r\npotential benefit of implementation alternatives to program performance\r\nimprovement.  Performance of the actual hardware coprocessor is compared to\r\nthe software-only implementation and to estimates developed during the\r\ndesign process.\r\n",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-01-01",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Mark F. Waterson"
     ],
@@ -2067,6 +2083,8 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/2001/01-02/01-02.pdf",
     "abstract": "\r\nThe Virtual Commerce (VCommerce) simulation environment provides\r\na framework within which students can develop internet-based\r\nbusinesses. Unlike most entrepreneurship simulation games, the objective\r\nof VCommerce is not to maximize profits.  The environment, which is\r\ndesigned for use in interdisciplinary classroom settings, provides an\r\nopportunity for students with different backgrounds to build (virtual)\r\nbusinesses together.  Elements of VCommerce, such as its open-ended\r\nbusiness model and product; significant technical depth; external\r\nplayers; and severe time constraints combine to create a surprisingly\r\nrealistic and effective learning experience for students in both computer science and management.  This article overviews the VCommerce environment and\r\nour lessons learned from using it at both the University of Hawaii and\r\nMichigan State University. ",
     "journal": "Communications of the ACM",
+    "volume": "46",
+    "number": "12",
     "authors": [
       "Philip M. Johnson",
       "Mette L. Moffett",
@@ -2203,14 +2221,13 @@
   },
   {
     "key": "csdl2-01-11",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "The design, implementation, and evaluation of INCA: an\r\nautomated system for approval code allocation",
     "year": 2002,
     "month": "May",
     "note": "http://csdl.ics.hawaii.edu/techreports/2001/01-11/01-11.pdf",
     "abstract": "\r\n   The ICS department of the University of Hawaii has faced problems\r\nsurrounding approval code distribution as its enrollment has increased. The\r\nmanual system for approval code allocation was time-consuming, ineffective\r\nand inefficient. INCA is designed to automate the task of approval code\r\nallocation, improve the quality of course approval decisions, and decrease\r\nthe administrative overhead involved in those decisions.\r\n\r\nBased upon informal feedback from department administrators, it appears\r\nthat INCA reduces their overhead and makes their life easier. What are the\r\nold problems that are solved by INCA? Does INCA introduce new kinds of\r\nproblems for the administrator? What about the students? Are they\r\ncompletely satisfied with the system? In what ways does the system benefit\r\nthe department as a whole?\r\n\r\nThis thesis discusses the design, implementation and evaluation of INCA. It\r\nevaluates INCA from the viewpoint of the administrator, the students, and\r\nthe department. An analysis of emails\r\nindicates that INCA reduces administrative overhead. The results of the\r\nuser survey show that three quarters of students believe INCA improved\r\ntheir course approval predictability and course requirements\r\nunderstandability. They prefer INCA to old method of requesting approval\r\ncodes by email. INCA database analysis provided course demand information\r\nand student statistics useful for departments. This evaluation of INCA from\r\nthree different perspectives provides useful insights for future\r\nimprovement of INCA and for improving the student experience with academic\r\nsystems in general.\r\n ",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-01-11",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Jitender Miglani"
     ],
@@ -2246,6 +2263,7 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/2001/01-13/01-13.pdf",
     "abstract": "\r\nCollection and analysis of empirical software project data is central to\r\nmodern techniques for improving software quality, programmer productivity,\r\nand the economics of software project development.  Unfortunately,\r\neffective collection and analysis of software project data is rare in\r\nmainstream software development. Prior research suggests that three primary\r\nbarriers are: (1) cost: gathering empirical software engineering\r\nproject data is frequently expensive in resources and time; (2)\r\n  quality: it is often difficult to validate the accuracy of the data; and\r\n(3) utility: many metrics programs succeed in collecting data but\r\nfail to make that data useful to developers.\r\n\r\nThis report describes Hackystat, a technology initiative and research\r\nproject that explores the strengths and weaknesses of a\r\n  developer-centric, in-process, and non-disruptive approach\r\nto validation of empirical software project data collection and analysis.\r\n",
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
+    "number": "CSDL2-01-13",
     "authors": [
       "Philip M. Johnson"
     ],
@@ -2255,14 +2273,13 @@
   },
   {
     "key": "csdl2-01-14",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "An artificial neural network for recognition of simulated dolphin whistles",
     "year": 2001,
     "month": "May",
     "note": "http://csdl.ics.hawaii.edu/techreports/2001/01-14/01-14.pdf",
     "abstract": "\r\nIt is known that dolphins are capable of understanding 200 \"word\"\r\nvocabularies with sentence complexity of three or more \"words\", where\r\nwords consist of audio tones or hand gestures. An automated recognition\r\nmethod of words where a word is a defined whistle, within a\r\npredetermined acceptable degree of variance, could allow words to  be\r\nboth easily reproducible by dolphins and identifiable by humans. We\r\ninvestigate a neural network to attempt to distinguish four\r\nartificially  generated whistles from themselves and from common\r\nunderwater  environmental noises, where a whistle consists of four\r\nvariations of a  fundamental whistle style. We play these whistle\r\nvariations into the  dolphins normal tank environment and then record\r\nfrom a separate  tank hydrophone. This results in slight differences for\r\neach whistle  variation's spectrogram, the complete collection of which\r\nwe use to  form the neural network training set. For a single whistle\r\nvariation, the  neural network demonstrates strong output node values,\r\ngreater than  0.9 on a scale of 0 to 1. However, for combinations of\r\n\"words\", the network exhibits poor training\r\nperformance and an  inability to distinguish between words. To validate\r\nthis, we used a test set of 41 examples, of which only 22 were\r\ncorrectly classified. This  result suggests that an appropriately\r\ntrained backpropagation neural  network using spectrographic analysis as\r\ninputs is a viable means for a  very specific whistle recognition,\r\nhowever a large degree of whistle  variation will dramatically lower the\r\nperformance of the network, past  that required for acceptable\r\nrecognition.\r\n ",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-01-14",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Timothy Burgess"
     ],
@@ -2289,13 +2306,12 @@
   },
   {
     "key": "csdl2-02-02",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "J2EEVAL: A method for performance analysis of Enterprise JavaBean applications",
     "year": "2002",
     "month": "August",
     "abstract": "\r\nJ2EEval is a method for performance analysis of Enterprise JavaBean (EJB)\r\napplications.  This thesis overviews the method and its application in\r\nthe context of a case study of the Inca Course approval system.\r\n",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-02-02",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Weifeng Miao"
     ],
@@ -2456,14 +2472,13 @@
   },
   {
     "key": "csdl2-02-06",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Improving software quality through extreme coverage with JBlanket",
     "year": 2003,
     "month": "May",
     "note": "http://csdl.ics.hawaii.edu/techreports/2002/02-06/02-06.pdf",
     "abstract": "\r\nUnit testing is an important part of software testing that aids in the\r\ndiscovery of bugs sooner in the software development process.  Extreme\r\nProgramming (XP), and its Test First Design technique, relies so heavily upon\r\nunit tests that the first code implemented is made up entirely of\r\ntest cases.  Furthermore, XP considers a feature to be completely coded\r\nonly when all of its test cases pass.  However, passing all test cases does\r\nnot necessarily mean the test cases are good.\r\n<p>\r\nExtreme Coverage (XC) is a new approach that helps to assess and improve the\r\nquality of software by enhancing unit testing.  It extends the XP requirement\r\nthat all test cases must pass with the requirement that all defect-prone\r\ntestable methods must be invoked by the tests.  Furthermore, a set of flexible\r\nrules are applied to XC to make it as attractive and light-weight as unit\r\ntesting is in XP.  One example rule is to exclude all methods containing one\r\nline of code from analysis.  I designed and implemented a new tool, called\r\nJBlanket, that automates the XC measurement process similar to the way that\r\nJUnit automates unit testing.  JBlanket produces HTML reports similar to JUnit\r\nreports which inform the user about which methods need to be tested next.\r\n<p>\r\nIn this research, I explore the feasibility of JBlanket, the amount of effort\r\nneeded to reach and maintain XC, and the impact that knowledge of XC has on\r\nsystem implementation through deployment and evaluation in an academic\r\nenvironment.  Results show that most students find JBlanket to be a useful tool\r\nin developing their test cases, and that knowledge of XC did influence the\r\nmanner in which students implemented their systems. However,  more studies are\r\nneeded to conclude precisely how much effort is needed to reach and maintain\r\nXC.\r\n<p>\r\nThis research lays the foundation for future research directions.  One\r\ndirection involves increasing its flexibility and value by expanding and\r\nrefining the rules of XC.  Another direction involves tracking XC behavior to\r\nfind out when it is and is not applicable.\r\n",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-02-06",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Joy M. Agustin"
     ],
@@ -2690,6 +2705,7 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/2004/04-05/04-05.pdf",
     "summary": "\r\nThis proceedings contains the slides to a series of seventeen talks on the architecture,\r\ndesign, applications, and research directions of Hackystat presented\r\nduring the week of May 10-14, 2004.   It also\r\nincludes a \"Hackystat Hacker Certification Exam\", which describes 18 exercises designed\r\nto provide an incremental introduction to Hackystat internals.",
     "institution": "University of Hawaii",
+    "number": "CSDL2-04-05",
     "authors": [
       "Philip M. Johnson"
     ],
@@ -2844,14 +2860,13 @@
   },
   {
     "key": "csdl2-05-01",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Priority Ranked Inspection: Supporting Effective\r\nInspection in Resource-limited Organizations",
     "year": 2005,
     "month": "August",
     "note": "http://csdl.ics.hawaii.edu/techreports/2005/05-01/05-01.pdf",
     "abstract": "\r\nImagine that your project manager has budgeted 200 person-hours for the\r\nnext month to inspect newly created source code. Unfortunately, in order to\r\ninspect all of the documents adequately, you estimate that it will take 400\r\nperson-hours. However, your manager refuses to increase the budgeted\r\nresources for the inspections. How do you decide which documents to inspect\r\nand which documents to skip? Unfortunately, the classic definition of\r\ninspection does not provide any advice on how to handle this situation. For\r\nexample, the notion of entry criteria used in Software Inspection\r\ndetermines when documents are ready for inspection rather\r\nthan if it is needed at all.\r\n\r\nMy research has investigated how to prioritize inspection resources and\r\napply them to areas of the system that need them more. It is commonly\r\nassumed that defects are not uniformly distributed across all documents in\r\na system, a relatively small subset of a system accounts for a relatively\r\nlarge proportion of defects. If inspection resources are\r\nlimited, then it will be more effective to identify and inspect the\r\ndefect-prone areas.\r\n\r\nTo accomplish this research, I have created an inspection process called\r\nPriority Ranked Inspection (PRI). PRI uses software product and development\r\nprocess measures to distinguish documents that are \\`\\`more in need of\r\ninspection'' (MINI) from those \\`\\`less in need of inspection'' (LINI). Some\r\nof the product and process measures include: user-reported defects, unit\r\ntest coverage, active time, and number of changes. I hypothesize that the\r\ninspection of MINI documents will generate more defects with a higher\r\nseverity than inspecting LINI documents.\r\n\r\nMy research employed a very simple exploratory study, which includes\r\ninspecting MINI and LINI software code and checking to see if MINI code\r\ninspections generate more defects than LINI code inspections. The results\r\nof the study provide supporting evidence that MINI documents do contain\r\nmore high-severity defects than LINI documents. In addition, there is some\r\nevidence that PRI can provide developers with more information to help\r\ndetermine what documents they should select for inspection.\r\n",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-05-01",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Aaron Kagawa"
     ],
@@ -2952,14 +2967,13 @@
   },
   {
     "key": "csdl2-05-09",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Continuous GQM: An automated framework for the Goal-Question-Metric paradigm",
     "year": 2005,
     "month": "August",
     "note": "http://csdl.ics.hawaii.edu/techreports/2005/05-09/05-09.pdf",
     "abstract": "\r\nMeasurement is an important aspect of Software Engineering as it is the\r\nfoundation of predictable and controllable software project\r\nexecution. Measurement is essential for assessing actual project progress,\r\nestablishing baselines and validating the effects of improvement or\r\ncontrolling actions.\r\n\r\nThe work performed in this thesis is based on Hackystat, a fully automated\r\nmeasurement framework for software engineering processes and\r\nproducts. Hackystat is designed to unobtrusively measure a wide range of\r\nmetrics relevant to software development and collect them in a centralized\r\ndata repository.  Unfortunately, it is not easy to interpret, analyze and\r\nvisualize the vast data collected by Hackystat in such way that it can\r\neffectively be used for software project control.\r\n\r\nA potential solution to that problem is to integrate Hackystat with the GQM\r\n(Goal / Question / Metric) Paradigm, a popular approach for goal-oriented,\r\nsystematic definition of measurement programs for software-engineering\r\nprocesses and products.  This integration should allow the goal-oriented\r\nuse of the metric data collected by Hackystat and increase its usefulness\r\nfor project control.  During the course of this work, this extension to\r\nHackystat which is later called hackyCGQM is implemented. As a result,\r\nhackyCGQM enables Hackystat to be used as a Software Project Control Center\r\n(SPCC) by providing purposeful high-level representations of the\r\nmeasurement data.\r\n\r\nAnother interesting side-effect of the combination of Hackystat and\r\nhackyCGQM is that this system is able to perform fully automated\r\nmeasurement and analysis cycles. This leads to the development of cGQM, a\r\nspecialized method for fully automated, GQM based measurement programs.  As\r\na summary, hackyCGQM seeks to implement a completely automated GQMbased\r\nmeasurement framework. This high degree of automation is made possible by\r\nlimiting the implemented measurement programs to metrics which can be\r\nmeasured automatically, thus sacrificing the ability to use arbitrary\r\nmetrics.\r\n",
-    "institution": "Department of Software Engineering,\r\n  Fachbereich Informatik,\r\n    Universitat Kaiserslautern, Germany",
-    "number": "CSDL-05-09",
+    "school": "Department of Software Engineering,\r\n  Fachbereich Informatik,\r\n    Universitat Kaiserslautern, Germany",
     "authors": [
       "Christoph Lofi"
     ],
@@ -3050,6 +3064,7 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/2006/06-07/06-07.pdf",
     "abstract": "\r\nIf empirical software engineering is to grow as a valid scientific\r\nendeavor, the ability to acquire, use, share, and compare data collected\r\nfrom a variety of sources must be encouraged. This is necessary to validate\r\nthe formal models being developed within computer science. However, within\r\nthe empirical software engineering community this has not been easily\r\naccomplished. This paper analyses experience from a number of projects, and\r\ndefines the issues, which include the following: (1) How should data,\r\ntestbeds, and artifacts be shared? (2) What limits should be placed on who\r\ncan use them and how? How does one limit potential misuse? (3) What is the\r\nappropriate way to credit the organization and individual that spent the\r\neffort collecting the data, developing the testbed, and building the\r\nartifact? (4) Once shared, who owns the evolved asset?  As a solution to\r\nthese issues, the paper proposes a framework for an empirical software\r\nengineering artifact license, which is intended to address the needs for\r\nboth creator and user of such artifacts and should foster a market in\r\nmaking available and using such artifacts. If this license framework for\r\nsharing software engineering artifacts is commonly accepted, it is\r\nconsidered that it should encourage artifact owners to make the artifacts\r\naccessible to others (gaining credit is more likely and misuse is less\r\nlikely), and it may be easier for other researchers to request artifacts\r\nsince there will be a well-defined protocol for how to deal with relevant\r\nmatters.\r\n",
     "journal": "Empirical Software Engineering",
+    "volume": 12,
     "authors": [
       "Victor R. Basili",
       "Marvin V. Zelkowitz",
@@ -3092,14 +3107,13 @@
   },
   {
     "key": "csdl2-06-09",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Evaluation of Jupiter: A Lightweight Code Review Framework",
     "year": 2006,
     "month": "December",
     "note": "http://csdl.ics.hawaii.edu/techreports/2006/06-09/06-09.pdf",
     "abstract": "\r\nSoftware engineers generally agree that code reviews reduce development\r\ncosts and improve software quality by finding defects in the early stages\r\nof software development. In addition, code review software tools help the\r\ncode review process by providing a more efficient means of collecting and\r\nanalyzing code review data. On the other hand, software organizations that\r\nconduct code reviews often do not utilize these review tools. Instead, most\r\norganizations simply use paper or text editors to support their code review\r\nprocesses. Using paper or a text editor is potentially less useful than\r\nusing a review tool for collecting and analyzing code review data.\r\n\r\nIn this research, I attempted to address the problems of previous code\r\nreview tools by creating a lightweight and flexible review tool. This\r\nreview tool that I have developed, called \"Jupiter\", is an Eclipse IDE\r\nPlug-In. I believe the Jupiter Code Review Tool is more efficient at\r\ncollecting and analyzing code review data than the text-based approaches.\r\n\r\nTo investigate this hypothesis, I have constructed a methodology to compare\r\nthe Jupiter Review Tool to the text-based review approaches. I carried out\r\na case study using both approaches in a software engineering course with 19\r\nstudents.\r\n\r\nThe results provide some supporting evidence that Jupiter is more useful\r\nand more usable than the text-based code review, requires less overhead\r\nthan the text-based review, and appears to support long-term adoption.\r\n\r\nThe major contributions of this research are the Jupiter design philosophy,\r\nthe Jupiter Code Review Tool, and the insights from the case study\r\ncomparing the text-based review to the Jupiter-based review.\r\n",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-06-09",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Takuya Yamashita"
     ],
@@ -3403,14 +3417,13 @@
   },
   {
     "key": "csdl2-09-10",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Learning Empirical Software Engineering Using Software Intensive Care Unit",
     "year": 2009,
     "month": "December",
     "note": "http://csdl.ics.hawaii.edu/techreports/2009/09-10/09-10.pdf",
     "abstract": "\r\nIn software engineering, the importance of measurement is well understood, and many efficient software development metrics have been developed to help measurement. However, as the number of metrics increases, the effort required to collect data, analyze them and interpret the results quickly becomes overwhelming. This problem is even more critical in educational approaches regarding empirical software engineering.\r\n\r\nThe Software Intensive Care Unit is a new approach to facilitating software measurement and control with multiple software development metrics. It uses the Hackystat system to achieve automated data collection and analysis, then uses the collected analysis data to create a monitoring interface for multiple \\`\\`vital signs''. A vital sign is a wrapper of a software metric with an easy to use presentation. It consists of a historical trend and a newest state value, both of which are colored according to the \\`\\`health'' state.\r\n\r\nMy research deployed and evaluated the Software ICU in a senior-level software engineering course. Students' usage was logged in the system, and a survey was conducted. The results provide supporting evidence that Software ICU does help students in course project development and project team organization. In addition, the results of the study also discover some limitations of the system, including inappropriate vital sign presentation and measurement dysfunction.\r\n",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-09-10",
+    "school": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "authors": [
       "Shaoxuan Zhang"
     ],
@@ -3476,14 +3489,13 @@
   },
   {
     "key": "csdl2-09-16",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Linked Data applied to Collaborative Software Development: A case study of Hackystat",
     "year": "2009",
     "month": "December",
     "note": "http://csdl.ics.hawaii.edu/techreports/2009/09-16/09-16.pdf",
     "abstract": "\r\nThis thesis investigates a new way to take advantage of RDF metadata to\r\nsupport Collaborative Software Development. RDF metadata helps developers\r\novercome typical problems in iterative software development, such as:\r\nexceptions thrown at run-time; making design and implementation decisions\r\nwithin previously unknown domains; and usage of previously unknown tools or\r\nlibraries. Solutions usually consist of searching for suggestions from\r\nforum posts, source code of similar projects, direct contact with specific\r\nexperts, etc.  The main problems with this approach are the time wasted in\r\nmanually detecting the searched info from unstructured documents, the low\r\neffectiveness of search engines, and the lack of information about the\r\nactual expertise of the directly contacted people.\r\n\r\nIn contrast, having info about projects and issues semantically structured\r\nwith RDF metadata can speed up detection of the searched details.  Dynamic\r\ncreation of RDF links with external similar RDF metadata allows users to\r\navoid searching or analyzing search results.  Finally, metadata about users\r\nincluding quality measures coming from a trustworthy source such as\r\nTelemetry can allow the user to trust the actual developer's\r\nexpertise. Such RDF metadata and links, together with HTTP URIs, is\r\nprovided by the Hackystat LinkedSensorData (LiSeD) service.\r\n",
-    "institution": "University of Bari, Italy",
-    "number": "CSDL-09-16",
+    "school": "University of Bari, Italy",
     "authors": [
       "Myriam Leggieri"
     ],
@@ -3494,14 +3506,13 @@
   },
   {
     "key": "csdl2-09-17",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Applying Case-Based Reasoning for Building Autonomic Service-Oriented Systems",
     "year": "2009",
     "month": "September",
     "note": "http://csdl.ics.hawaii.edu/techreports/2009/09-17/09-17.pdf",
     "abstract": "\r\nService-oriented computing is considered as a successful approach building\r\nlarge-scale software systems, spanning the internet, and globally improving\r\nsoftware reuse. Service-oriented architectures are complex and hard to\r\nmaintain. A service may run on many machines, and single machines may host\r\nmany services. The concept of distributed composition of services hides a\r\nhuge amount of complexity in the management of the service-oriented\r\narchitecture. Users have to deal with complex configuration of services to\r\nachieve functional and quality requirements, thus the complexity of the\r\nsystem requires a lot of administrator-interference. Despite the effort of\r\nthe administrator, the configuration may not be good enough. It is hard for\r\nan administrator to monitor individual services and the service-oriented\r\nsystem to determine if the system is running optimal. Therefore a growing\r\ntrend for autonomic service-oriented systems has emerged. In mid-october\r\n2001, IBM released a manifesto that the main obstacle to further progress\r\nin the IT industry is a looming software complexity crisis. The manifesto\r\nclaimed that the difficulty of managing today's computer systems goes well\r\nbeyond the administration of individual software environments. Computing\r\nsystem's complexity appears to be approaching the limits of human\r\ncapability, and there will be no way to make timely, decisive responses to\r\nthe rapid stream of changing and conflicting. This dissertation discusses\r\nautonomic computing in service-oriented computing. We present a framework\r\nthat builds the foundation for self-healing, self-reconfiguration,\r\nself-optimization and selfprotecting service-oriented systems. We apply and\r\nimplement the framework to Hackystat, an Open Source Software developed at\r\nUniversity of Hawaii. Furthermore we discuss the role of service-oriented\r\ncomputing in autonomic computing, which plays a fundamental role for the\r\nrelationship between autonomic elements. At the end, we achieved to provide\r\na global overview in the domain of autonomic and service-oriented computing\r\nand how to combine them in bidirectional ways. We implemented an open\r\nsource framework called, Hackystat Service Manager, for achieving an\r\nautonomic service-oriented architecture in Hackystat in the scope of Google\r\nSummer of Code, which can be evolved and evaluated or adapted to any other\r\nservice-oriented system.\r\n\r\n",
-    "institution": "University of Limerick, Ireland",
-    "number": "CSDL-09-17",
+    "school": "University of Limerick, Ireland",
     "authors": [
       "Herve Weitz"
     ],
@@ -4055,6 +4066,8 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/2013/13-05/13-05.pdf",
     "abstract": "\r\nTo achieve the full benefits of the Smart Grid, end users must become active participants in the energy ecosystem. This paper presents the Kukui Cup challenge, a multifaceted serious game designed around the topic of energy conservation that incorporates a variety of energy feedback visualizations, online educational activities, and real-world activities such as workshops and excursions. We describe our experiences developing energy feedback visualizations in the Kukui Cup based on in-lab evaluations and field studies in college residence halls. We learned that energy feedback systems should address these three factors: 1) they should be actionable, 2) domain knowledge should go hand in hand with feedback systems, and 3) feedback must be \\`\\`sticky'' if it is to lead to changes in behaviors and attitudes. We provide examples of both successful and unsuccessful visualizations, and discuss how they address the three factors we have identified.\r\n",
     "journal": "International Journal On Advances in Intelligent Systems",
+    "volume": "3 and 4",
+    "number": 6,
     "authors": [
       "Robert S. Brewer",
       "Yongwen Xu",
@@ -4098,7 +4111,7 @@
     "month": "April",
     "note": "http://csdl.ics.hawaii.edu/techreports/2013/13-10/13-10.pdf",
     "abstract": "\r\nWhile there has been a steady increase in sustainable HCI research, there remains a lack of consensus on how to ensure this research moves us towards achieving sustainability. This paper suggests three ways the sustainable HCI community might shift to better address the challenge of achieving global sustainability. First, we should shift from creating only small-scale solutions to systems and solutions that are scalable to many users and environments because the problem of sustainability is vast in scale. Second, we should shift from short-term solutions to \\`sticky' solutions that will continue to have an impact over decades, because sustainability is a problem that will span generations. Third, the sustainable HCI community must shift from an insular focus on our community to a broad engagement and collaboration with other research communities involved in sustainability research.\r\n",
-    "booktitle": "Proceedings of the CHI 2014 Workshop \\`\\`What have we learned?\r\nA SIGCHI HCI \\\\& Sustainability community workshop''",
+    "booktitle": "Proceedings of the CHI 2014 Workshop: What have we learned? A SIGCHI HCI and Sustainability community workshop",
     "address": "Toronto, Canada",
     "authors": [
       "Robert S. Brewer"
@@ -4162,14 +4175,13 @@
   },
   {
     "key": "csdl2-14-04",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "OPQ Cloud: A scalable software framework for the aggregation of distributed power quality data",
     "year": "2014",
     "month": "April",
     "note": "http://csdl.ics.hawaii.edu/techreports/2014/14-04/14-04.pdf",
     "abstract": "Power quality issues can be caused in a variety of situations. Voltage fluctuations, frequency fluctuations, and harmonics are all power quality issues which can be caused by weather, high penetration of renewables, man-made issues, or other natural phenomena. We designed a software framework which can aggregate crowdsourced distributed power quality measurements in order to study power quality issues over a dense geographic area. ",
-    "institution": "University of Hawaii, Honolulu, HI",
-    "number": "CSDL-14-04",
+    "school": "University of Hawaii, Honolulu, HI",
     "authors": [
       "Anthony J. Christe"
     ],
@@ -4252,14 +4264,13 @@
   },
   {
     "key": "csdl2-14-11",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "Design, Implementation, and Initial Evaluation of OPQBox: A low-cost device for crowdsourced power quality monitoring",
     "year": "2014",
     "month": "November",
     "note": "http://csdl.ics.hawaii.edu/techreports/2014/14-11/14-11.pdf",
     "abstract": "The face of power distribution has changed rapidly over the last several decades. Modern grids are evolving to accommodate distributed power generation, and highly variable loads. Furthermore as the devices we use every day become more electronically complex, they become increasingly more sensitive to power quality problems. Distributed power quality monitoring systems have been shown to provide real-time insight on the status of the power grid and even pinpoint the origin of power disturbances. [6] Oahu’s isolated power grid combined with high penetration of distributed renewable energy generators create perfect conditions to assess the feasibility and utility of such a network. Over the last three months we have been collecting power quality data from several locations on Oahu as a pilot study for a larger monitoring system. This papers describes our methodology, hardware and software design and presents a preliminary analysis of the data we collected so far. Lastly this paper presents a design for an improved power quality monitor based upon the pilot study experiences. ",
-    "institution": "University of Hawaii, Honolulu, HI",
-    "number": "CSDL-14-11",
+    "school": "University of Hawaii, Honolulu, HI",
     "authors": [
       "Sergey Negrashov"
     ],
@@ -4279,6 +4290,8 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/2015/15-03/15-03.pdf",
     "abstract": "\r\n\r\nIn the past 10 years, there has been considerable evidence of the harmful effects of multitasking and other distractions on learning. One study found that multitasking students spend only 65 percent of their time actively learning, take longer to complete assignments, make more mistakes, are less able to remember material later, and show less ability to generalize the information they learned for use in other contexts.\r\n\r\nTraditional software engineering education approaches: in-class lectures, unsupervised homework assignments, and occasional projects, create many opportunities for distraction. To address this problem, coauthor Philip M. Johnson developed an “athletic” software engineering education approach, which coauthors Emily Hill and Daniel Port adapted for use in their courses. We wanted to determine if software engineering education could be redesigned to be like an athletic endeavor and whether this would improve learning.\r\n",
     "journal": "IEEE Software",
+    "volume": 33,
+    "number": 1,
     "authors": [
       "Emily Hill",
       "Philip M. Johnson",
@@ -4356,14 +4369,13 @@
   },
   {
     "key": "csdl2-16-04",
-    "type": "techreport",
+    "type": "mastersthesis",
     "title": "MANDE: Procedural optimization and measurement of passive acoustic sensor networks for animal observation in marine environments",
     "year": "2016",
     "month": "August",
     "note": "http://csdl.ics.hawaii.edu/techreports/2016/16-04/16-04.pdf",
     "abstract": "Static Observation Networks (SONs) are often used in the biological sciences to study animal migration and habitat. These networks are comprised of self-contained, stationary receivers that continuously listen for acoustic transmissions released by sonic tags carried by individual animals. The transmissions released by these tags carry serial identification numbers that can be used to verify that a particular individual was near a given receiver. Because receivers in these networks are stationary, receiver placement is critical to maximizing data recovery. Currently, no open-source automated mechanism exists to facilitate the design of optimal receiver networks. SON design is often governed by loose \"rules of thumb\" and \"by eye\" readings of low resolution bathymetric maps. Moreover, there is no standardized method for evaluating the efficacy of a SON. This paper introduces the Maximal Acoustic Network Designer (MANDe) a system which takes advantage of high-resolution bathymetric data and advanced animal modeling to provide optimal network designs. MANDe also allows for statistical analysis of existing network configurations in order to create efficacy-metrics that can be used to evaluate arbitrary network configurations. This paper will present MANDe’s mathematical and conceptual models and analyze the computational complexities of its methods. ",
-    "institution": "University of Hawaii, Honolulu, HI",
-    "number": "CSDL-16-04",
+    "school": "University of Hawaii, Honolulu, HI",
     "authors": [
       "Gregory L. Burgess"
     ],
@@ -4402,6 +4414,8 @@
     "note": "http://csdl.ics.hawaii.edu/techreports/2019/19-03/19-03.pdf",
     "abstract": "\r\nModern web application development provides an attractive application area for introductory software engineering education, as students have direct experience with the domain and it provides them with the potential to gain practical, real-world skills. Achieving this potential requires the development of competency with a multiple component tech stack for web application development, which is challenging to acquire within a single semester. In this research, we designed, implemented, and evaluated a new pedagogy called “athletic software engineering” which is intended to help students efficiently and effectively acquire competency with a multiple component tech stack as a precursor to a web application development project. We evaluated the pedagogy over 4 years and six semesters with 286 students and found strong evidence for its effectiveness.\r\n",
     "journal": "ACM Transactions on Computing Education",
+    "volume": 19,
+    "number": 4,
     "authors": [
       "Philip M. Johnson"
     ],
