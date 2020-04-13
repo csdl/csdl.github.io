@@ -1,39 +1,5 @@
 [
   {
-    "key": "csdl-91-01",
-    "type": "techreport",
-    "title": "Introduction to the Collaborative Software Development Laboratory",
-    "year": 1991,
-    "month": "February",
-    "abstract": "Obsolete. See technical reports 97-05 and 98-03.",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-91-01",
-    "authors": [
-      "Philip M. Johnson"
-    ],
-    "keywords": [
-      "CSDL"
-    ]
-  },
-  {
-    "key": "csdl-91-02",
-    "type": "techreport",
-    "title": "EGRET Design Specification: Version 2.0",
-    "year": 1991,
-    "month": "July",
-    "abstract": "Obsolete.  See current Egret system documentation for design information",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-91-02",
-    "authors": [
-      "Philip M. Johnson",
-      "Dadong Wan",
-      "Danu Tjahjono"
-    ],
-    "keywords": [
-      "EGRET"
-    ]
-  },
-  {
     "key": "csdl-91-03",
     "type": "inproceedings",
     "title": "The EGRET Project: Exploring Open, Evolutionary, and Emergent Collaborative Systems",
@@ -192,8 +158,7 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "EGRET",
-      "Publications-Periodicals"
+      "EGRET"
     ]
   },
   {
@@ -312,10 +277,10 @@
     "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
     "number": "CSDL-93-05",
     "authors": [
-      " Kiran Kavoori Ram"
+      "Kiran Kavoori Ram"
     ],
     "keywords": [
-      "Miscellaneous"
+      ""
     ]
   },
   {
@@ -473,7 +438,7 @@
       "Johnny Li"
     ],
     "keywords": [
-      "Miscellaneous"
+      ""
     ]
   },
   {
@@ -584,23 +549,6 @@
     "keywords": [
       "CSRS",
       "Publications-Journals"
-    ]
-  },
-  {
-    "key": "csdl-93-23",
-    "type": "inproceedings",
-    "title": "Report on the 1993 ECSCW Tools and Technologies Workshop",
-    "year": 1994,
-    "month": "April",
-    "note": "http://csdl.ics.hawaii.edu/techreports/1993/93-23/93-23.text",
-    "abstract": "This plain-text file provides a brief summary of the\r\n  workshop.",
-    "booktitle": "SIGOIS Bulletin",
-    "authors": [
-      "Philip M. Johnson"
-    ],
-    "keywords": [
-      "Miscellaneous",
-      "Publications-Periodicals"
     ]
   },
   {
@@ -738,7 +686,6 @@
       "Rosemary Andrada"
     ],
     "keywords": [
-      "WWW",
       "Thesis-Proposals"
     ]
   },
@@ -946,7 +893,6 @@
       "Rosemary Andrada"
     ],
     "keywords": [
-      "WWW",
       "Thesis-MS"
     ]
   },
@@ -963,7 +909,6 @@
       "Carleton A. Moore"
     ],
     "keywords": [
-      "Miscellaneous",
       "Publications-Workshops"
     ]
   },
@@ -1067,7 +1012,7 @@
       "Rosemary Andrada"
     ],
     "keywords": [
-      "WWW"
+      ""
     ]
   },
   {
@@ -1102,25 +1047,6 @@
     ],
     "keywords": [
       "AEN"
-    ]
-  },
-  {
-    "key": "csdl-95-23",
-    "type": "article",
-    "title": "Egret: A Framework for Advanced CSCW Applications",
-    "year": "1996",
-    "month": "May",
-    "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-95-23.pdf",
-    "abstract": "\r\nEgret is a publically available, advanced framework for construction of\r\ncomputer-supported cooperative work applications.  Egret provides an\r\napproach to multi-user, interactive application development that differs\r\nmarkedly from other frameworks or infrastructures, such as Groupkit, WWW,\r\nor Lotus Notes.  This short paper introduces Egret, its architecture,\r\ndesign philosophy, selected applications, and interest groups within the\r\nsoftware engineering community. It concludes with information on how Egret's sources,\r\nbinaries, and documentation may be obtained free of charge using the\r\nInternet.",
-    "journal": "ACM Software Engineering Notes",
-    "volume": "21",
-    "number": "2",
-    "authors": [
-      "Philip M. Johnson"
-    ],
-    "keywords": [
-      "EGRET",
-      "Publications-Periodicals"
     ]
   },
   {
@@ -1308,23 +1234,6 @@
     ]
   },
   {
-    "key": "csdl-97-05",
-    "type": "techreport",
-    "title": "An Annotated Overview of CSDL Software Engineering",
-    "year": "1997",
-    "month": "November",
-    "note": "http://csdl.ics.hawaii.edu/techreports/1997/97-05/97-05.html",
-    "abstract": "Current software engineering activities in CSDL can be viewed as consisting\r\nof two basic components: product engineering and process\r\nengineering. Product engineering refers to the various work products\r\ncreated during development.  Process engineering refers to the various\r\nmeasurements and analyses performed on the development process.  This\r\ndocument describes activities within\r\nCSDL over the past five years to better\r\nunderstand and improve our process and product engineering within our\r\nacademic research development environment.",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-97-05",
-    "authors": [
-      "Philip M. Johnson"
-    ],
-    "keywords": [
-      "CSDL"
-    ]
-  },
-  {
     "key": "csdl-97-06",
     "type": "techreport",
     "title": "LEAP Initial Toolset: Software Requirements Specification",
@@ -1394,23 +1303,6 @@
     ]
   },
   {
-    "key": "csdl-98-03",
-    "type": "techreport",
-    "title": "A Proposal for CSDL2: A Center for Software Development Leadership through Learning",
-    "year": "1997",
-    "month": "July",
-    "note": "http://csdl.ics.hawaii.edu/techreports/1998/98-03/98-03.html",
-    "abstract": "This document describes the design of CSDL2: a social, physical, and\r\nvirtual environment to support the development of world class software\r\nengineering professionals.  In CSDL2, a \"multi-generational learning\r\ncommunity\" of faculty, graduate students, and\r\nundergraduates all collaborate within a structured work environment for\r\npracticing product, process, and organizational engineering.",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-98-03",
-    "authors": [
-      "Philip M. Johnson"
-    ],
-    "keywords": [
-      "CSDL"
-    ]
-  },
-  {
     "key": "csdl-98-04",
     "type": "inproceedings",
     "title": "Investigating Data Quality Problems in the PSP",
@@ -1446,7 +1338,7 @@
       "Jennifer Saito"
     ],
     "keywords": [
-      "WWW"
+      ""
     ]
   },
   {
@@ -1466,7 +1358,7 @@
       "Jennifer Saito"
     ],
     "keywords": [
-      "WWW"
+      ""
     ]
   },
   {
@@ -1658,8 +1550,7 @@
       "Robert S. Brewer"
     ],
     "keywords": [
-      "MCS",
-      "Grant"
+      "MCS"
     ]
   },
   {
@@ -1676,8 +1567,7 @@
       "Carleton A. Moore"
     ],
     "keywords": [
-      "Leap",
-      "Grant"
+      "Leap"
     ]
   },
   {
@@ -1718,23 +1608,6 @@
     ]
   },
   {
-    "key": "csdl-99-09",
-    "type": "techreport",
-    "title": "A Proposal for an Oahu Internet Ocean Sports Resource",
-    "year": "1999",
-    "month": "February",
-    "note": "http://csdl.ics.hawaii.edu/techreports/1999/99-09/grant.pdf",
-    "abstract": "This document proposes the development of a geographic\r\n  information system available over the Internet to help\r\n  visitors to Hawaii become aware of Ocean sports opportunities.",
-    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
-    "number": "CSDL-99-09",
-    "authors": [
-      "Joseph A. Dane"
-    ],
-    "keywords": [
-      "Grant"
-    ]
-  },
-  {
     "key": "csdl-99-10",
     "type": "mastersthesis",
     "title": "Modular Program Size Counting",
@@ -1765,7 +1638,8 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "Grant"
+      "Leap",
+      "JavaWizard"
     ]
   },
   {
@@ -1801,25 +1675,6 @@
     "keywords": [
       "MCS",
       "Publications-Conferences"
-    ]
-  },
-  {
-    "key": "csdl-99-14",
-    "type": "article",
-    "title": "Project LEAP:\r\n   Lightweight, Empirical, Anti-measurement dysfunction, and Portable\r\n   Software Developer Improvement",
-    "year": "1999",
-    "month": "December",
-    "note": "http://csdl.ics.hawaii.edu/techreports/1999/99-14/99-14.pdf",
-    "abstract": "\r\nProject LEAP investigates the use of lightweight, empirical,\r\nanti-measurement dysfunction, and portable approaches to software developer\r\nimprovement. This document provides a one-page progress report on\r\nProject Leap for inclusion in the \"Millenium\" issue of Software\r\nEngineering Notes.\r\n\r\n",
-    "journal": "ACM Software Engineering Notes",
-    "volume": "24",
-    "number": "6",
-    "authors": [
-      "Philip M. Johnson"
-    ],
-    "keywords": [
-      "Leap",
-      "Publications-Periodicals"
     ]
   },
   {
@@ -1929,8 +1784,7 @@
       "Mette L. Moffett"
     ],
     "keywords": [
-      "VCommerce",
-      "Grant"
+      "VCommerce"
     ]
   },
   {
@@ -1998,7 +1852,7 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "Grant"
+      ""
     ]
   },
   {
@@ -2035,7 +1889,7 @@
       "Larry Votta"
     ],
     "keywords": [
-      "PWP"
+      ""
     ]
   },
   {
@@ -2070,8 +1924,7 @@
       "Mark F. Waterson"
     ],
     "keywords": [
-      "Thesis-MS",
-      "Hardware-Subroutine"
+      "Thesis-MS"
     ]
   },
   {
@@ -2216,7 +2069,7 @@
       "William M. Albritton"
     ],
     "keywords": [
-      "VRM"
+      ""
     ]
   },
   {
@@ -2945,7 +2798,7 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "Miscellaneous"
+      ""
     ]
   },
   {
@@ -3355,8 +3208,7 @@
       "Robert S. Brewer"
     ],
     "keywords": [
-      "Sustainability",
-      "LitReview"
+      "Sustainability"
     ]
   },
   {
@@ -3392,7 +3244,6 @@
       "Pavel Senin"
     ],
     "keywords": [
-      "LitReview",
       "Trajectory"
     ]
   },
@@ -3869,7 +3720,7 @@
       "Kaveh Abhari",
       "Hana Bowers",
       "Robert S. Brewer",
-      "Gregory Burgess",
+      "Gregory L. Burgess",
       "Caterina Desiato",
       "Philip M. Johnson",
       "Michelle Katchuck",
@@ -4420,7 +4271,8 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "Publications-Journals"
+      "Publications-Journals",
+      "Athletic-Software-Engineering"
     ]
   },
   {
@@ -4434,7 +4286,7 @@
     "booktitle": "Proceedings of the 51st ACM Technical Symposium on Computer Science Education (SIGCSE 2020)",
     "authors": [
       "Philip M. Johnson",
-      "Carleton Moore",
+      "Carleton A. Moore",
       "Peter Leong",
       "Seungoh Paek"
     ],

@@ -9,6 +9,8 @@ const argv = require('minimist')(process.argv.slice(2));
 class CsdlTechReports {
   constructor() {
     this.outFile = 'src/data/PaperData.json';
+    this.authorMapFile = 'src/data/PaperData.authormap.json';
+    this.keywordMapFile = 'src/data/PaperData.keywordmap.json';
     const bibFileName = argv.bibfile;
     const bibString = fs.readFileSync(bibFileName, 'utf8');
     this.bibFile = bibtex.parseBibFile(bibString);
@@ -25,15 +27,60 @@ class CsdlTechReports {
     };
   }
 
+  buildAuthorMap() {
+    const authorMap = {};
+    const mapKey = (key) => {
+      const entry = this.getEntry(key);
+      const authors = this.authorStrings(entry);
+      // eslint-disable-next-line no-unused-expressions
+      _.each(authors, author => {
+        // eslint-disable-next-line no-unused-expressions
+      this.isCsdlMember(author) && ((authorMap[author]) ? authorMap[author].push(key) : authorMap[author] = [key]);
+      });
+    };
+    _.each(this.citeKeys, key => mapKey(key));
+    return authorMap;
+  }
+
+  buildKeyWordMap() {
+    const keywordMap = {};
+    const mapKey = (key) => {
+      const entry = this.getEntry(key);
+      const keywords = this.normalizedField(entry, 'keywords').split(',').map(str => str.trim());
+      // eslint-disable-next-line no-unused-expressions
+      _.each(keywords, keyword => {
+        // eslint-disable-next-line no-unused-expressions
+        keyword && ((keywordMap[keyword]) ? keywordMap[keyword].push(key) : keywordMap[keyword] = [key]);
+      });
+    };
+    _.each(this.citeKeys, key => mapKey(key));
+    return keywordMap;
+  }
+
   writeFiles() {
     jsonfile.spaces = 2;
     const masterList = _.map(this.citeKeys, key => this.getEntryObject(key));
     console.log(`Writing ${this.outFile}`);
-    jsonfile.writeFile(this.outFile, masterList, { spaces: 2 }, err => { if (err != null) console.error(err); });
+    jsonfile.writeFile(this.outFile, masterList, { spaces: 2 }, err => {
+      if (err != null) console.error(err);
+    });
+
+    console.log(`Writing ${this.authorMapFile}`);
+    jsonfile.writeFile(this.authorMapFile, this.buildAuthorMap(), { spaces: 2 }, err => {
+      if (err != null) console.error(err);
+    });
+    // console.log(_.keys(this.buildAuthorMap()).sort(), _.keys(this.buildAuthorMap()).length);
+
+    console.log(`Writing ${this.keywordMapFile}`);
+    jsonfile.writeFile(this.keywordMapFile, this.buildKeyWordMap(), { spaces: 2 }, err => {
+      if (err != null) console.error(err);
+    });
+    // console.log(_.keys(this.buildKeyWordMap()).sort());
   }
 
   authorStrings(entry) {
-    const makeName = (auth) => (auth.firstNames.concat(auth.vons).concat(auth.lastNames).concat(auth.jrs)).join(' ');
+    const makeName = (auth) => (auth.firstNames.concat(auth.vons).concat(auth.lastNames).concat(auth.jrs)).join(' ')
+      .trim();
     return entry.getField('author').authors$.map(author => makeName(author));
   }
 
@@ -62,13 +109,87 @@ class CsdlTechReports {
     obj.key = citeKey;
     obj.type = type;
     // process regular fields
-    const processField = field => { if (entry.getField(field)) obj[field] = this.normalizedField(entry, field); };
+    const processField = field => {
+      if (entry.getField(field)) obj[field] = this.normalizedField(entry, field);
+    };
     const defaultFields = ['title', 'year', 'month', 'note', 'abstract', 'summary'];
     _.each(defaultFields, processField);
     _.each(this.specialFieldMap[type], processField);
     obj.authors = this.authorStrings(entry);
     obj.keywords = this.normalizedField(entry, 'keywords').split(',').map(str => str.trim());
     return obj;
+  }
+
+  isCsdlMember(author) {
+    const nonMembers = [
+      'Adam A. Porter',
+      'Alex Young',
+      'Alexandar Kavcic',
+      'Alexey Olkov',
+      'Anthony Kuh',
+      'Arnold P. Boedihardjo',
+      'Audris Mockus',
+      'Bill Giebink',
+      'Brian T. Pentland',
+      'Burt Leung',
+      'Christina Sablan',
+      'Christoph Aschwanden',
+      'Christopher Chan',
+      'Cliff Tomosada',
+      'Crystal Chen',
+      'Dag Sjoberg',
+      'Daniel Port',
+      'Dora Nakafuji',
+      'Emily Hill',
+      'Forrest Shull',
+      'Hakan Erdogmus',
+      'Hana Bowers',
+      'Herve Weitz',
+      'Jarrett Lee',
+      'Jeffrey Carver',
+      'Jeffrey K. Hollingsworth',
+      'Jennifer Saito',
+      'Jessica Lin',
+      'John Gustafson',
+      'Johnny Li',
+      'Kaveh Abhari',
+      'Keone Hiraide',
+      'Kiran Kavoori Ram',
+      'Larry Votta',
+      'Leilani Pena',
+      'Lorin Hochstein',
+      'Lutz Prechelt',
+      'Manfred Lerner',
+      'Mark F. Waterson',
+      'Martha S. Feldman',
+      'Martin Voelp',
+      'Marvin V. Zelkowitz',
+      'Matthias Fripp',
+      'Michelle Katchuck',
+      'Myriam Leggieri',
+      'Nico Zazworka',
+      'Nolan Y. Kiddo',
+      'Risa Khamsi',
+      'Sara K. Cobble',
+      'Sebastian Jekutsch',
+      'Sima Asgari',
+      'Stuart Faulk',
+      'Sunil Gandhi',
+      'Susan Frankenstein',
+      'Taiga Nakamura',
+      'Tim Oates',
+      'Timothy Burgess',
+      'Todd Baumeister',
+      'Tony Cowling',
+      'Tuan Huynh',
+      'Victor R. Basili',
+      'Walter Tichy',
+      'Weifeng Miao',
+      'Xiangli Xu',
+      'Xing Wang',
+      'William E. Doane',
+    ];
+    return _.findIndex(nonMembers, nonMember => nonMember === author) === -1;
   }
 }
 
