@@ -22,6 +22,8 @@ If the script fails with an authentication error, the simplest workaround is to 
   6. PhD, MS, and BS "badges" for research projects?
   7. Compute descriptive statistics to place in first section.
   8. Publications processing
+     - Move nonMembers to a data file.
+     - Create a sortKey field that's YYYYMM, where MM is 00 if not specified.
      - Create form to collect the "include" CSDL member and/or keyword.
      - Display results.
   10. Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat

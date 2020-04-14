@@ -11,6 +11,7 @@ class CsdlTechReports {
     this.outFile = 'src/data/PaperData.json';
     this.authorMapFile = 'src/data/PaperData.authormap.json';
     this.keywordMapFile = 'src/data/PaperData.keywordmap.json';
+    this.yearMapFile = 'src/data/PaperData.yearmap.json';
     const bibFileName = argv.bibfile;
     const bibString = fs.readFileSync(bibFileName, 'utf8');
     this.bibFile = bibtex.parseBibFile(bibString);
@@ -57,6 +58,21 @@ class CsdlTechReports {
     return keywordMap;
   }
 
+  buildYearMap() {
+    const yearMap = {};
+    const mapKey = (key) => {
+      const entry = this.getEntry(key);
+      const year = this.normalizedField(entry, 'year');
+      if (yearMap[year]) {
+        yearMap[year].push(key);
+      } else {
+        yearMap[year] = [key];
+      }
+    };
+    _.each(this.citeKeys, key => mapKey(key));
+    return yearMap;
+  }
+
   writeFiles() {
     jsonfile.spaces = 2;
     const masterList = _.map(this.citeKeys, key => this.getEntryObject(key));
@@ -76,6 +92,11 @@ class CsdlTechReports {
       if (err != null) console.error(err);
     });
     // console.log(_.keys(this.buildKeyWordMap()).sort());
+
+    console.log(`Writing ${this.yearMapFile}`);
+    jsonfile.writeFile(this.yearMapFile, this.buildYearMap(), { spaces: 2 }, err => {
+      if (err != null) console.error(err);
+    });
   }
 
   authorStrings(entry) {
