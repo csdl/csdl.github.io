@@ -6,6 +6,7 @@ import Title from './Title';
 import TechReports from './TechReports';
 import SectionButtons from './SectionButtons';
 import PaperCard from './PaperCard';
+import PaperForm from './PaperForm';
 
 class Papers extends React.Component {
   constructor(props) {
@@ -47,7 +48,7 @@ class Papers extends React.Component {
         <Title title={'Papers'}/>
         <SectionButtons onClick={this.onClickSectionButton} total={this.techreports.total()}/>
         <p style={{ textAlign: 'center' }}>Click (or tap) an entry to display (or hide) the abstract.</p>
-        {this.state.display === 'recent' ? this.renderRecent() : this.renderAll()}
+        {this.state.display === 'recent' ? this.renderRecent() : <PaperForm/>}
       </Container>
     </div>
   );

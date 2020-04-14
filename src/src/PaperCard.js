@@ -13,7 +13,7 @@ const formatMsThesis = entry => `${entry.authors.join(', ')},  **${entry.title}*
 
 const formatInProceedings = entry => `${entry.authors.join(', ')},  **${entry.title}**, In *${entry.booktitle}*, ${entry.address ? `${entry.address},` : ''} ${entry.month} ${entry.year}, ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
 
-const formatArticle = entry => `${entry.authors.join(', ')},  **${entry.title}**, In *${entry.journal}*, ${entry.volume ? `Volume ${entry.volume},`: ''} ${entry.number ? `Number ${entry.number},` : ''} ${entry.month ? entry.month : ''} ${entry.year},  ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
+const formatArticle = entry => `${entry.authors.join(', ')},  **${entry.title}**, In *${entry.journal}*, ${entry.volume ? `Volume ${entry.volume},` : ''} ${entry.number ? `Number ${entry.number},` : ''} ${entry.month ? entry.month : ''} ${entry.year},  ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
 
 const formatMisc = entry => `${entry.authors.join(', ')},  **${entry.title}**, ${entry.howpublished}, ${entry.month} ${entry.year}, ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
 
@@ -36,7 +36,7 @@ function PaperCard(props) {
     <Accordion>
       <Card style={cardStyle}>
         <Accordion.Toggle as={Card.Header} eventKey="0">
-          <Markdown style={{marginBottom: 0}}>
+          <Markdown>
             {formatMap[props.entry.type](props.entry)}
           </Markdown>
         </Accordion.Toggle>

@@ -1,5 +1,8 @@
 import _ from 'lodash';
 import paperData from './data/PaperData';
+import authorData from './data/PaperData.authormap';
+import keywordData from './data/PaperData.keywordmap.json';
+import yearData from './data/PaperData.yearmap.json';
 
 class TechReports {
 
@@ -24,6 +27,18 @@ class TechReports {
 
   getEntry(key) {
     return _.find(paperData, entry => entry.key === key);
+  }
+
+  getAuthors() {
+    return _.keys(authorData).sort();
+  }
+
+  getTopics() {
+    return _.keys(keywordData).sort();
+  }
+
+  getYears() {
+    return _.keys(yearData).sort().reverse();
   }
 }
 
