@@ -1,13 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import SimpleSchema from 'simpl-schema';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
-import _ from 'lodash';
+// import _ from 'lodash';
 import { AutoForm, SubmitField, SelectField } from 'uniforms-bootstrap4';
-import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import TechReports from './TechReports';
-import PaperCard from './PaperCard';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const makeSchema = (authors, topics, years) => new SimpleSchema({
@@ -32,6 +30,21 @@ class PaperForm extends React.Component {
     console.log(this.state);
   }
 
+  appendAuthorCount(author) {
+    const count = this.techreports.getAuthorCount(author);
+    return (count ? `${author} (${count})` : author);
+  }
+
+  appendTopicCount(topic) {
+    const count = this.techreports.getTopicCount(topic);
+    return (count ? `${topic} (${count})` : topic);
+  }
+
+  appendYearCount(year) {
+    const count = this.techreports.getYearCount(year);
+    return (count ? `${year} (${count})` : year);
+  }
+
   render = () => {
     const authors = [allAuthorsLabel].concat(this.techreports.getAuthors());
     const topics = [allTopicsLabel].concat(this.techreports.getTopics());
@@ -41,9 +54,15 @@ class PaperForm extends React.Component {
       <div>
         <AutoForm schema={formSchema} onSubmit={data => this.submit(data)}>
           <Row className="justify-content-center">
-            <div style={{ paddingRight: '10px' }}><SelectField name='author' label={false} showInlineError={true}/></div>
-            <div style={{ paddingRight: '10px' }}><SelectField name='topic' label={false} showInlineError={true}/></div>
-            <div style={{ paddingRight: '10px' }}><SelectField name='year' label={false} showInlineError={true}/></div>
+            <div style={{ paddingRight: '10px' }}>
+              <SelectField name='author' label={false} transform={(author) => this.appendAuthorCount(author)}/>
+            </div>
+            <div style={{ paddingRight: '10px' }}>
+              <SelectField name='topic' label={false} transform={(topic) => this.appendTopicCount(topic)}/>
+            </div>
+            <div style={{ paddingRight: '10px' }}>
+              <SelectField name='year' label={false} transform={(year) => this.appendYearCount(year)}/>
+            </div>
             <SubmitField value='Select Papers'/>
           </Row>
         </AutoForm>

@@ -16,7 +16,7 @@
     "csdl-95-16",
     "csdl-96-05"
   ],
-  "Publications-Workshops": [
+  "Pubs-Workshop": [
     "csdl-91-03",
     "csdl-92-03",
     "csdl-92-04",
@@ -36,7 +36,7 @@
     "csdl2-11-03",
     "csdl2-13-10"
   ],
-  "Publications-Conferences": [
+  "Pubs-Conference": [
     "csdl-92-01",
     "csdl-93-07",
     "csdl-93-17",
@@ -112,7 +112,7 @@
     "csdl-93-13",
     "csdl-94-02"
   ],
-  "Thesis-Proposals": [
+  "Thesis-Proposal": [
     "csdl-93-01",
     "csdl-94-07",
     "csdl-94-09",
@@ -130,7 +130,7 @@
     "csdl2-10-04",
     "csdl2-13-02"
   ],
-  "Publications-Journals": [
+  "Pubs-Journal": [
     "csdl-93-09",
     "csdl-93-22",
     "csdl-94-04",
@@ -507,12 +507,15 @@
     "csdl2-20-01",
     "csdl2-20-02"
   ],
-  "Athletic-Software-Engineering": [
+  "Ath-Soft-Eng": [
     "csdl2-15-03",
     "csdl2-16-01",
     "csdl2-19-03"
   ],
-  "Publications-Book-Chapters": [
+  "Pubs-Book-Chap": [
     "csdl2-16-03"
+  ],
+  "RadGrad": [
+    "csdl2-19-04"
   ]
 }

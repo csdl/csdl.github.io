@@ -12,7 +12,7 @@
     ],
     "keywords": [
       "EGRET",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -28,7 +28,7 @@
     ],
     "keywords": [
       "EGRET",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -62,7 +62,7 @@
     ],
     "keywords": [
       "CLARE",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -79,7 +79,7 @@
     ],
     "keywords": [
       "CSRS",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -118,7 +118,7 @@
     "type": "inproceedings",
     "title": "Improving Software Quality through Computer Supported Collaborative Review",
     "year": 1993,
-    "month": "September Publications-Conferences",
+    "month": "September Pubs-Conference",
     "note": "ftp://ftp.ics.hawaii.edu/pub/tr/ics-tr-92-07.pdf",
     "abstract": "Formal technical review (FTR) is a cornerstone of software quality\r\nassurance.  However, the labor intensive and manual nature of review, along\r\nwith basic unresolved questions about its process and products, means that\r\nreview is typically under-utilized or inefficiently applied within the\r\nsoftware development process. This paper introduces CSRS, a\r\ncomputer-supported cooperative work environment for software review that\r\nimproves the efficiency of review activities and supports empirical\r\ninvestigation of the appropriate parameters for review. The paper presents\r\na typical scenario of CSRS in review, its data and process model,\r\napplication to process maturation, relationship to other research, current\r\nstatus, and future directions.",
     "booktitle": "Proceedings of the Third European Conference on Computer Supported Cooperative Work",
@@ -144,7 +144,7 @@
     ],
     "keywords": [
       "EGRET",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -209,7 +209,7 @@
     ],
     "keywords": [
       "CLARE",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -317,7 +317,7 @@
     ],
     "keywords": [
       "CSRS",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -336,7 +336,7 @@
     ],
     "keywords": [
       "EGRET",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -455,7 +455,7 @@
     ],
     "keywords": [
       "CSRS",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -529,7 +529,7 @@
     ],
     "keywords": [
       "CLARE",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -548,7 +548,7 @@
     ],
     "keywords": [
       "CSRS",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -601,7 +601,7 @@
     ],
     "keywords": [
       "CSRS",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -620,7 +620,7 @@
     ],
     "keywords": [
       "CLARE",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -653,7 +653,7 @@
     ],
     "keywords": [
       "CSRS",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -686,7 +686,7 @@
       "Rosemary Andrada"
     ],
     "keywords": [
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -739,7 +739,7 @@
     ],
     "keywords": [
       "EGRET",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -757,7 +757,7 @@
     ],
     "keywords": [
       "AEN",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -775,7 +775,7 @@
     ],
     "keywords": [
       "AEN",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -909,7 +909,7 @@
       "Carleton A. Moore"
     ],
     "keywords": [
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -1065,7 +1065,7 @@
     ],
     "keywords": [
       "CSRS",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -1138,7 +1138,7 @@
     "keywords": [
       "FTR",
       "CSRS",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -1176,7 +1176,7 @@
     "keywords": [
       "FTR",
       "CSRS",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -1230,7 +1230,7 @@
     "keywords": [
       "FTR",
       "CSRS",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -1299,7 +1299,7 @@
     ],
     "keywords": [
       "Leap",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -1318,7 +1318,7 @@
     ],
     "keywords": [
       "PSP",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -1376,7 +1376,7 @@
     ],
     "keywords": [
       "MCS",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -1429,7 +1429,7 @@
     ],
     "keywords": [
       "PSP",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -1447,7 +1447,7 @@
     ],
     "keywords": [
       "Leap",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -1465,7 +1465,7 @@
     ],
     "keywords": [
       "PSP",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -1586,7 +1586,7 @@
     "keywords": [
       "Leap",
       "FTR",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -1604,7 +1604,7 @@
     ],
     "keywords": [
       "Leap",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -1674,7 +1674,7 @@
     ],
     "keywords": [
       "MCS",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -1709,7 +1709,7 @@
     ],
     "keywords": [
       "Leap",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -1732,7 +1732,7 @@
     "keywords": [
       "Leap",
       "PSP",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -1767,7 +1767,7 @@
     ],
     "keywords": [
       "Inca",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -1945,7 +1945,7 @@
     ],
     "keywords": [
       "VCommerce",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -2016,7 +2016,7 @@
     ],
     "keywords": [
       "TsunamiSim",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -2034,7 +2034,7 @@
     ],
     "keywords": [
       "Inca",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -2104,7 +2104,7 @@
     ],
     "keywords": [
       "Hackystat",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -2154,7 +2154,7 @@
       "Bill Giebink"
     ],
     "keywords": [
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -2249,7 +2249,7 @@
       "PSP",
       "Leap",
       "Hackystat",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -2357,7 +2357,7 @@
     "keywords": [
       "Hackystat",
       "JBlanket",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -2466,7 +2466,7 @@
     ],
     "keywords": [
       "Hackystat",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -2524,7 +2524,7 @@
     ],
     "keywords": [
       "HPC",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -2546,7 +2546,7 @@
     ],
     "keywords": [
       "HPC",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -2653,7 +2653,7 @@
     ],
     "keywords": [
       "Hackystat",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -2688,7 +2688,7 @@
       "Qin Zhang"
     ],
     "keywords": [
-      "Thesis-Proposals",
+      "Thesis-Proposal",
       "Hackystat"
     ]
   },
@@ -2708,7 +2708,7 @@
     "keywords": [
       "HPC",
       "Hackystat",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -2870,7 +2870,7 @@
     "keywords": [
       "Hackystat",
       "Zorro",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -2905,7 +2905,7 @@
     ],
     "keywords": [
       "Hackystat",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -2927,7 +2927,7 @@
     ],
     "keywords": [
       "Hackystat",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -2954,7 +2954,7 @@
     ],
     "keywords": [
       "HPC",
-      "Publications-Journals",
+      "Pubs-Journal",
       "Hackystat"
     ]
   },
@@ -2987,7 +2987,7 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "Publications-Journals",
+      "Pubs-Journal",
       "Hackystat"
     ]
   },
@@ -3005,7 +3005,7 @@
       "Hongbing Kou"
     ],
     "keywords": [
-      "Thesis-Proposals",
+      "Thesis-Proposal",
       "Zorro",
       "Hackystat"
     ]
@@ -3024,7 +3024,7 @@
       "Hongbing Kou"
     ],
     "keywords": [
-      "Publications-Conferences",
+      "Pubs-Conference",
       "Zorro",
       "Hackystat"
     ]
@@ -3061,7 +3061,7 @@
     ],
     "keywords": [
       "Hackystat",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -3097,7 +3097,7 @@
     ],
     "keywords": [
       "Sustainability",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -3152,7 +3152,7 @@
     "keywords": [
       "Hackystat",
       "Zorro",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -3171,7 +3171,7 @@
     ],
     "keywords": [
       "Hackystat",
-      "Publications-Conferences",
+      "Pubs-Conference",
       "SoftwareICU"
     ]
   },
@@ -3261,7 +3261,7 @@
       "Pavel Senin"
     ],
     "keywords": [
-      "Thesis-Proposals",
+      "Thesis-Proposal",
       "Trajectory",
       "Hackystat"
     ]
@@ -3387,7 +3387,7 @@
     ],
     "keywords": [
       "Sustainability",
-      "Thesis-Proposals",
+      "Thesis-Proposal",
       "WattDepot",
       "KukuiCup"
     ]
@@ -3426,7 +3426,7 @@
     ],
     "keywords": [
       "Sustainability",
-      "Thesis-Proposals",
+      "Thesis-Proposal",
       "WattDepot",
       "KukuiCup",
       "Makahiki"
@@ -3450,7 +3450,7 @@
       "Sustainability",
       "WattDepot",
       "SmartGrid",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -3492,7 +3492,7 @@
       "WattDepot",
       "KukuiCup",
       "Makahiki",
-      "Publications-Conferences",
+      "Pubs-Conference",
       "Gamification"
     ]
   },
@@ -3512,7 +3512,7 @@
     "keywords": [
       "Trajectory",
       "Hackystat",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -3608,7 +3608,7 @@
     "keywords": [
       "Sustainability",
       "KukuiCup",
-      "Publications-Workshops",
+      "Pubs-Workshop",
       "Gamification"
     ]
   },
@@ -3628,7 +3628,7 @@
     "keywords": [
       "Sustainability",
       "KukuiCup",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -3687,7 +3687,7 @@
     "keywords": [
       "Trajectory",
       "Hackystat",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -3779,7 +3779,7 @@
       "Makahiki",
       "WattDepot",
       "KukuiCup",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -3802,7 +3802,7 @@
     "keywords": [
       "Sustainability",
       "KukuiCup",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -3821,7 +3821,7 @@
       "PSP",
       "Leap",
       "Hackystat",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -3845,7 +3845,7 @@
       "Sustainability",
       "KukuiCup",
       "Makahiki",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -3883,7 +3883,7 @@
     "keywords": [
       "Sustainability",
       "Makahiki",
-      "Thesis-Proposals"
+      "Thesis-Proposal"
     ]
   },
   {
@@ -3906,7 +3906,7 @@
       "Sustainability",
       "KukuiCup",
       "Makahiki",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -3931,7 +3931,7 @@
       "Sustainability",
       "KukuiCup",
       "Makahiki",
-      "Publications-Journals"
+      "Pubs-Journal"
     ]
   },
   {
@@ -3969,7 +3969,7 @@
     ],
     "keywords": [
       "Sustainability",
-      "Publications-Workshops"
+      "Pubs-Workshop"
     ]
   },
   {
@@ -4066,7 +4066,7 @@
     ],
     "keywords": [
       "Trajectory",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -4110,7 +4110,7 @@
       "Sustainability",
       "KukuiCup",
       "Makahiki",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -4149,8 +4149,8 @@
       "Daniel Port"
     ],
     "keywords": [
-      "Athletic-Software-Engineering",
-      "Publications-Journals"
+      "Ath-Soft-Eng",
+      "Pubs-Journal"
     ]
   },
   {
@@ -4169,8 +4169,8 @@
       "Emily Hill"
     ],
     "keywords": [
-      "Athletic-Software-Engineering",
-      "Publications-Conferences"
+      "Ath-Soft-Eng",
+      "Pubs-Conference"
     ]
   },
   {
@@ -4215,7 +4215,7 @@
       "Sustainability",
       "KukuiCup",
       "Makahiki",
-      "Publications-Book-Chapters"
+      "Pubs-Book-Chap"
     ]
   },
   {
@@ -4253,7 +4253,7 @@
       "Sustainability",
       "SmartGrid",
       "PowerQuality",
-      "Publications-Conferences"
+      "Pubs-Conference"
     ]
   },
   {
@@ -4271,8 +4271,8 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "Publications-Journals",
-      "Athletic-Software-Engineering"
+      "Pubs-Journal",
+      "Ath-Soft-Eng"
     ]
   },
   {
@@ -4291,7 +4291,8 @@
       "Seungoh Paek"
     ],
     "keywords": [
-      "Publications-Conferences"
+      "RadGrad",
+      "Pubs-Conference"
     ]
   },
   {

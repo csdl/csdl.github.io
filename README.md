@@ -14,17 +14,19 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  3. Implement publications
-  4. Implement people
-  5. Implement partners
-  4. Implement a footer with contact info.
-  5. Implement scroll https://github.com/ganderzz/react-scroll-to
-  6. PhD, MS, and BS "badges" for research projects?
-  7. Compute descriptive statistics to place in first section.
-  8. Publications processing
-     - Move nonMembers to a data file.
+ * Publications processing
      - Create a sortKey field that's YYYYMM, where MM is 00 if not specified.
-     - Create form to collect the "include" CSDL member and/or keyword.
      - Display results.
-  10. Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat
-  11. Backup source. Then copy entire TR library into public directory. See if it wipes it on deploy. Check out deploy script
+  * Add papers for each project in project section.
+  * Implement people
+  * Implement partners
+  * Implement a footer with contact info.
+  * Move nonMembers to a data file.
+  * Implement scroll https://github.com/ganderzz/react-scroll-to
+  * Compute descriptive statistics to place in first section.
+  * Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat
+  * Revise this readme to document site management.
+
+### Post initial deploy
+
+  * Move TR Library into this repo.

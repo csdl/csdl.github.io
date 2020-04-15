@@ -25,21 +25,19 @@ class TechReports {
     return this.extractKey(_.filter(paperData, entry => entry.type === type));
   }
 
-  getEntry(key) {
-    return _.find(paperData, entry => entry.key === key);
-  }
+  getEntry = (key) => _.find(paperData, entry => entry.key === key);
 
-  getAuthors() {
-    return _.keys(authorData).sort();
-  }
+  getAuthorCount = (author) => (authorData[author] ? authorData[author].length : 0);
 
-  getTopics() {
-    return _.keys(keywordData).sort();
-  }
+  getTopicCount = (topic) => (keywordData[topic] ? keywordData[topic].length : 0);
 
-  getYears() {
-    return _.keys(yearData).sort().reverse();
-  }
+  getYearCount = (year) => (yearData[year] ? yearData[year].length : 0);
+
+  getAuthors = () => _.keys(authorData).sort();
+
+  getTopics = () => _.keys(keywordData).sort();
+
+  getYears = () => _.keys(yearData).sort().reverse();
 }
 
 export default TechReports;
