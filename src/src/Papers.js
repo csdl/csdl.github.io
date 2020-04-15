@@ -28,6 +28,7 @@ class Papers extends React.Component {
     const keys = this.techreports.getRecentKeys();
     return (
       <div>
+        <p style={{ textAlign: 'center' }}>Click (or tap) an entry to display (or hide) the abstract.</p>
         {_.map(keys, (key, idx) => <PaperCard key={idx} entry={this.techreports.getEntry(key)}/>)}
       </div>
     );
@@ -47,7 +48,6 @@ class Papers extends React.Component {
       <Container>
         <Title title={'Papers'}/>
         <SectionButtons onClick={this.onClickSectionButton} total={this.techreports.total()}/>
-        <p style={{ textAlign: 'center' }}>Click (or tap) an entry to display (or hide) the abstract.</p>
         {this.state.display === 'recent' ? this.renderRecent() : <PaperForm/>}
       </Container>
     </div>

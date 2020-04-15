@@ -1,11 +1,11 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import _ from 'lodash';
 import SimpleSchema from 'simpl-schema';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
-// import _ from 'lodash';
 import { AutoForm, SubmitField, SelectField } from 'uniforms-bootstrap4';
 import Row from 'react-bootstrap/Row';
 import TechReports from './TechReports';
+import PaperCard from './PaperCard';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const makeSchema = (authors, topics, years) => new SimpleSchema({
@@ -23,11 +23,14 @@ class PaperForm extends React.Component {
     super(props);
     this.state = { author: null, topic: null, year: null };
     this.techreports = new TechReports();
+    this.authors = [allAuthorsLabel].concat(this.techreports.getAuthors());
+    this.topics = [allTopicsLabel].concat(this.techreports.getTopics());
+    this.years = [allYearsLabel].concat(this.techreports.getYears());
+    this.formSchema = makeSchema(this.authors, this.topics, this.years);
   }
 
   submit(data) {
     this.setState({ author: data.author, topic: data.topic, year: data.year });
-    console.log(this.state);
   }
 
   appendAuthorCount(author) {
@@ -45,14 +48,40 @@ class PaperForm extends React.Component {
     return (count ? `${year} (${count})` : year);
   }
 
+  determineEntries() {
+    let authorKeys = [];
+    let topicKeys = [];
+    let yearKeys = [];
+    if (this.state.author !== null) {
+      if (this.state.author === allAuthorsLabel) {
+        authorKeys = this.techreports.getKeys();
+      } else {
+        authorKeys = this.techreports.getKeysByAuthor(this.state.author);
+      }
+
+      if (this.state.topic === allTopicsLabel) {
+        topicKeys = this.techreports.getKeys();
+      } else {
+        topicKeys = this.techreports.getKeysByTopic(this.state.topic);
+      }
+
+      if (this.state.year === allYearsLabel) {
+        yearKeys = this.techreports.getKeys();
+      } else {
+        yearKeys = this.techreports.getKeysByYear(this.state.year);
+      }
+    }
+    const intersectedKeys = _.intersection(authorKeys, topicKeys, yearKeys);
+    const sortedKeys = this.techreports.getSortedKeys(intersectedKeys).reverse();
+    return _.map(sortedKeys, (key) => this.techreports.getEntry(key));
+  }
+
   render = () => {
-    const authors = [allAuthorsLabel].concat(this.techreports.getAuthors());
-    const topics = [allTopicsLabel].concat(this.techreports.getTopics());
-    const years = [allYearsLabel].concat(this.techreports.getYears());
-    const formSchema = makeSchema(authors, topics, years);
+    const entries = this.determineEntries();
     return (
       <div>
-        <AutoForm schema={formSchema} onSubmit={data => this.submit(data)}>
+        <p style={{ textAlign: 'center' }}>Display intersection of an Author, Topic, and/or Year.</p>
+        <AutoForm schema={this.formSchema} onSubmit={data => this.submit(data)}>
           <Row className="justify-content-center">
             <div style={{ paddingRight: '10px' }}>
               <SelectField name='author' label={false} transform={(author) => this.appendAuthorCount(author)}/>
@@ -66,6 +95,8 @@ class PaperForm extends React.Component {
             <SubmitField value='Select Papers'/>
           </Row>
         </AutoForm>
+        {(entries.length > 0) && <p style={{ textAlign: 'center' }}>Click (or tap) an entry to display (or hide) the abstract.</p>}
+        {_.map(entries, (entry, idx) => <PaperCard key={idx} entry={entry}/>)}
       </div>
     );
   }

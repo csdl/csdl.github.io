@@ -6,6 +6,23 @@ const bibtex = require('bibtex');
 const jsonfile = require('jsonfile');
 const argv = require('minimist')(process.argv.slice(2));
 
+function computeMonthNumberString(month) {
+  if (!month) { return '00'; }
+  if (month.toLowerCase().startsWith('jan')) { return '01'; }
+  if (month.toLowerCase().startsWith('feb')) { return '02'; }
+  if (month.toLowerCase().startsWith('mar')) { return '03'; }
+  if (month.toLowerCase().startsWith('apr')) { return '04'; }
+  if (month.toLowerCase().startsWith('may')) { return '05'; }
+  if (month.toLowerCase().startsWith('jun')) { return '06'; }
+  if (month.toLowerCase().startsWith('jul')) { return '07'; }
+  if (month.toLowerCase().startsWith('aug')) { return '08'; }
+  if (month.toLowerCase().startsWith('sep')) { return '09'; }
+  if (month.toLowerCase().startsWith('oct')) { return '10'; }
+  if (month.toLowerCase().startsWith('nov')) { return '11'; }
+  if (month.toLowerCase().startsWith('dec')) { return '12'; }
+  return '00';
+}
+
 class CsdlTechReports {
   constructor() {
     this.outFile = 'src/data/PaperData.json';
@@ -138,6 +155,7 @@ class CsdlTechReports {
     _.each(this.specialFieldMap[type], processField);
     obj.authors = this.authorStrings(entry);
     obj.keywords = this.normalizedField(entry, 'keywords').split(',').map(str => str.trim());
+    obj.sortKey = parseInt(`${obj.year}${computeMonthNumberString(obj.month)}`, 10);
     return obj;
   }
 

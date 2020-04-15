@@ -14,10 +14,10 @@ const sectionStyle2 = { ...sectionStyle, backgroundColor: lightGreenColorCode };
 ReactDOM.render(
   <React.StrictMode>
     <Top/>
-    <Papers sectionStyle={sectionStyle2}/>
     <Home sectionStyle={sectionStyle}/>
     <News sectionStyle={sectionStyle2}/>
     <Research sectionStyle={sectionStyle}/>
+    <Papers sectionStyle={sectionStyle2}/>
   </React.StrictMode>,
   // eslint-disable-next-line no-undef
   document.getElementById('root'),

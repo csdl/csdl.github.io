@@ -14,10 +14,8 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
- * Publications processing
-     - Create a sortKey field that's YYYYMM, where MM is 00 if not specified.
-     - Display results.
   * Add papers for each project in project section.
+  * Add an athletic software engineering project.
   * Implement people
   * Implement partners
   * Implement a footer with contact info.

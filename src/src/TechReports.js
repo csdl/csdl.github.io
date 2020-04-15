@@ -38,6 +38,14 @@ class TechReports {
   getTopics = () => _.keys(keywordData).sort();
 
   getYears = () => _.keys(yearData).sort().reverse();
+
+  getKeysByAuthor = (author) => authorData[author];
+
+  getKeysByTopic = (topic) => keywordData[topic];
+
+  getKeysByYear = (year) => yearData[year];
+
+  getSortedKeys = (keys) => [...keys].sort((a, b) => a.sortKey - b.sortKey);
 }
 
 export default TechReports;
