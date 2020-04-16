@@ -2803,6 +2803,7 @@
     ],
     "keywords": [
       "Hackystat",
+      "Telemetry",
       "Pubs-Journal"
     ],
     "sortKey": 200508
@@ -2841,7 +2842,8 @@
     ],
     "keywords": [
       "Thesis-Proposal",
-      "Hackystat"
+      "Hackystat",
+      "Telemetry"
     ],
     "sortKey": 200510
   },
@@ -2938,7 +2940,8 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "Hackystat"
+      "Hackystat",
+      "Telemetry"
     ],
     "sortKey": 200506
   },
@@ -2974,7 +2977,8 @@
       "Philip M. Johnson"
     ],
     "keywords": [
-      "Hackystat"
+      "Hackystat",
+      "Telemetry"
     ],
     "sortKey": 200507
   },
@@ -2992,6 +2996,7 @@
     ],
     "keywords": [
       "Thesis-MS",
+      "C-GQM",
       "Hackystat"
     ],
     "sortKey": 200508
@@ -3050,6 +3055,7 @@
     ],
     "keywords": [
       "Hackystat",
+      "Telemetry",
       "Thesis-PhD"
     ],
     "sortKey": 200612
@@ -3289,7 +3295,8 @@
       "Pavel Senin"
     ],
     "keywords": [
-      "Hackystat"
+      "Hackystat",
+      "Trajectory"
     ],
     "sortKey": 200812
   },

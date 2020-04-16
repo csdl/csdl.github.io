@@ -45,7 +45,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --quiet --ext .jsx --ext .js ./src",
-    "build-techreports": "scripts/build-techreports.js --bibfile csdl-trs.bib"
+    "build-techreports": "scripts/build-techreports.js --bibfile src/data/PaperData.bib"
   },
   "eslintConfig": {
     "extends": "react-app"

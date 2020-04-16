@@ -30,6 +30,7 @@ class CsdlTechReports {
     this.keywordMapFile = 'src/data/PaperData.keywordmap.json';
     this.yearMapFile = 'src/data/PaperData.yearmap.json';
     const bibFileName = argv.bibfile;
+    console.log('Reading', bibFileName);
     const bibString = fs.readFileSync(bibFileName, 'utf8');
     this.bibFile = bibtex.parseBibFile(bibString);
     this.citeKeys = _.keys(this.bibFile.entries$);

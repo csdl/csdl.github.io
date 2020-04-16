@@ -3,10 +3,15 @@ import Card from 'react-bootstrap/Card';
 import Markdown from 'react-markdown';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
+import _ from 'lodash';
+import TechReports from './TechReports';
 import { greenColorCode } from './Constants';
+import PaperCard from './PaperCard';
+
 
 const cardStyle = { border: `1px solid ${greenColorCode}` };
 const buttonStyle = { backgroundColor: greenColorCode, borderColor: greenColorCode };
+const techReports = new TechReports();
 
 function smallCard(date, media, project, text, showLess, showOneCard) {
   return (
@@ -26,7 +31,9 @@ function smallCard(date, media, project, text, showLess, showOneCard) {
   );
 }
 
-function bigCard(date, project, bigImage, longText, showOneCard) {
+function bigCard(date, project, keyword, bigImage, longText, showOneCard) {
+  const paperKeys = techReports.getKeysByKeyword(keyword);
+  const entries = (paperKeys) ? techReports.getSortedEntries(_.map(paperKeys, key => techReports.getEntry(key))) : [];
   return (
     <Card style={cardStyle}>
       <Card.Img variant="top" src={ bigImage }/>
@@ -34,6 +41,8 @@ function bigCard(date, project, bigImage, longText, showOneCard) {
         <Card.Title style={{ color: greenColorCode }}>{project} ({date})</Card.Title>
         <Card.Text as='div'>
           <Markdown source={longText}/>
+          {(entries.length > 0) && <Markdown source='##### Publications'/>}
+          {(entries.length > 0) && _.map(entries, (entry, idx) => <PaperCard key={idx} entry={entry}/>)}
         </Card.Text>
       </Card.Body>
       <Card.Footer>
@@ -44,10 +53,10 @@ function bigCard(date, project, bigImage, longText, showOneCard) {
 }
 
 function ResearchCard(props) {
-  const { date, media, project, text, url, showOneCard, showLess, bigImage, longText } = props;
+  const { date, media, project, keyword, text, url, showOneCard, showLess, bigImage, longText } = props;
   return (
     showLess ?
-      bigCard(date, project, bigImage, longText, showOneCard) :
+      bigCard(date, project, keyword, bigImage, longText, showOneCard) :
       smallCard(date, media, project, text, url, showOneCard, showLess)
   );
 }
@@ -56,6 +65,7 @@ ResearchCard.propTypes = {
   date: PropTypes.string.isRequired,
   media: PropTypes.string.isRequired,
   project: PropTypes.string.isRequired,
+  keyword: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   showOneCard: PropTypes.func.isRequired,

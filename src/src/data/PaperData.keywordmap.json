@@ -364,8 +364,18 @@
     "csdl2-05-02",
     "csdl2-06-08"
   ],
+  "Telemetry": [
+    "csdl2-04-11",
+    "csdl2-04-16",
+    "csdl2-05-05",
+    "csdl2-05-07",
+    "csdl2-06-05"
+  ],
   "PRI": [
     "csdl2-05-01"
+  ],
+  "C-GQM": [
+    "csdl2-05-09"
   ],
   "Zorro": [
     "csdl2-06-02",
@@ -415,17 +425,18 @@
     "csdl2-20-01",
     "csdl2-20-02"
   ],
-  "SoftwareICU": [
-    "csdl2-09-02",
-    "csdl2-09-03",
-    "csdl2-09-10"
-  ],
   "Trajectory": [
+    "csdl2-08-04",
     "csdl2-09-08",
     "csdl2-09-09",
     "csdl2-10-09",
     "csdl2-11-10",
     "csdl2-14-06"
+  ],
+  "SoftwareICU": [
+    "csdl2-09-02",
+    "csdl2-09-03",
+    "csdl2-09-10"
   ],
   "WattDepot": [
     "csdl2-09-15",

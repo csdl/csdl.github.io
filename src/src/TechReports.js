@@ -29,19 +29,19 @@ class TechReports {
 
   getAuthorCount = (author) => (authorData[author] ? authorData[author].length : 0);
 
-  getTopicCount = (topic) => (keywordData[topic] ? keywordData[topic].length : 0);
+  getKeywordCount = (topic) => (keywordData[topic] ? keywordData[topic].length : 0);
 
   getYearCount = (year) => (yearData[year] ? yearData[year].length : 0);
 
   getAuthors = () => _.keys(authorData).sort();
 
-  getTopics = () => _.keys(keywordData).sort();
+  getKeywords = () => _.keys(keywordData).sort();
 
   getYears = () => _.keys(yearData).sort().reverse();
 
   getKeysByAuthor = (author) => authorData[author];
 
-  getKeysByTopic = (topic) => keywordData[topic];
+  getKeysByKeyword = (topic) => keywordData[topic];
 
   getKeysByYear = (year) => yearData[year];
 

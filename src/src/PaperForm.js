@@ -8,29 +8,29 @@ import TechReports from './TechReports';
 import PaperCard from './PaperCard';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
-const makeSchema = (authors, topics, years) => new SimpleSchema({
+const makeSchema = (authors, keywords, years) => new SimpleSchema({
   author: { type: String, label: 'Author', allowedValues: authors, defaultValue: authors[0] },
-  topic: { type: String, label: 'Topic', allowedValues: topics, defaultValue: topics[0] },
+  keyword: { type: String, label: 'Keyword', allowedValues: keywords, defaultValue: keywords[0] },
   year: { type: String, label: 'Year', allowedValues: years, defaultValue: years[0] },
 });
 
 const allAuthorsLabel = '(All Authors)';
-const allTopicsLabel = '(All Topics)';
+const allKeywordsLabel = '(All Keywords)';
 const allYearsLabel = '(All Years)';
 
 class PaperForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { author: null, topic: null, year: null };
+    this.state = { author: null, keyword: null, year: null };
     this.techreports = new TechReports();
     this.authors = [allAuthorsLabel].concat(this.techreports.getAuthors());
-    this.topics = [allTopicsLabel].concat(this.techreports.getTopics());
+    this.keywords = [allKeywordsLabel].concat(this.techreports.getKeywords());
     this.years = [allYearsLabel].concat(this.techreports.getYears());
-    this.formSchema = makeSchema(this.authors, this.topics, this.years);
+    this.formSchema = makeSchema(this.authors, this.keywords, this.years);
   }
 
   submit(data) {
-    this.setState({ author: data.author, topic: data.topic, year: data.year });
+    this.setState({ author: data.author, keyword: data.keyword, year: data.year });
   }
 
   appendAuthorCount(author) {
@@ -38,9 +38,9 @@ class PaperForm extends React.Component {
     return (count ? `${author} (${count})` : author);
   }
 
-  appendTopicCount(topic) {
-    const count = this.techreports.getTopicCount(topic);
-    return (count ? `${topic} (${count})` : topic);
+  appendKeywordCount(keyword) {
+    const count = this.techreports.getKeywordCount(keyword);
+    return (count ? `${keyword} (${count})` : keyword);
   }
 
   appendYearCount(year) {
@@ -57,8 +57,8 @@ class PaperForm extends React.Component {
     intersectList.push(this.techreports.getKeysByAuthor(this.state.author));
     }
 
-    if (this.state.topic !== allTopicsLabel) {
-      intersectList.push(this.techreports.getKeysByTopic(this.state.topic));
+    if (this.state.keyword !== allKeywordsLabel) {
+      intersectList.push(this.techreports.getKeysByKeyword(this.state.keyword));
     }
 
     if (this.state.year !== allYearsLabel) {
@@ -80,14 +80,14 @@ class PaperForm extends React.Component {
     const entries = this.determineEntries();
     return (
       <div>
-        <p style={{ textAlign: 'center' }}>Display intersection of an Author, Topic, and/or Year.</p>
+        <p style={{ textAlign: 'center' }}>Display intersection of an Author, Keyword, and/or Year.</p>
         <AutoForm schema={this.formSchema} onSubmit={data => this.submit(data)}>
           <Row className="justify-content-center">
             <div style={{ paddingRight: '10px' }}>
               <SelectField name='author' label={false} transform={(author) => this.appendAuthorCount(author)}/>
             </div>
             <div style={{ paddingRight: '10px' }}>
-              <SelectField name='topic' label={false} transform={(topic) => this.appendTopicCount(topic)}/>
+              <SelectField name='keyword' label={false} transform={(keyword) => this.appendKeywordCount(keyword)}/>
             </div>
             <div style={{ paddingRight: '10px' }}>
               <SelectField name='year' label={false} transform={(year) => this.appendYearCount(year)}/>
