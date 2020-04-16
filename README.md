@@ -14,13 +14,12 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  * Add an athletic software engineering project.
   * Implement people
   * Implement partners
+  * Update home section with partner funding.
   * Implement a footer with contact info.
   * Move nonMembers to a data file.
   * Implement scroll https://github.com/ganderzz/react-scroll-to
-  * Compute descriptive statistics to place in first section.
   * Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat
   * Revise this readme to document site management.
 

@@ -581,7 +581,7 @@ Our experience shows that students and teachers both benefit by making this cour
 In addition, Morea makes it possible to represent dependencies between courses at the module-level. So, instead of saying that the course ICS 311 requires the courses ICS 241, 211, and 141, you can instead explicitly represent that the ICS 311 module called "Growth of Functions" depends upon the modules "Algorithms" from ICS 141, "Big-O Notation" from ICS 211, and "Advanced Counting Techniques" from ICS 241. To see this in action, check out [the ICS 311 Growth of Functions module](http://courses.ics.hawaii.edu/ReviewICS311/modules/growth/).  Module-level dependency representation makes it easier to answer questions like "What should be the content of the core curriculum?"  The answer could be: "only those modules that are actually required by later modules in the curriculum." 
 
 For more information, please see [http://morea-framework.github.io/](http://morea-framework.github.io/).
-`
+`,
     },
     {
       date: '2013 - present',
@@ -626,6 +626,19 @@ The fundamental goal of the RadGrad Project is to provide students, faculty, and
 To establish the first class status of extracurricular activities, the Degree Experience perspective replaces GPA as the single metric for success with a three component metric called ICE that assesses student development with respect to Innovation, Competency, and Experience. Each student's Degree Experience also includes a representation of their disciplinary interests and career goals that helps them assess the relevance of potential curricular and extracurricular activities. Finally, the Degree Experience perspective is voluntary. It complements but does not change any existing undergraduate degree requirements of a university.
 
 For more information, see [https://radgrad.org](https://radgrad.org)`,
+    },
+    {
+      date: '2015 - present',
+      project: 'Athletic Software Engineering',
+      keyword: 'Ath-Soft-Eng',
+      text: 'Pedagogical innovations for "high performance" software engineering education.',
+      media: 'images/athletic-software-engineering-small.png',
+      bigImage: 'images/athletic-software-engineering-big.jpg',
+      longText: `
+Modern web application development provides an attractive application area for introductory software engineering education, as students have direct experience with the domain and it provides them with the potential to gain practical, real-world skills. Achieving this potential requires the development of competency with a multiple component tech stack for web application development, which is challenging to acquire within a single semester. 
+
+In this research, we designed, implemented, and evaluated a new pedagogy called “athletic software engineering” which is intended to help students efficiently and effectively acquire competency with a multiple component tech stack as a precursor to a web application development project. So far, we have evaluated the pedagogy over 4 years and six semesters with 286 students and found strong evidence for its effectiveness.
+`,
     },
   ].reverse();
 }
