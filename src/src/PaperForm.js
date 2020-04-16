@@ -49,31 +49,31 @@ class PaperForm extends React.Component {
   }
 
   determineEntries() {
-    let authorKeys = [];
-    let topicKeys = [];
-    let yearKeys = [];
-    if (this.state.author !== null) {
-      if (this.state.author === allAuthorsLabel) {
-        authorKeys = this.techreports.getKeys();
-      } else {
-        authorKeys = this.techreports.getKeysByAuthor(this.state.author);
-      }
-
-      if (this.state.topic === allTopicsLabel) {
-        topicKeys = this.techreports.getKeys();
-      } else {
-        topicKeys = this.techreports.getKeysByTopic(this.state.topic);
-      }
-
-      if (this.state.year === allYearsLabel) {
-        yearKeys = this.techreports.getKeys();
-      } else {
-        yearKeys = this.techreports.getKeysByYear(this.state.year);
-      }
+    const intersectList = [];
+    if (this.state.author === null) {
+      return [];
     }
-    const intersectedKeys = _.intersection(authorKeys, topicKeys, yearKeys);
-    const sortedKeys = this.techreports.getSortedKeys(intersectedKeys).reverse();
-    return _.map(sortedKeys, (key) => this.techreports.getEntry(key));
+    if (this.state.author !== allAuthorsLabel) {
+    intersectList.push(this.techreports.getKeysByAuthor(this.state.author));
+    }
+
+    if (this.state.topic !== allTopicsLabel) {
+      intersectList.push(this.techreports.getKeysByTopic(this.state.topic));
+    }
+
+    if (this.state.year !== allYearsLabel) {
+      intersectList.push(this.techreports.getKeysByYear(this.state.year));
+    }
+    let keysToSort = [];
+    if (intersectList.length === 0) {
+      keysToSort = this.techreports.getKeys();
+    } else if (intersectList.length === 1) {
+      keysToSort = intersectList[0];
+    } else {
+      keysToSort = _.intersection(...intersectList);
+    }
+    const entries = _.map(keysToSort, key => this.techreports.getEntry(key));
+    return this.techreports.getSortedEntries(entries);
   }
 
   render = () => {
@@ -95,7 +95,8 @@ class PaperForm extends React.Component {
             <SubmitField value='Select Papers'/>
           </Row>
         </AutoForm>
-        {(entries.length > 0) && <p style={{ textAlign: 'center' }}>Click (or tap) an entry to display (or hide) the abstract.</p>}
+        {(entries.length > 0) &&
+        <p style={{ textAlign: 'center' }}>Click (or tap) an entry to display (or hide) the abstract.</p>}
         {_.map(entries, (entry, idx) => <PaperCard key={idx} entry={entry}/>)}
       </div>
     );

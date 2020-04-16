@@ -45,7 +45,8 @@ class TechReports {
 
   getKeysByYear = (year) => yearData[year];
 
-  getSortedKeys = (keys) => [...keys].sort((a, b) => a.sortKey - b.sortKey);
+  // Sorting returns reverse chronological order.
+  getSortedEntries = (entries) => entries.sort((a, b) => b.sortKey - a.sortKey);
 }
 
 export default TechReports;
