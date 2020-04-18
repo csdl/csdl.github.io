@@ -4,9 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Home from './Home';
 import Top from './Top';
+import Bottom from './Bottom';
 import News from './News';
 import Research from './Research';
 import Papers from './Papers';
+import People from './People';
 import { lightGreenColorCode } from './Constants';
 
 const sectionStyle = { paddingTop: '1em', paddingBottom: '1em' };
@@ -18,6 +20,9 @@ ReactDOM.render(
     <News sectionStyle={sectionStyle2}/>
     <Research sectionStyle={sectionStyle}/>
     <Papers sectionStyle={sectionStyle2}/>
+    <People sectionStyle={sectionStyle}/>
+    <Bottom/>
+
   </React.StrictMode>,
   // eslint-disable-next-line no-undef
   document.getElementById('root'),

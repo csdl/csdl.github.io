@@ -34,15 +34,6 @@ class Papers extends React.Component {
     );
   }
 
-  renderAll = () => {
-    const keys = this.techreports.getKeys().reverse();
-    return (
-      <div>
-        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={this.techreports.getEntry(key)}/>)}
-      </div>
-    );
-  }
-
   render = () => (
     <div style={this.props.sectionStyle} id="papers">
       <Container>

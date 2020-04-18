@@ -16,6 +16,7 @@ If the script fails with an authentication error, the simplest workaround is to 
 
   * Implement people
   * Implement partners
+  * Make a button group to emphasize the "toggle" aspect of the section button
   * Update home section with partner funding.
   * Implement a footer with contact info.
   * Move nonMembers to a data file.
