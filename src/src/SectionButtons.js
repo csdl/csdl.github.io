@@ -1,15 +1,16 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Row from 'react-bootstrap/Row';
 import PropTypes from 'prop-types';
-import { greenColorCode } from './Constants';
+import { greenColorCode, lightGreenColorCode } from './Constants';
 
 class SectionButtons extends React.Component {
   constructor(props) {
     super(props);
-    const buttonStyle = { backgroundColor: greenColorCode, margin: '1em', borderColor: greenColorCode };
-    this.selectedStyle = { ...buttonStyle, fontWeight: 'bold' };
-    this.deselectedStyle = { ...buttonStyle, fontWeight: 'normal' };
+    const buttonStyle = { borderColor: greenColorCode };
+    this.selectedStyle = { ...buttonStyle, fontWeight: 'bold', backgroundColor: greenColorCode };
+    this.deselectedStyle = { ...buttonStyle, fontWeight: 'normal', color: greenColorCode, backgroundColor: lightGreenColorCode };
     this.state = { recentStyle: this.selectedStyle, allStyle: this.deselectedStyle };
     this.recentLabel = props.recentLabel || 'Recent';
   }
@@ -26,9 +27,11 @@ class SectionButtons extends React.Component {
   }
 
   render = () => (
-    <Row className="justify-content-center">
+    <Row style={{ marginBottom: '1em' }} className="justify-content-center">
+      <ButtonGroup aria-label="Basic example">
       <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>{this.recentLabel}</Button>
       <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All ({this.props.total})</Button>
+      </ButtonGroup>
     </Row>
   );
 }
