@@ -5,7 +5,6 @@ export default function getResearchData() {
       project: 'CLARE',
       keyword: 'CLARE',
       text: 'Represent human learning of scientific literature to support useful computational manipulations.',
-      url: '',
       media: 'images/clare-small.png',
       bigImage: 'images/clare-big.png',
       longText: `
@@ -27,7 +26,6 @@ A survey of CLARE’s sessions shows that about 70% of learners think that CLARE
       project: 'URN',
       keyword: 'URN',
       text: 'Explore representations and processes needed to model user interests and predict relevency of usenet postings.',
-      url: '',
       media: 'images/urn-small.png',
       bigImage: '',
       longText: `
@@ -49,7 +47,6 @@ URN was evaluated internally by members of CSDL through a case study involving n
       project: 'AEN',
       keyword: 'AEN',
       text: 'Process and tool support for the development of high quality, jointly-authored hypertext documents.',
-      url: '',
       media: 'images/aen-small.png',
       bigImage: 'images/aen-big.png',
       longText: `
@@ -81,7 +78,6 @@ High values for all of these metrics indicate the presence of strong collaborati
       project: 'CSRS',
       keyword: 'CSRS',
       text: 'The Computer Supported Review System enables declarative definition of review processes and instrumentation for data collection.',
-      url: '',
       media: 'images/csrs-small.png',
       bigImage: 'images/csrs-big.gif',
       longText: `
@@ -104,7 +100,6 @@ Our study of review meetings found that meetings do not significantly increase d
       project: 'Flashmail',
       keyword: 'Flashmail',
       text: 'Investigate time-dependent electronic messages. One of the earliest "instant messaging" systems.',
-      url: '',
       media: 'images/flashmail-small.png',
       bigImage: 'images/flashmail-big.gif',
       longText: `
@@ -126,7 +121,6 @@ We found that Flashmail messages tend to be short (under 300 characters), and th
       project: 'HI-TIME',
       keyword: 'HI-TIME',
       text: 'Improve telecommunications policy through computer-mediated planning process.',
-      url: '',
       media: 'images/hitime-small.png',
       bigImage: '',
       longText: `
@@ -144,7 +138,6 @@ In early 1996, the ambitious collaborative planning process, including the imple
       project: 'Egret',
       keyword: 'EGRET',
       text: 'A framework providing tool support for the construction of computer-supported cooperative work applications.',
-      url: '',
       media: 'images/egret-small.png',
       bigImage: '',
       longText: `
@@ -169,7 +162,6 @@ Egret provides both low and high level storage and communication facilities for 
       project: 'LOCC',
       keyword: 'LOCC',
       text: 'Grammar-based parsing and analysis for program size computation.',
-      url: '',
       media: 'images/locc-small.png',
       bigImage: 'images/locc-big.gif',
       longText: `
@@ -185,7 +177,6 @@ LOCC’s effectiveness was evaluated by using it to count over 50,000 lines of J
       project: 'JavaWizard',
       keyword: 'JavaWizard',
       text: 'Detect and analyze error types in Java programming to improve libraries, tools, and education.',
-      url: '',
       media: 'images/jwiz-small.png',
       bigImage: 'images/jwiz-big.jpg',
       longText: `
@@ -213,7 +204,6 @@ Out of 267 JWiz warnings, there were 79 functional errors, 110 maintenance error
       project: 'PSP Data Quality',
       keyword: 'PSP',
       text: 'Experimental findings from Personal Software Process usage reveals significant errors due to manual data collection and analysis.',
-      url: '',
       media: 'images/psp-data-quality-small.png',
       bigImage: '',
       longText: `
@@ -231,7 +221,6 @@ In the Fall of 1996 a one-semester software engineering class was taught, coveri
       project: 'LEAP',
       keyword: 'Leap',
       text: 'Lightweight, empirical, automated, and portable tools and techniques to support individual software process improvement.',
-      url: '',
       media: 'images/leap-small.png',
       bigImage: 'images/leap-big.gif',
       longText: `
@@ -257,7 +246,6 @@ To investigate some of the issues of data collection and analysis, we conducted 
       project: 'javaJAM',
       keyword: 'JavaJam',
       text: 'Assist developers with reviewing software source, documentation, and comments.',
-      url: '',
       media: 'images/javajam-small.png',
       bigImage: 'images/javajam-big.gif',
       longText: `
@@ -275,7 +263,6 @@ javaJAM was evaluated through a case student in a classroom setting where studen
       project: 'MCS',
       keyword: 'MCS',
       text: 'Mailing List Condensation is a system designed to strip out extraneous, conversational aspects of the data stream.',
-      url: '',
       media: 'images/mcs-small.png',
       bigImage: 'images/mcs-big.png',
       longText: `
@@ -297,7 +284,6 @@ We condensed a 1428 message mailing list archive to an archive containing only 1
       project: 'VCommerce',
       keyword: 'VCommerce',
       text: 'An educational simulation game for teaching high-tech entrepreneurship.',
-      url: '',
       media: 'images/vcommerce-small.png',
       bigImage: 'images/vcommerce-big.jpg',
       longText: `
@@ -315,7 +301,6 @@ VCommerce was also used in business school classes at Michigan State University 
       project: 'Inca',
       keyword: 'Inca',
       text: 'Design of an n-tier Enterprise JavaBean application for course approval request processing.',
-      url: '',
       media: 'images/inca-small.png',
       bigImage: '',
       longText: `
@@ -341,7 +326,6 @@ When a disaster strikes, response and relief organizations must first assess the
       project: 'CLEW',
       keyword: 'Clew',
       text: 'The Collaborative Educational Website supports role-based editing and notifications.',
-      url: '',
       media: 'images/clew-small.png',
       bigImage: 'images/clew-big.png',
       longText: `
@@ -361,7 +345,6 @@ The results of the evaluations provide evidence that the CLEW System provides a 
       project: 'Priority Ranked Inspection',
       keyword: 'PRI',
       text: 'How to prioritize inspection resources and apply them to areas of a system that need them most.',
-      url: '',
       media: 'images/pri-small.png',
       bigImage: 'images/pri-big.png',
       longText: `
@@ -377,7 +360,6 @@ Evaluation of the Priority Ranked Inspection method involved a simple explorator
       project: 'Continuous GQM',
       keyword: 'C-GQM',
       text: 'Integrate Hackystat real-time measurement with Goal-Question-Metric analysis.',
-      url: '',
       media: 'images/continuous-gqm-small.png',
       bigImage: '',
       longText: `
@@ -391,7 +373,6 @@ Another interesting side-effect of the combination of Hackystat and hackyCGQM is
       project: 'JBlanket',
       keyword: 'JBlanket',
       text: 'A new technique called "Extreme Coverage" for measuring test quality.',
-      url: '',
       media: 'images/jblanket-small.png',
       bigImage: 'images/jblanket-big.gif',
       longText: `
@@ -421,7 +402,6 @@ SCLC (Source Code Line Counter) counts the size of different types of source cod
       project: 'Jupiter',
       keyword: 'Jupiter',
       text: 'Improve code review through an Eclipse plugin',
-      url: '',
       media: 'images/jupiter-small.png',
       bigImage: 'images/jupiter-big.jpg',
       longText: `
@@ -435,7 +415,6 @@ This research attempted to address the problems of previous code review tools by
       project: 'Zorro',
       keyword: 'Zorro',
       text: 'An automated method for detecting test-driven design practices.',
-      url: '',
       media: 'images/zorro-small.png',
       bigImage: 'images/zorro-big.png',
       longText: `
@@ -449,7 +428,6 @@ Zorro implemented a set of rules that first partitions the stream of observed de
       project: 'Software Project Telemetry',
       keyword: 'Telemetry',
       text: 'Track process and product metrics automatically through software sensors.',
-      url: '',
       media: 'images/software-project-telemetry-small.png',
       bigImage: 'images/software-project-telemetry-big.png',
       longText: `
@@ -463,7 +441,6 @@ Evaluation of software project telemetry provides evidence that it is an effecti
       project: 'Software ICU',
       keyword: 'SoftwareICU',
       text: 'Rapidly assess the "health" of one or more projects. ',
-      url: '',
       media: 'images/software-icu-small.png',
       bigImage: 'images/software-icu-big.gif',
       longText: `
@@ -479,7 +456,6 @@ Not all vital signs can be colorized.  For example, the Size vital sign cannot b
       project: 'Hackystat',
       keyword: 'Hackystat',
       text: 'A framework for collection, analysis, visualization, interpretation, annotation, and dissemination of software development process and product data.',
-      url: '',
       media: 'images/hackystat-small.png',
       bigImage: 'images/hackystat-big.png',
       longText: `
@@ -493,7 +469,6 @@ For more information, see [https://hackystat.github.io/](https://hackystat.githu
       project: 'Software Trajectory Analysis',
       keyword: 'Trajectory',
       text: 'A data-mining framework for knowledge discovery from software processes artifacts. ',
-      url: 'http://code.google.com/p/hackystat-ui-trajectory/',
       media: 'images/software-trajectory-analysis-small.png',
       bigImage: 'images/software-trajectory-analysis-big.png',
       longText: `
@@ -509,7 +484,6 @@ For more information, please see [http://code.google.com/p/hackystat-ui-trajecto
       project: 'Kukui Cup',
       keyword: 'KukuiCup',
       text: 'An energy challenge investigating energy literacy, conservation, and information technology.',
-      url: 'https://kukuicup.org/',
       media: 'images/kukuicup-logo.jpg',
       bigImage: 'images/kukuicup-big.png',
       longText: `
@@ -534,7 +508,6 @@ For more information, please see [https://kukuicup.org/](https://kukuicup.org/).
       project: 'Makahiki',
       keyword: 'Makahiki',
       text: 'An open source serious game engine for sustainability.',
-      url: 'https://makahiki.readthedocs.io/en/latest/',
       media: 'images/makahiki-image.png',
       bigImage: 'images/makahiki-big.jpg',
       longText: `
@@ -548,7 +521,6 @@ For more information, please see [https://makahiki.readthedocs.io/en/latest/](ht
       project: 'WattDepot',
       keyword: 'WattDepot',
       text: 'An open source, meter-agnostic RESTful web service for energy data storage, retrieval, and analysis. ',
-      url: 'http://wattdepot.org/',
       media: 'images/WattDepot.png',
       bigImage: 'images/wattdepot-big.png',
       longText: `
@@ -570,7 +542,6 @@ For more information, please see [http://wattdepot.org](http://wattdepot.org).
       project: 'Morea',
       keyword: 'Morea',
       text: 'Generate educational websites organized by Modules, Outcomes, Readings, Experiences, and Assessments.',
-      url: 'http://morea-framework.github.io/',
       media: 'images/morea-module.png',
       bigImage: 'images/morea-big.png',
       longText: `
@@ -588,7 +559,6 @@ For more information, please see [http://morea-framework.github.io/](http://more
       project: 'Open Power Quality',
       keyword: 'PowerQuality',
       text: 'Open source hardware and software for low-cost distributed power quality data collection, analysis, and visualization.',
-      url: 'https://openpowerquality.org/',
       media: 'images/opqlogo.png',
       bigImage: 'images/opq-big.png',
       longText: `
@@ -617,7 +587,6 @@ For more information, see [https://openpowerquality.org](https://openpowerqualit
       project: 'RadGrad',
       keyword: 'RadGrad',
       text: 'Improve the undergraduate degree experience through increased engagement and retention.',
-      url: 'https://radgrad.org/',
       media: 'images/radgrad_logo.png',
       bigImage: 'images/radgrad-big.png',
       longText: `
