@@ -47,7 +47,7 @@ class People extends React.Component {
     <div style={this.props.sectionStyle} id="people">
       <Container>
         <Title title={'People'}/>
-        <SectionButtons onClick={this.onClickSectionButton} total={this.peopleData.length}/>
+        <SectionButtons onClick={this.onClickSectionButton} total={this.peopleData.length} recentLabel='Current'/>
         {this.state.display === 'recent' ? this.renderRecent() : this.renderAll()}
       </Container>
     </div>

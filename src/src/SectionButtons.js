@@ -11,6 +11,7 @@ class SectionButtons extends React.Component {
     this.selectedStyle = { ...buttonStyle, fontWeight: 'bold' };
     this.deselectedStyle = { ...buttonStyle, fontWeight: 'normal' };
     this.state = { recentStyle: this.selectedStyle, allStyle: this.deselectedStyle };
+    this.recentLabel = props.recentLabel || 'Recent';
   }
 
   onClick = (buttonName) => {
@@ -26,7 +27,7 @@ class SectionButtons extends React.Component {
 
   render = () => (
     <Row className="justify-content-center">
-      <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>Recent</Button>
+      <Button onClick={() => this.onClick('recent')} style={this.state.recentStyle}>{this.recentLabel}</Button>
       <Button onClick={() => this.onClick('all')} style={this.state.allStyle}>All ({this.props.total})</Button>
     </Row>
   );
@@ -35,6 +36,7 @@ class SectionButtons extends React.Component {
 SectionButtons.propTypes = {
   onClick: PropTypes.func.isRequired,
   total: PropTypes.number.isRequired,
+  recentLabel: PropTypes.string,
 };
 
 export default SectionButtons;
