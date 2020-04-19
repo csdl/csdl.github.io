@@ -5,14 +5,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Title from './Title';
 import SectionButtons from './SectionButtons';
-import PeopleCard from './PeopleCard';
-import getPeopleData from './data/PeopleData';
+import MemberCard from './MemberCard';
+import getMemberData from './data/MemberData';
 
-class People extends React.Component {
+class Members extends React.Component {
   constructor(props) {
     super(props);
     this.state = { display: 'recent' };
-    this.peopleData = getPeopleData();
+    this.memberData = getMemberData();
   }
 
   onClickSectionButton = (pushedButton) => {
@@ -25,11 +25,11 @@ class People extends React.Component {
   }
 
   renderRecent = () => {
-    const recentPeople = _.filter(this.peopleData, (person) => person.dates[1] === 'present');
+    const recentMembers = _.filter(this.memberData, (person) => person.dates[1] === 'present');
     return (
       <Container>
         <Row className="justify-content-center">
-          {_.map(recentPeople, person => <PeopleCard person={person}/>)}
+          {_.map(recentMembers, (person, idx) => <MemberCard key={idx} person={person}/>)}
         </Row>
       </Container>
     );
@@ -38,24 +38,25 @@ class People extends React.Component {
   renderAll = () => (
     <Container>
       <Row className="justify-content-center">
-        {_.map(this.peopleData, person => <PeopleCard person={person}/>)}
+        {_.map(this.memberData, (person, idx) => <MemberCard key={idx} person={person}/>)}
       </Row>
     </Container>
   )
 
   render = () => (
-    <div style={this.props.sectionStyle} id="people">
+    <div style={this.props.sectionStyle} id="members">
       <Container>
-        <Title title={'People'}/>
-        <SectionButtons onClick={this.onClickSectionButton} total={this.peopleData.length} recentLabel='Current'/>
+        <Title title={'Members'}/>
+        <SectionButtons onClick={this.onClickSectionButton} total={this.memberData.length} recentLabel='Current'/>
+        <p style={{ textAlign: 'center' }}>Click (or tap) an image to display (or hide) member details.</p>
         {this.state.display === 'recent' ? this.renderRecent() : this.renderAll()}
       </Container>
     </div>
   );
 }
 
-People.propTypes = {
+Members.propTypes = {
   sectionStyle: PropTypes.object.isRequired,
 };
 
-export default People;
+export default Members;

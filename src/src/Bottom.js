@@ -12,6 +12,7 @@ function Bottom() {
           <p>Collaborative Software Development Laboratory<br/>
             Department of Information and Computer Sciences<br/>
             University of Hawaii at Manoa<br/>
+            1680 East-West Road, POST Room 307<br/>
             Honolulu, HI, USA<br/>
           </p>
           </Row>

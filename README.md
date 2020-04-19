@@ -14,11 +14,8 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  * Implement people
   * Implement partners
-  * Make a button group to emphasize the "toggle" aspect of the section button
   * Update home section with partner funding.
-  * Implement a footer with contact info.
   * Move nonMembers to a data file.
   * Implement scroll https://github.com/ganderzz/react-scroll-to
   * Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat
@@ -27,3 +24,4 @@ If the script fails with an authentication error, the simplest workaround is to 
 ### Post initial deploy
 
   * Move TR Library into this repo.
+  * Implement permalinks for projects and TR lib selections.

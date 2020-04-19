@@ -67,7 +67,6 @@ ResearchCard.propTypes = {
   project: PropTypes.string.isRequired,
   keyword: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
   showOneCard: PropTypes.func.isRequired,
   showLess: PropTypes.bool.isRequired,
   bigImage: PropTypes.string,

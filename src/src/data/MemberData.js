@@ -1,4 +1,4 @@
-export default function getPeopleData() {
+export default function getMemberData() {
   return [
     {
       name: ['Aaron', 'Kagawa'],
@@ -213,7 +213,7 @@ export default function getPeopleData() {
     {
       name: ['Mercedez', 'Castro'],
       photo: '/images/people/mercedez-castro.jpg',
-      dates: ['2019', 'present'],
+      dates: ['2019', ''],
     },
     {
       name: ['Mette', 'Moffett'],

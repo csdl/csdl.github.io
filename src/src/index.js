@@ -8,7 +8,7 @@ import Bottom from './Bottom';
 import News from './News';
 import Research from './Research';
 import Papers from './Papers';
-import People from './People';
+import Members from './Members';
 import { lightGreenColorCode } from './Constants';
 
 const sectionStyle = { paddingTop: '1em', paddingBottom: '1em' };
@@ -20,7 +20,7 @@ ReactDOM.render(
     <News sectionStyle={sectionStyle2}/>
     <Research sectionStyle={sectionStyle}/>
     <Papers sectionStyle={sectionStyle2}/>
-    <People sectionStyle={sectionStyle}/>
+    <Members sectionStyle={sectionStyle}/>
     <Bottom/>
 
   </React.StrictMode>,
