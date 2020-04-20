@@ -9,6 +9,7 @@ import News from './News';
 import Research from './Research';
 import Papers from './Papers';
 import Members from './Members';
+import Sponsors from './Sponsors';
 import { lightGreenColorCode } from './Constants';
 
 const sectionStyle = { paddingTop: '1em', paddingBottom: '1em' };
@@ -21,6 +22,7 @@ ReactDOM.render(
     <Research sectionStyle={sectionStyle}/>
     <Papers sectionStyle={sectionStyle2}/>
     <Members sectionStyle={sectionStyle}/>
+    <Sponsors sectionStyle={sectionStyle2}/>
     <Bottom/>
 
   </React.StrictMode>,

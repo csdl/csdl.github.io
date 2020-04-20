@@ -14,12 +14,15 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  * Implement partners
-  * Update home section with partner funding.
+  * Implement sponsors
+  * Update home section with sponsor funding.
   * Move nonMembers to a data file.
   * Implement scroll https://github.com/ganderzz/react-scroll-to
   * Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat
   * Revise this readme to document site management.
+  * Use react hooks and convert classes to functional components.
+  * Comment the code.
+  * SectionButtons -> SectionToggle, round the corners more?
 
 ### Post initial deploy
 
