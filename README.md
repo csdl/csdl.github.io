@@ -22,7 +22,8 @@ If the script fails with an authentication error, the simplest workaround is to 
   * Revise this readme to document site management.
   * Use react hooks and convert classes to functional components.
   * Comment the code.
-  * SectionButtons -> SectionToggle, round the corners more?
+  * SectionButtons -> SectionToggle.
+  * Edit News titles for consistency.
 
 ### Post initial deploy
 

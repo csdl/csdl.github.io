@@ -50,5 +50,161 @@ The Center for Renewable Energy and Island Sustainability was established throug
 REIS sponsored CSDL research on the smart grid and renewable energy, including the Kukui Cup project.
 `,
     },
+    {
+      date: '2012',
+      sponsor: 'HEI Charitable Foundation',
+      text: 'Support for next generation education research.',
+      logo: 'images/heic-logo.png',
+      grants: [10000],
+      longText: `
+ The [Hawaiian Electric Industries (HEI) Charitable Foundation](http://www.hei.com/CustomPage/Index?keyGenPage=1073751886) is focused on community programs aimed at promoting environmental sustainability, educational excellence, economic growth, and community development.
+ 
+ HEI Charitable Foundation provided funds to support the 2012 Kukui Cup.
+`,
+    },
+    {
+      date: '2011',
+      sponsor: 'Dept. of Business, Economic Development, and Tourism (DBEDT)',
+      text: 'Support for next generation education research.',
+      logo: 'images/dbedt-logo.jpg',
+      grants: [5000],
+      longText: `
+ The [Department of Business, Economic Development, and Tourism](http://hawaii.gov/dbedt) is Hawaii’s resource center for economic and statistical data, business development opportunities, energy and conservation information, and foreign trade advantages.
+ 
+ DBEDT provided funds to support the 2011 Kukui Cup.
+`,
+    },
+    {
+      date: '2008 - 2009',
+      sponsor: 'Google Summer of Code',
+      text: 'Support summer interns to develop Hackystat',
+      logo: 'images/google-logo.png',
+      grants: [45000],
+      longText: `
+ [Google Summer of Code](https://summerofcode.withgoogle.com/) is a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.
+ 
+ Google Summer of Code provided funds to support Hackystat development in the summers of 2008 and 2009.
+`,
+    },
+    {
+      date: '2008',
+      sponsor: 'Expedia',
+      text: 'Technology transfer of Hackystat',
+      logo: 'images/expedia-logo.jpg',
+      grants: [25000],
+      longText: `
+ [Expedia, Inc.](http://expedia.com/) is a parent company to some of the world’s leading travel companies, providing travel products and services to leisure and corporate travelers in the US and around the world. It books airline tickets, hotel reservations, car rentals, cruises, vacation packages and various attractions and services via the World Wide Web and telephone travel agents.
+ 
+ Expedia provided funds to support Hackystat development.
+`,
+    },
+    {
+      date: '2006',
+      sponsor: 'Sixth Sense Analytics',
+      text: 'Technology transfer of Hackystat',
+      logo: 'images/6th-sense-logo.gif',
+      grants: [25000],
+      longText: `
+6th Sense Analytics (now a part of Borland, Inc.) provided visibility and control to distributed software development projects through the use of our hosted software solution that automatically and unobtrusively collects the software development metrics that organizations need to understand the execution of software development projects.
+
+ 6th Sense Analytics provided funds to support Hackystat development.
+`,
+    },
+    {
+      date: '2005',
+      sponsor: 'Maui High Performance Computing Center',
+      text: 'Adapt Hackystat to support High Performance Computing',
+      logo: 'images/mhpcc-logo.jpg',
+      grants: [42000],
+      longText: `
+The Maui High Performance Computing Center, established in 1993, is an Air Force research Laboratory (AFRL) Center managed by the University of Hawaii. It provides computational resources for the Department of Defense’s scientific computational needs through their support of DoD “Challenge Projects” and other government users. The Center also supports the Directed Energy Directorate’s Maui Space Surveillance System.
+
+ MHPCC provided funds through a student engagement program to support research on empirically guided high performance computing software development using Hackystat.
+`,
+    },
+    {
+      date: '2004',
+      sponsor: 'IBM',
+      text: 'Support development of the Jupiter code review plugin to Eclipse.',
+      logo: 'images/ibm-logo.jpg',
+      grants: [15000],
+      longText: `
+IBM is an American multinational technology and consulting corporation, with headquarters in Armonk, New York, United States. IBM manufactures and sells computer hardware and software, and offers infrastructure, hosting and consulting services in areas ranging from mainframe computers to nanotechnology.
+
+ IBM sponsored research on the Jupiter code review system through the Eclipse Innovation Grant program.
+`,
+    },
+    {
+      date: '2000',
+      sponsor: 'City Bank',
+      text: 'Research and development of B2B infrastructure for Hawaii',
+      logo: 'images/citybank-logo.png',
+      grants: [30000],
+      longText: `
+City Bank was a state-chartered bank organized under the laws of the state of Hawaii in 1959. It is now part of Central Pacific Bank.
+
+City Bank's New Economy Research grant focussed on aligning the financial services, fulfillment distribution infrastructure, and small business sectors in Hawaii through B2B technology innovation.
+`,
+    },
+    {
+      date: '1999',
+      sponsor: 'Sun Microsystems',
+      text: 'Software and hardware for Java-based software engineering research',
+      logo: 'images/sun-logo.png',
+      grants: [39205],
+      longText: `
+Sun Microsystems, Inc. (now part of Oracle, Inc.) was a leading provider of high speed microprocessors, scalable systems, robust software, network storage, and comprehensive professional services. Sun’s Developer Relations Group was charged with providing strategic outreach for Sun’s key platform technologies.
+
+Sun Microsystems provided hardware and software to support the development and evaluation of several Java-based software technologies, including Project LEAP, JavaWiz, MCS, and LOCC.
+`,
+    },
+    {
+      date: '1997',
+      sponsor: 'Makai Ocean Engineering',
+      text: 'Software engineering for subsea cable and array installations',
+      logo: 'images/makai-logo.gif',
+      grants: [83286, 10000],
+      longText: `
+[Makai Ocean Engineering](http://www.makai.com/) was founded in 1973 as a diversified ocean engineering company providing services in Hawaii and the Pacific. Today, Makai has expanded their services to include an international clientele focusing on engineering for renewable energy (OTEC and SWAC), large ocean pipelines, software for the planning, simulation, installation and recovery of submarine cables and arrays, and software for visualizing scientific 4D/5D data.
+
+Makai and CSDL collaborated on a joint research project sponsored by the National Defense Center for Excellence for Research in Ocean Sciences (CEROS) for an Internet-enabled engineering tool for dynamically analyzing and planning world-wide subsea cable and array installations.
+`,
+    },
+    {
+      date: '1997',
+      sponsor: 'Digital Equipment Corporation',
+      text: 'Java-based software review technology research and development',
+      logo: 'images/digital-logo.png',
+      grants: [101413],
+      longText: `
+Digital Equipment Corporation (now a subsidiary of COMPAQ) had a 40 year history of innovation in computer technology, from the PDP-1 in 1960 to Alpha-based systems in the 1990’s. The Advanced Development Group was chartered to research and prototype state of the art compilation technology.
+
+DEC's Advanced Development Group worked with CSDL to develop and evaluate Java-based software review technology as part of Project LEAP. Our joint efforts also included JavaWiz, an advanced static analysis tool for detection of Java-based programming errors.
+`,
+    },
+    {
+      date: '1996',
+      sponsor: 'Tektronix',
+      text: 'Adapt formal technical review to an industrial process.',
+      logo: 'images/tektronix-logo.png',
+      grants: [45000],
+      longText: `
+[Tektronix](https://www.tek.com/)‘s Measurement Business Division supplies products that measure and display signals and their paths wherever they are produced, processed, transmitted, and received.
+
+CSDL and Tektronix worked on industrial software quality improvement through formal technical review.  In addition, Tektronix provided CSDL students with summer internship experiences.
+`,
+    },
+    {
+      date: '1995',
+      sponsor: 'PICHTR',
+      text: 'Collaborative environments for strategic planning',
+      logo: 'images/pichtr-logo.jpg',
+      grants: [30280],
+      longText: `
+The [Pacific International Center for High Technology Research (PICHTR)](https://www.pichtr.org/) was established by the 1983 Legislature and, originally managed within the University of Hawaii for administrative purposes, was incorporated in 1985 as an independent Hawaii-based not-for-profit. Its mission is to accelerate technology commercialization to increase security, safety, and economic opportunities in Hawaii and the Asia-Pacific region. Its focus is on renewable energy; natural disaster management; agriculture; and ocean, educational and dual-use technology.
+
+CSDL and PICHTR worked on the design of a collaborative environment for strategic planning called Project HI-TIME.
+`,
+    },
   ];
 }
