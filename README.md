@@ -14,8 +14,6 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  * Implement sponsors
-  * Update home section with sponsor funding.
   * Move nonMembers to a data file.
   * Implement scroll https://github.com/ganderzz/react-scroll-to
   * Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat
@@ -23,7 +21,6 @@ If the script fails with an authentication error, the simplest workaround is to 
   * Use react hooks and convert classes to functional components.
   * Comment the code.
   * SectionButtons -> SectionToggle.
-  * Edit News titles for consistency.
 
 ### Post initial deploy
 
