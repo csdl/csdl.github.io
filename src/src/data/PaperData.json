@@ -4474,6 +4474,99 @@
     "sortKey": 201608
   },
   {
+    "key": "csdl2-17-03",
+    "type": "inproceedings",
+    "title": "OPQ Version 2: An architecture for distributed, real-time, high performance power data acquisition, analysis, and visualization",
+    "year": "2017",
+    "month": "August",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2017/17-03/17-03.pdf",
+    "abstract": "OpenPowerQuality (OPQ) is a framework that supports end-to-end capture, analysis, and visualizations of distributed real-time power quality (PQ) data. Version 2 of OPQ builds on version 1 by providing higher sampling rates, optional battery backup, end-to-end security, GPS synchronization, pluggable analysis, and a real-time visualization framework. OPQ provides real-time distributed power measurements which allows users to see both local PQ events and grid-wide PQ events. The OPQ project has three principal components: back-end hardware for making power measurements, middleware for data acquisition and analysis, and a front-end providing visualizations. OPQBox2 is a hardware platform that takes PQ measurements, provides onboard analysis, and securely transfers data to our middleware. The OPQ middleware performs filtering on the OPQBox2 sensor data and performs high-level PQ analysis. The results of our PQ analysis and real-time state of the sensor network are displayed using OPQView. We’ve collected distributed PQ data from locations across Oahu, Hawaii and have demonstrated our ability to detect both local and grid-wide power quality events.\r\n",
+    "booktitle": "Proceedings of the 7th International Conference on CYBER Technology in Automation, Control, and Intelligent Systems",
+    "address": "Honolulu, Hawaii",
+    "authors": [
+      "Anthony J. Christe",
+      "Sergey Negrashov",
+      "Philip M. Johnson",
+      "Dylan Nakahodo",
+      "David Badke",
+      "David Aghalarpout"
+    ],
+    "keywords": [
+      "Sustainability",
+      "SmartGrid",
+      "PowerQuality",
+      "Pubs-Conference"
+    ],
+    "sortKey": 201708
+  },
+  {
+    "key": "csdl2-17-04",
+    "type": "article",
+    "title": "GrammarViz 3.0: Interactive Discovery of Variable-length Time Series Patterns",
+    "year": "2018",
+    "month": "February",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2017/17-04/17-04.pdf",
+    "abstract": "\r\nThe problems of recurrent and anomalous pattern discovery in time series, e.g., motifs and discords, respectively, have received a lot of attention from researchers in the past decade. However, since the pattern search space is usually intractable, most existing detection algorithms require that the patterns have discriminative characteristics and have its length known in advance and provided as input, which is an unreasonable requirement for many real-world problems. In addition, patterns of similar structure, but of different lengths may co-exist in a time series.\r\n\r\nAddressing these issues, we have developed algorithms for variable-length time series pattern discovery that are based on symbolic discretization and grammar inference—two techniques whose combination enables the structured reduction of the search space and discovery of the candidate patterns in linear time.\r\n\r\nIn this work, we present GrammarViz 3.0—a software package that provides implementations of proposed algorithms and graphical user interface for interactive variable-length time series pattern discovery. The current version of the software provides an alternative grammar inference algorithm that improves the time series motif discovery workflow, and introduces an experimental procedure for automated discretization parameter selection that builds upon the minimum cardinality maximum cover principle and aids the time series recurrent and anomalous pattern discovery.\r\n",
+    "journal": "ACM Transactions on Knowledge Discovery from Data",
+    "volume": 12,
+    "number": 1,
+    "authors": [
+      "Pavel Senin",
+      "Jessica Lin",
+      "Xing Wang",
+      "Tim Oates",
+      "Sunil Gandhi",
+      "Arnold Boedihardjo",
+      "Crystal Chen",
+      "Susan Frankenstein"
+    ],
+    "keywords": [
+      "Trajectory",
+      "Pubs-Journal"
+    ],
+    "sortKey": 201802
+  },
+  {
+    "key": "csdl2-17-05",
+    "type": "mastersthesis",
+    "title": "RadGrad: Using degree planning, social networking, and gamification to improve academic, professional, and social engagement during the undergraduate computer science degree experience",
+    "year": "2017",
+    "month": "August",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2017/17-05/17-05.pdf",
+    "abstract": "A casual analysis of the Hawaii technology community site, TechHui, suggests that over the past decade, recent alumni and current undergraduates of the Information and Computer Science (ICS) program at the University of Hawaii at Manoa (UHM) have experienced several problems with various academic, professional, and social aspects of their ICS experience. Existing degree planning systems such as STAR, Starfish by Hobsons, Blackboard Planner and Coursicle fail to provide the specific support that ICS students need to create a complete and comprehensive degree plan. Existing academic social networks such as LinkedIn, TechHui and Rate My Professors fail to connect students closely with professors and alumni. Current popular video games suggest that several gamification features could encourage ICS students to achieve higher goals. A new system called RadGrad combines degree planning, social networking, and gamification in a novel way that aims to give ICS undergraduates the support they need to succeed and redefines what it means to have a successful degree experience. The overall goal of this thesis is to justify the initial RadGrad system design and establish baseline values for future studies. A baseline student survey conducted in Spring 2017 reveals current and more detailed student perceptions on the academic, professional, and social aspects of the ICS degree experience prior to using RadGrad. These baseline results can be used in a future study to measure if RadGrad has had any effects on the students. ",
+    "school": "University of Hawaii, Honolulu, HI",
+    "authors": [
+      "Amy Takayesu"
+    ],
+    "keywords": [
+      "Thesis-MS",
+      "RadGrad"
+    ],
+    "sortKey": 201708
+  },
+  {
+    "key": "csdl2-18-01",
+    "type": "techreport",
+    "title": "DEP/RadGrad: Enhancing individualized learning plans and communities of practice to improve engagement, retention, and diversity in undergraduate computer science education",
+    "year": "2018",
+    "month": "January",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2018/18-01/18-01.pdf",
+    "abstract": "This is the project description component of a proposal to the Institutional and Community Transformation track, Exploration and Design Tier, of the IUSE:EHR program. It describes a framework (Degree Experience Plans) and a technology (RadGrad) which is designed to improve engagement, retention, and diversity in undergraduate computer science education. ",
+    "institution": "University of Hawaii, Honolulu, HI",
+    "number": "CSDL-18-01",
+    "authors": [
+      "Philip M. Johnson",
+      "Carleton A. Moore",
+      "Peter Leong",
+      "Seungoh Paek"
+    ],
+    "keywords": [
+      "Sustainability",
+      "RadGrad"
+    ],
+    "sortKey": 201801
+  },
+  {
     "key": "csdl2-19-02",
     "type": "inproceedings",
     "title": "A Transient Classification System Implementation on an Open Source Distributed Power Quality Network",

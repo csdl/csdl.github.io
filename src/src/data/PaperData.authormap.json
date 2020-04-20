@@ -118,6 +118,8 @@
     "csdl2-16-01",
     "csdl2-16-02",
     "csdl2-16-03",
+    "csdl2-17-03",
+    "csdl2-18-01",
     "csdl2-19-02",
     "csdl2-19-03",
     "csdl2-19-04"
@@ -227,6 +229,7 @@
     "csdl2-13-05",
     "csdl2-14-10",
     "csdl2-16-03",
+    "csdl2-18-01",
     "csdl2-19-04"
   ],
   "Julio Polo": [
@@ -340,7 +343,8 @@
     "csdl2-09-09",
     "csdl2-10-09",
     "csdl2-11-10",
-    "csdl2-14-06"
+    "csdl2-14-06",
+    "csdl2-17-04"
   ],
   "Shaoxuan Zhang": [
     "csdl2-09-02",
@@ -397,21 +401,40 @@
   "Anthony J. Christe": [
     "csdl2-14-04",
     "csdl2-16-02",
+    "csdl2-17-03",
     "csdl2-19-02",
     "csdl2-20-01"
   ],
   "Sergey Negrashov": [
     "csdl2-14-11",
     "csdl2-16-02",
+    "csdl2-17-03",
     "csdl2-20-02"
   ],
-  "Charles Dickens": [
-    "csdl2-19-02"
+  "Dylan Nakahodo": [
+    "csdl2-17-03"
+  ],
+  "David Badke": [
+    "csdl2-17-03"
+  ],
+  "David Aghalarpout": [
+    "csdl2-17-03"
+  ],
+  "Arnold Boedihardjo": [
+    "csdl2-17-04"
+  ],
+  "Amy Takayesu": [
+    "csdl2-17-05"
   ],
   "Peter Leong": [
+    "csdl2-18-01",
     "csdl2-19-04"
   ],
   "Seungoh Paek": [
+    "csdl2-18-01",
     "csdl2-19-04"
+  ],
+  "Charles Dickens": [
+    "csdl2-19-02"
   ]
 }

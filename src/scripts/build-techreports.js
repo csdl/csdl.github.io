@@ -103,13 +103,13 @@ class CsdlTechReports {
     jsonfile.writeFile(this.authorMapFile, this.buildAuthorMap(), { spaces: 2 }, err => {
       if (err != null) console.error(err);
     });
-    // console.log(_.keys(this.buildAuthorMap()).sort(), _.keys(this.buildAuthorMap()).length);
+    console.log(_.keys(this.buildAuthorMap()).sort());
 
     console.log(`Writing ${this.keywordMapFile}`);
     jsonfile.writeFile(this.keywordMapFile, this.buildKeyWordMap(), { spaces: 2 }, err => {
       if (err != null) console.error(err);
     });
-    // console.log(_.keys(this.buildKeyWordMap()).sort());
+    console.log(_.keys(this.buildKeyWordMap()).sort());
 
     console.log(`Writing ${this.yearMapFile}`);
     jsonfile.writeFile(this.yearMapFile, this.buildYearMap(), { spaces: 2 }, err => {

@@ -31,9 +31,7 @@ The Collaborative Software Development Laboratory is led by [Philip Johnson](htt
 
 Established in 1991, the Collaborative Software Development Laboratory performs research, development, and technology transfer in disciplines including software engineering, sustainability, entrepreneurship, educational technology, renewable energy, and computer-supported cooperative work.
 
-So far, research by the ${numMembers} current and former members of CSDL has led to ${journal} journal, ${conference} conference, and ${workshop} workshop publications, as well as ${phd} Ph.D. theses, ${ms} M.S. theses, and ${bs} undergraduate honors theses.  
-
-Our ${numSponsors} sponsors have provided a total of ${total} in funding. 
+So far, research by the ${numMembers} current and former members of CSDL has led to ${journal} journal, ${conference} conference, and ${workshop} workshop publications, as well as ${phd} Ph.D. theses, ${ms} M.S. theses, and ${bs} undergraduate honors theses.  Our ${numSponsors} sponsors have provided a total of ${total} in funding. 
 `;
 
 function Home(props) {
