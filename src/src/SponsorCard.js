@@ -8,10 +8,9 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { greenColorCode } from './Constants';
 
-
 const cardStyle = { border: `1px solid ${greenColorCode}` };
 const buttonStyle = { backgroundColor: greenColorCode, borderColor: greenColorCode };
-const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', notation: "compact" });
+const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', notation: 'compact' });
 
 function smallCard(date, sponsor, text, logo, grants, longText, showOneCard) {
   const total = dollar.format(_.reduce(grants, (sum, n) => sum + n, 0));

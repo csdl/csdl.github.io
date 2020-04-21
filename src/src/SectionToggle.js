@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import PropTypes from 'prop-types';
 import { greenColorCode, lightGreenColorCode } from './Constants';
 
-class SectionButtons extends React.Component {
+class SectionToggle extends React.Component {
   constructor(props) {
     super(props);
     const buttonStyle = { borderColor: greenColorCode };
@@ -36,10 +36,10 @@ class SectionButtons extends React.Component {
   );
 }
 
-SectionButtons.propTypes = {
+SectionToggle.propTypes = {
   onClick: PropTypes.func.isRequired,
   total: PropTypes.number.isRequired,
   recentLabel: PropTypes.string,
 };
 
-export default SectionButtons;
+export default SectionToggle;

@@ -2,11 +2,11 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Markdown from 'react-markdown';
+import _ from 'lodash';
 import TechReports from './TechReports';
 import Title from './Title';
 import getMemberData from './data/MemberData';
 import getSponsorData from './data/SponsorData';
-import _ from 'lodash';
 
 // Tech Report Info
 const techReports = new TechReports();
@@ -21,7 +21,7 @@ const bs = techReports.getKeysByKeyword('Thesis-BS').length;
 const numMembers = getMemberData().length;
 
 // Sponsor info
-const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', notation: "compact" });
+const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', notation: 'compact' });
 const numSponsors = getSponsorData().length;
 const sponsorFundingList = _.flatten(_.map(getSponsorData(), sponsor => sponsor.grants));
 const total = dollar.format(_.reduce(sponsorFundingList, (sum, n) => sum + n, 0));

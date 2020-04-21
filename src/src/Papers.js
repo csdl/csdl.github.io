@@ -4,7 +4,7 @@ import _ from 'lodash';
 import Container from 'react-bootstrap/Container';
 import Title from './Title';
 import TechReports from './TechReports';
-import SectionButtons from './SectionButtons';
+import SectionToggle from './SectionToggle';
 import PaperCard from './PaperCard';
 import PaperForm from './PaperForm';
 
@@ -38,7 +38,7 @@ class Papers extends React.Component {
     <div style={this.props.sectionStyle} id="papers">
       <Container>
         <Title title={'Papers'}/>
-        <SectionButtons onClick={this.onClickSectionButton} total={this.techreports.total()}/>
+        <SectionToggle onClick={this.onClickSectionButton} total={this.techreports.total()}/>
         {this.state.display === 'recent' ? this.renderRecent() : <PaperForm/>}
       </Container>
     </div>

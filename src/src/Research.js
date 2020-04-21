@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Title from './Title';
-import SectionButtons from './SectionButtons';
+import SectionToggle from './SectionToggle';
 import getResearchData from './data/ResearchData';
 import ResearchCard from './ResearchCard';
 
@@ -42,7 +42,7 @@ class Research extends React.Component {
     }
     return (
       <div>
-        <SectionButtons onClick={this.onClickSectionButton} total={this.researchData.length}/>
+        <SectionToggle onClick={this.onClickSectionButton} total={this.researchData.length}/>
         {decks}
       </div>
     );

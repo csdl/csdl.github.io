@@ -27,9 +27,9 @@ CSDL has been supported by six grants from the National Science Foundation.
     {
       date: '2018 - present',
       sponsor: 'University of Hawaii Office of Sustainability',
-      text: 'President\'s Green Project Implementation Award, JCI Fellows Program',
+      text: 'Support for energy research and development initiatives including the President\'s Green Project Implementation Award and the JCI Fellows Program',
       logo: 'images/uh-office-of-sustainability-logo.png',
-      grants: [10000],
+      grants: [10000, 85286, 28269, 28269, 27351],
       longText: `
 The [University of Hawaii Office of Sustainability](https://www.hawaii.edu/sustainability/) works across UH campuses to complement, support and enhance the existing sustainability work under way, and to provide coordination capacity for campuses to share information and resources with each other to accelerate action to strengthen the environmental, social, cultural and economic health of our islands’ communities.
 
@@ -41,7 +41,7 @@ The JCI Fellows program will fund research assistants at both graduate and under
     {
       date: '2009 - 2011',
       sponsor: 'Center for Renewable Energy and Island Sustainability',
-      text: 'Research on the smart grid, renewable energy, and the Kukui Cup',
+      text: 'Support for research on the smart grid, renewable energy, and the Kukui Cup.',
       logo: 'images/reis-logo.png',
       grants: [100000],
       longText: `
@@ -53,7 +53,7 @@ REIS sponsored CSDL research on the smart grid and renewable energy, including t
     {
       date: '2012',
       sponsor: 'HEI Charitable Foundation',
-      text: 'Support for next generation education research.',
+      text: 'Support for next generation education research using the Kukui Cup.',
       logo: 'images/heic-logo.png',
       grants: [10000],
       longText: `
@@ -65,7 +65,7 @@ REIS sponsored CSDL research on the smart grid and renewable energy, including t
     {
       date: '2011',
       sponsor: 'Dept. of Business, Economic Development, and Tourism (DBEDT)',
-      text: 'Support for next generation education research.',
+      text: 'Support for next generation education research using the Kukui Cup.',
       logo: 'images/dbedt-logo.jpg',
       grants: [5000],
       longText: `
@@ -77,7 +77,7 @@ REIS sponsored CSDL research on the smart grid and renewable energy, including t
     {
       date: '2008 - 2009',
       sponsor: 'Google Summer of Code',
-      text: 'Support summer interns to develop Hackystat',
+      text: 'Support summer interns to develop software engineering applications using Hackystat.',
       logo: 'images/google-logo.png',
       grants: [45000],
       longText: `
@@ -89,7 +89,7 @@ REIS sponsored CSDL research on the smart grid and renewable energy, including t
     {
       date: '2008',
       sponsor: 'Expedia',
-      text: 'Technology transfer of Hackystat',
+      text: 'Support technology transfer of Hackystat to an industrial software process.',
       logo: 'images/expedia-logo.jpg',
       grants: [25000],
       longText: `
@@ -101,7 +101,7 @@ REIS sponsored CSDL research on the smart grid and renewable energy, including t
     {
       date: '2006',
       sponsor: 'Sixth Sense Analytics',
-      text: 'Technology transfer of Hackystat',
+      text: 'Support technology transfer and commercialization of software based upon Hackystat.',
       logo: 'images/6th-sense-logo.gif',
       grants: [25000],
       longText: `
@@ -113,7 +113,7 @@ REIS sponsored CSDL research on the smart grid and renewable energy, including t
     {
       date: '2005',
       sponsor: 'Maui High Performance Computing Center',
-      text: 'Adapt Hackystat to support High Performance Computing',
+      text: 'Adapt Hackystat to support High Performance Computing application domains.',
       logo: 'images/mhpcc-logo.jpg',
       grants: [42000],
       longText: `
@@ -137,7 +137,7 @@ IBM is an American multinational technology and consulting corporation, with hea
     {
       date: '2000',
       sponsor: 'City Bank',
-      text: 'Research and development of B2B infrastructure for Hawaii',
+      text: 'Support research and development of B2B infrastructure for Hawaii',
       logo: 'images/citybank-logo.png',
       grants: [30000],
       longText: `
@@ -149,7 +149,7 @@ City Bank's New Economy Research grant focussed on aligning the financial servic
     {
       date: '1999',
       sponsor: 'Sun Microsystems',
-      text: 'Software and hardware for Java-based software engineering research',
+      text: 'Provide software and hardware for Java-based software engineering research',
       logo: 'images/sun-logo.png',
       grants: [39205],
       longText: `
@@ -161,7 +161,7 @@ Sun Microsystems provided hardware and software to support the development and e
     {
       date: '1997',
       sponsor: 'Makai Ocean Engineering',
-      text: 'Software engineering for subsea cable and array installations',
+      text: 'Support software engineering technology transfer for subsea cable and array installations',
       logo: 'images/makai-logo.gif',
       grants: [83286, 10000],
       longText: `
@@ -173,7 +173,7 @@ Makai and CSDL collaborated on a joint research project sponsored by the Nationa
     {
       date: '1997',
       sponsor: 'Digital Equipment Corporation',
-      text: 'Java-based software review technology research and development',
+      text: 'Support Java-based software review technology research and development',
       logo: 'images/digital-logo.png',
       grants: [101413],
       longText: `
@@ -185,7 +185,7 @@ DEC's Advanced Development Group worked with CSDL to develop and evaluate Java-b
     {
       date: '1996',
       sponsor: 'Tektronix',
-      text: 'Adapt formal technical review to an industrial process.',
+      text: 'Adapt formal technical review processes to an industrial software development team.',
       logo: 'images/tektronix-logo.png',
       grants: [45000],
       longText: `

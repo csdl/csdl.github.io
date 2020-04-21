@@ -4,7 +4,7 @@ import _ from 'lodash';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Title from './Title';
-import SectionButtons from './SectionButtons';
+import SectionToggle from './SectionToggle';
 import MemberCard from './MemberCard';
 import getMemberData from './data/MemberData';
 
@@ -47,7 +47,7 @@ class Members extends React.Component {
     <div style={this.props.sectionStyle} id="members">
       <Container>
         <Title title={'Members'}/>
-        <SectionButtons onClick={this.onClickSectionButton} total={this.memberData.length} recentLabel='Current'/>
+        <SectionToggle onClick={this.onClickSectionButton} total={this.memberData.length} recentLabel='Current'/>
         <p style={{ textAlign: 'center' }}>Click (or tap) an image to display (or hide) member details.</p>
         {this.state.display === 'recent' ? this.renderRecent() : this.renderAll()}
       </Container>

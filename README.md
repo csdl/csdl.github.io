@@ -21,7 +21,7 @@ If the script fails with an authentication error, the simplest workaround is to 
   * Use react hooks and convert classes to functional components.
   * Comment the code.
   * SectionButtons -> SectionToggle.
-  * https://github.com/andyearnshaw/Intl.js/
+  * https://github.com/andyearnshaw/Intl.js/ (or NPM Version?)
 
 ### Post initial deploy
 

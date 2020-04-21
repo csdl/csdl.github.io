@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Title from './Title';
-import SectionButtons from './SectionButtons';
+import SectionToggle from './SectionToggle';
 import getSponsorData from './data/SponsorData';
 import SponsorCard from './SponsorCard';
 
@@ -41,7 +41,7 @@ class Sponsors extends React.Component {
     }
     return (
       <div>
-        <SectionButtons onClick={this.onClickSectionButton} total={this.SponsorData.length}/>
+        <SectionToggle onClick={this.onClickSectionButton} total={this.SponsorData.length}/>
         {decks}
       </div>
     );

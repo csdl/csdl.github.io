@@ -5,7 +5,7 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import Title from './Title';
 import getNewsData from './data/NewsData';
 import NewsCard from './NewsCard';
-import SectionButtons from './SectionButtons';
+import SectionToggle from './SectionToggle';
 
 class News extends React.Component {
   constructor(props) {
@@ -54,7 +54,7 @@ class News extends React.Component {
     <div style={this.props.sectionStyle} id="news">
       <Container>
         <Title title={'News'}/>
-        <SectionButtons onClick={this.onClickSectionButton} total={this.newsData.length}/>
+        <SectionToggle onClick={this.onClickSectionButton} total={this.newsData.length}/>
         {this.renderDecks()}
       </Container>
     </div>
