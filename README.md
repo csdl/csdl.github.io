@@ -14,14 +14,10 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  * Move nonMembers to a data file.
-  * Implement scroll https://github.com/ganderzz/react-scroll-to
-  * Add youtube videos for projects: radgrad, opq, kukuicup, morea, hackystat
+  * Add youtube videos for projects: ,, kukuicup, morea, hackystat
   * Revise this readme to document site management.
   * Use react hooks and convert classes to functional components.
   * Comment the code.
-  * SectionButtons -> SectionToggle.
-  * https://github.com/andyearnshaw/Intl.js/ (or NPM Version?)
 
 ### Post initial deploy
 

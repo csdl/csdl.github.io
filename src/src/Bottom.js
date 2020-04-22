@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import preval from 'preval.macro';
 import { greenColorCode } from './Constants';
 
 function Bottom() {
@@ -14,6 +15,7 @@ function Bottom() {
             University of Hawaii at Manoa<br/>
             1680 East-West Road, POST Room 307<br/>
             Honolulu, HI, USA<br/>
+            <small>Last updated: {preval`module.exports = new Date().toLocaleString();`}</small>
           </p>
           </Row>
         </Container>

@@ -457,7 +457,7 @@ Not all vital signs can be colorized.  For example, the Size vital sign cannot b
       keyword: 'Hackystat',
       text: 'A framework for collection, analysis, visualization, interpretation, annotation, and dissemination of software development process and product data.',
       media: 'images/hackystat-small.png',
-      bigImage: 'images/hackystat-big.png',
+      videoId: 'NrLFIpm0wps',
       longText: `
 Hackystat is an open source framework for collection, analysis, visualization, interpretation, annotation, and dissemination of software development process and product data. Hackystat users typically attach software ‘sensors’ to their development tools, which unobtrusively collect and send “raw” data about development to a web service called the Hackystat SensorBase for storage. The SensorBase repository can be queried by other web services to form higher level abstractions of this raw data, and/or integrate it with other internet-based communication or coordination mechanisms, and/or generate visualizations of the raw data, abstractions, or annotations.
 
@@ -485,7 +485,7 @@ For more information, please see [http://code.google.com/p/hackystat-ui-trajecto
       keyword: 'KukuiCup',
       text: 'An energy challenge investigating energy literacy, conservation, and information technology.',
       media: 'images/kukuicup-logo.jpg',
-      bigImage: 'images/kukuicup-big.png',
+      videoId: 'EJc0mXS7JCo',
       longText: `
 The Kukui Cup Project explores novel ways to utilize concepts from information technology, community-based social marketing, serious games, and educational pedagogy to support sustained change in sustainability-related behaviors.  We held a total of seven Kukui Cup challenges from 2011 - 2013.
 
@@ -543,7 +543,7 @@ For more information, please see [http://wattdepot.org](http://wattdepot.org).
       keyword: 'Morea',
       text: 'Generate educational websites organized by Modules, Outcomes, Readings, Experiences, and Assessments.',
       media: 'images/morea-module.png',
-      bigImage: 'images/morea-big.png',
+      videoId: 'DIbVvGHOhow',
       longText: `
 Morea implements a simple pedagogical design pattern: a course is a sequence of modules, each with one or more learning outcomes. Modules can combine one or more passive readings (providing background) with one or more active experiences (in-class work or homework). Finally, a module can contain one or more assessments to help students determine if they've achieved the learning outcomes. These five representations: Modules, Outcomes, Readings, Experiences, and Assessments form the acronym "Morea". 
 
@@ -560,7 +560,7 @@ For more information, please see [http://morea-framework.github.io/](http://more
       keyword: 'PowerQuality',
       text: 'Open source hardware and software for low-cost distributed power quality data collection, analysis, and visualization.',
       media: 'images/opqlogo.png',
-      bigImage: 'images/opq-big.png',
+      videoId: 'cGrQcyEZ5GI',
       longText: `
 The goal of the Open Power Quality project is to develop and evaluate technology to support three important improvements to electrical infrastructure: 
 
@@ -588,7 +588,7 @@ For more information, see [https://openpowerquality.org](https://openpowerqualit
       keyword: 'RadGrad',
       text: 'Improve the undergraduate degree experience through increased engagement and retention.',
       media: 'images/radgrad_logo.png',
-      bigImage: 'images/radgrad-big.png',
+      videoId: 'uGxwFldWtfs',
       longText: `
 The fundamental goal of the RadGrad Project is to provide students, faculty, and advisors with an alternative perspective on the undergraduate degree program---which traditionally boils down to a single kind of activity (coursework) and a single metric for success (grade point average). Our alternative perspective is called the Degree Experience, and it gives first class status to both curricular activities (courses) and extracurricular activities (discipline-oriented events, activities, clubs, etc.)
 

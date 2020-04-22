@@ -4,7 +4,6 @@ const fs = require('fs');
 const _ = require('lodash');
 const bibtex = require('bibtex');
 const jsonfile = require('jsonfile');
-const argv = require('minimist')(process.argv.slice(2));
 
 function computeMonthNumberString(month) {
   if (!month) { return '00'; }
@@ -23,15 +22,16 @@ function computeMonthNumberString(month) {
   return '00';
 }
 
-class CsdlTechReports {
+class TechReports {
   constructor() {
+    this.bibFileName = 'src/data/PaperData.bib';
     this.outFile = 'src/data/PaperData.json';
     this.authorMapFile = 'src/data/PaperData.authormap.json';
     this.keywordMapFile = 'src/data/PaperData.keywordmap.json';
     this.yearMapFile = 'src/data/PaperData.yearmap.json';
-    const bibFileName = argv.bibfile;
-    console.log('Reading', bibFileName);
-    const bibString = fs.readFileSync(bibFileName, 'utf8');
+    this.authorMapFilterListFile = 'src/data/PaperData.authormap.filterlist.json';
+    const bibString = fs.readFileSync(this.bibFileName, 'utf8');
+    this.authorMapFilterList = JSON.parse(fs.readFileSync(this.authorMapFilterListFile, 'utf8'));
     this.bibFile = bibtex.parseBibFile(bibString);
     this.citeKeys = _.keys(this.bibFile.entries$);
     // fields common to all: key, title, author, year, month, keywords, note, abstract, summary
@@ -54,7 +54,7 @@ class CsdlTechReports {
       // eslint-disable-next-line no-unused-expressions
       _.each(authors, author => {
         // eslint-disable-next-line no-unused-expressions
-      this.isCsdlMember(author) && ((authorMap[author]) ? authorMap[author].push(key) : authorMap[author] = [key]);
+      this.isMember(author) && ((authorMap[author]) ? authorMap[author].push(key) : authorMap[author] = [key]);
       });
     };
     _.each(this.citeKeys, key => mapKey(key));
@@ -160,80 +160,12 @@ class CsdlTechReports {
     return obj;
   }
 
-  isCsdlMember(author) {
-    const nonMembers = [
-      'Adam A. Porter',
-      'Alex Young',
-      'Alexandar Kavcic',
-      'Alexey Olkov',
-      'Anthony Kuh',
-      'Arnold P. Boedihardjo',
-      'Audris Mockus',
-      'Bill Giebink',
-      'Brian T. Pentland',
-      'Burt Leung',
-      'Christina Sablan',
-      'Christoph Aschwanden',
-      'Christopher Chan',
-      'Cliff Tomosada',
-      'Crystal Chen',
-      'Dag Sjoberg',
-      'Daniel Port',
-      'Dora Nakafuji',
-      'Emily Hill',
-      'Forrest Shull',
-      'Hakan Erdogmus',
-      'Hana Bowers',
-      'Herve Weitz',
-      'Jarrett Lee',
-      'Jeffrey Carver',
-      'Jeffrey K. Hollingsworth',
-      'Jennifer Saito',
-      'Jessica Lin',
-      'John Gustafson',
-      'Johnny Li',
-      'Kaveh Abhari',
-      'Keone Hiraide',
-      'Kiran Kavoori Ram',
-      'Larry Votta',
-      'Leilani Pena',
-      'Lorin Hochstein',
-      'Lutz Prechelt',
-      'Manfred Lerner',
-      'Mark F. Waterson',
-      'Martha S. Feldman',
-      'Martin Voelp',
-      'Marvin V. Zelkowitz',
-      'Matthias Fripp',
-      'Michelle Katchuck',
-      'Myriam Leggieri',
-      'Nico Zazworka',
-      'Nolan Y. Kiddo',
-      'Risa Khamsi',
-      'Sara K. Cobble',
-      'Sebastian Jekutsch',
-      'Sima Asgari',
-      'Stuart Faulk',
-      'Sunil Gandhi',
-      'Susan Frankenstein',
-      'Taiga Nakamura',
-      'Tim Oates',
-      'Timothy Burgess',
-      'Todd Baumeister',
-      'Tony Cowling',
-      'Tuan Huynh',
-      'Victor R. Basili',
-      'Walter Tichy',
-      'Weifeng Miao',
-      'Xiangli Xu',
-      'Xing Wang',
-      'William E. Doane',
-    ];
-    return _.findIndex(nonMembers, nonMember => nonMember === author) === -1;
+  isMember(author) {
+    return _.findIndex(this.authorMapFilterList, nonMember => nonMember === author) === -1;
   }
 }
 
 console.log('Starting build-techreports');
-const techreports = new CsdlTechReports();
+const techreports = new TechReports();
 techreports.writeFiles();
 console.log('Finished build-techreports');

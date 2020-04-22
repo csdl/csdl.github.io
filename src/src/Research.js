@@ -19,10 +19,10 @@ class Research extends React.Component {
     this.setState({ showOneCard: project });
   };
 
-  renderResearchCard = ({ date, project, keyword, text, url, media, bigImage, longText, moreInfo }, key) => (
+  renderResearchCard = ({ date, project, keyword, text, url, media, bigImage, longText, moreInfo, videoId }, key) => (
     <ResearchCard
       key={key} date={date} project={project} keyword={keyword} text={text} url={url} media={media}
-      bigImage={bigImage} longText={longText} moreInfo={moreInfo}
+      bigImage={bigImage} longText={longText} moreInfo={moreInfo} videoId={videoId}
       showOneCard={this.showOneCard} showLess={!!this.state.showOneCard}/>
   );
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import YouTube from 'react-youtube-embed';
 import Card from 'react-bootstrap/Card';
 import Markdown from 'react-markdown';
 import Button from 'react-bootstrap/Button';
@@ -7,7 +8,6 @@ import _ from 'lodash';
 import TechReports from './TechReports';
 import { greenColorCode } from './Constants';
 import PaperCard from './PaperCard';
-
 
 const cardStyle = { border: `1px solid ${greenColorCode}` };
 const buttonStyle = { backgroundColor: greenColorCode, borderColor: greenColorCode };
@@ -31,12 +31,13 @@ function smallCard(date, media, project, text, showLess, showOneCard) {
   );
 }
 
-function bigCard(date, project, keyword, bigImage, longText, showOneCard) {
+function bigCard(date, project, keyword, bigImage, longText, showOneCard, videoId) {
   const paperKeys = techReports.getKeysByKeyword(keyword);
   const entries = (paperKeys) ? techReports.getSortedEntries(_.map(paperKeys, key => techReports.getEntry(key))) : [];
   return (
     <Card style={cardStyle}>
-      <Card.Img variant="top" src={ bigImage }/>
+      {videoId && <YouTube id={videoId}/>}
+      {bigImage && <Card.Img variant="top" src={bigImage}/>}
       <Card.Body>
         <Card.Title style={{ color: greenColorCode }}>{project} ({date})</Card.Title>
         <Card.Text as='div'>
@@ -53,10 +54,10 @@ function bigCard(date, project, keyword, bigImage, longText, showOneCard) {
 }
 
 function ResearchCard(props) {
-  const { date, media, project, keyword, text, url, showOneCard, showLess, bigImage, longText } = props;
+  const { date, media, project, keyword, text, url, showOneCard, showLess, bigImage, longText, videoId } = props;
   return (
     showLess ?
-      bigCard(date, project, keyword, bigImage, longText, showOneCard) :
+      bigCard(date, project, keyword, bigImage, longText, showOneCard, videoId) :
       smallCard(date, media, project, text, url, showOneCard, showLess)
   );
 }
@@ -71,6 +72,7 @@ ResearchCard.propTypes = {
   showLess: PropTypes.bool.isRequired,
   bigImage: PropTypes.string,
   longText: PropTypes.string,
+  videoId: PropTypes.string,
 };
 
 export default ResearchCard;
