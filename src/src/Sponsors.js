@@ -12,6 +12,7 @@ function Sponsors(props) {
   const totalDecks = Math.trunc(sponsorData.length / 3);
   const [numDecks, setNumDecks] = useState(1);
   const [showOneCard, setShowOneCard] = useState(null);
+  const [toggleState, setToggleState] = useState('recent');
 
   const showThisCard = (project) => {
     setShowOneCard(project);
@@ -24,11 +25,12 @@ function Sponsors(props) {
       showOneCard={showThisCard} showLess={!!showOneCard}/>
   );
 
-  const onClickSectionButton = (pushedButton) => {
-    if (pushedButton === 'recent') {
+  const onClickToggle = (toggleSetting) => {
+    setToggleState(toggleSetting);
+    if (toggleSetting === 'recent') {
       setNumDecks(1);
     } else
-      if (pushedButton === 'all') {
+      if (toggleSetting === 'all') {
         setNumDecks(totalDecks);
       }
   };
@@ -53,7 +55,7 @@ function Sponsors(props) {
     }
     return (
       <div>
-        <SectionToggle onClick={onClickSectionButton} total={sponsorData.length}/>
+        <SectionToggle onClick={onClickToggle} total={sponsorData.length} toggleSetting={toggleState}/>
         {decks}
       </div>
     );

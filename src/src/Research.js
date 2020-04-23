@@ -12,6 +12,7 @@ function Research(props) {
   const totalDecks = Math.trunc(researchData.length / 3);
   const [numDecks, setNumDecks] = useState(1);
   const [showOneCard, setShowOneCard] = useState(null);
+  const [toggleState, setToggleState] = useState('recent');
 
   const showThisCard = (project) => {
     setShowOneCard(project);
@@ -25,11 +26,12 @@ function Research(props) {
       showOneCard={showThisCard} showLess={!!showOneCard}/>
   );
 
-  const onClickSectionButton = (pushedButton) => {
-    if (pushedButton === 'recent') {
+  const onClickToggle = (toggleSetting) => {
+    setToggleState(toggleSetting);
+    if (toggleSetting === 'recent') {
       setNumDecks(1);
     } else
-      if (pushedButton === 'all') {
+      if (toggleSetting === 'all') {
         setNumDecks(totalDecks);
       }
   };
@@ -54,7 +56,7 @@ function Research(props) {
     }
     return (
       <div>
-        <SectionToggle onClick={onClickSectionButton} total={researchData.length}/>
+        <SectionToggle onClick={onClickToggle} total={researchData.length} toggleSetting={toggleState}/>
         {decks}
       </div>
     );

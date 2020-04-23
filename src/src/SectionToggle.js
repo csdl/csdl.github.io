@@ -9,9 +9,20 @@ function SectionToggle(props) {
   const recentLabel = props.recentLabel || 'Recent';
   const buttonStyle = { borderColor: greenColorCode };
   const selectedStyle = { ...buttonStyle, fontWeight: 'bold', backgroundColor: greenColorCode };
-  const deselectedStyle = { ...buttonStyle, fontWeight: 'normal', color: greenColorCode, backgroundColor: lightGreenColorCode };
-  const [recentStyle, setRecentStyle] = useState(selectedStyle);
-  const [allStyle, setAllStyle] = useState(deselectedStyle);
+  const deselectedStyle = {
+    ...buttonStyle,
+    fontWeight: 'normal',
+    color: greenColorCode,
+    backgroundColor: lightGreenColorCode,
+  };
+  const [recentStyle, setRecentStyle] =
+    useState((props.toggleSetting === 'all') ? deselectedStyle : selectedStyle);
+  const [allStyle, setAllStyle] =
+    useState((props.toggleSetting === 'all') ? selectedStyle : deselectedStyle);
+  // if (props.toggleSetting === 'all') {
+  //   setRecentStyle(deselectedStyle);
+  //   setAllStyle(selectedStyle);
+  // }
 
   const onClick = (buttonName) => {
     if (buttonName === 'recent') {
@@ -40,6 +51,7 @@ SectionToggle.propTypes = {
   onClick: PropTypes.func.isRequired,
   total: PropTypes.number.isRequired,
   recentLabel: PropTypes.string,
+  toggleSetting: PropTypes.string,
 };
 
 export default SectionToggle;
