@@ -14,10 +14,9 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  * Add youtube videos for projects: ,, kukuicup, morea, hackystat
-  * Revise this readme to document site management.
   * Use react hooks and convert classes to functional components.
   * Comment the code.
+  * Revise this readme to document site management.
 
 ### Post initial deploy
 
