@@ -7,6 +7,11 @@ import SectionToggle from './SectionToggle';
 import getSponsorData from './data/SponsorData';
 import SponsorCard from './SponsorCard';
 
+/**
+ * Display the Sponsors section.
+ * Drilling down on a Sponsor item replaces the list by the single Card.
+ * We must remember the Toggle state so it's displayed correctly after a "show less..."
+ */
 function Sponsors(props) {
   const sponsorData = getSponsorData();
   const totalDecks = Math.trunc(sponsorData.length / 3);

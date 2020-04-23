@@ -12,6 +12,9 @@ const cardStyle = { border: `1px solid ${greenColorCode}` };
 const buttonStyle = { backgroundColor: greenColorCode, borderColor: greenColorCode };
 const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', notation: 'compact' });
 
+/**
+ * Display the summary of a Sponsor.
+ */
 function smallCard(date, sponsor, text, logo, grants, longText, showOneCard) {
   const total = dollar.format(_.reduce(grants, (sum, n) => sum + n, 0));
   return (
@@ -36,6 +39,9 @@ function smallCard(date, sponsor, text, logo, grants, longText, showOneCard) {
   );
 }
 
+/**
+ * Display details of a sponsor when the user clicks "Show more..."
+ */
 function bigCard(date, sponsor, text, logo, grants, longText, showOneCard) {
   const total = dollar.format(_.reduce(grants, (sum, n) => sum + n, 0));
   return (

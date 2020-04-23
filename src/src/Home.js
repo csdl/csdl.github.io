@@ -8,7 +8,7 @@ import Title from './Title';
 import getMemberData from './data/MemberData';
 import getSponsorData from './data/SponsorData';
 
-// Tech Report Info
+/* Tech Report Info */
 const techReports = new TechReports();
 const journal = techReports.getKeysByKeyword('Pubs-Journal').length;
 const conference = techReports.getKeysByKeyword('Pubs-Conference').length;
@@ -17,16 +17,17 @@ const phd = techReports.getKeysByKeyword('Thesis-PhD').length;
 const ms = techReports.getKeysByKeyword('Thesis-MS').length;
 const bs = techReports.getKeysByKeyword('Thesis-BS').length;
 
-// Member info
+/* Member info */
 const numMembers = getMemberData().length;
 
-// Sponsor info
+/* Sponsor info */
 const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', notation: 'compact' });
 const numSponsors = getSponsorData().length;
 const sponsorFundingList = _.flatten(_.map(getSponsorData(), sponsor => sponsor.grants));
 const total = dollar.format(_.reduce(sponsorFundingList, (sum, n) => sum + n, 0));
 
-const homePageText = `
+/* Markdown for Home section text. */
+const homeText = `
 The Collaborative Software Development Laboratory is led by [Philip Johnson](https://philipmjohnson.org"), a Professor in the [Department of Information and Computer Sciences](http://www.ics.hawaii.edu) at the [University of Hawaii](https://www.hawaii.edu).
 
 Established in 1991, the Collaborative Software Development Laboratory performs research, development, and technology transfer in disciplines including software engineering, sustainability, entrepreneurship, educational technology, renewable energy, and computer-supported cooperative work.
@@ -34,6 +35,9 @@ Established in 1991, the Collaborative Software Development Laboratory performs 
 So far, research by the ${numMembers} current and former members of CSDL has led to ${journal} journal, ${conference} conference, and ${workshop} workshop publications, as well as ${phd} Ph.D. theses, ${ms} M.S. theses, and ${bs} undergraduate honors theses.  Our ${numSponsors} sponsors have provided a total of ${total} in funding. 
 `;
 
+/**
+ * The Home section introduces the organization and provides summary statistics.
+ */
 function Home(props) {
   const jumbotronStyle = { backgroundColor: '#FFFFFF', padding: 0, marginBottom: 0 };
   return (
@@ -42,7 +46,7 @@ function Home(props) {
       <Jumbotron fluid style={jumbotronStyle}>
         <Container>
           <Title title={'Welcome to CSDL'}/>
-          <Markdown source={homePageText}/>
+          <Markdown source={homeText}/>
         </Container>
       </Jumbotron>
     </div>

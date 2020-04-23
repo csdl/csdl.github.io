@@ -7,12 +7,16 @@ import getNewsData from './data/NewsData';
 import NewsCard from './NewsCard';
 import SectionToggle from './SectionToggle';
 
+/**
+ * Display the News section.
+ * By default, display only the three most recent News items.
+ */
 function News(props) {
   const newsData = getNewsData();
   const totalDecks = Math.trunc(newsData.length / 3);
   const [numDecks, setNumDecks] = useState(1);
 
-  const onClickSectionButton = (pushedButton) => {
+  const onClickToggle = (pushedButton) => {
     if (pushedButton === 'recent') {
       setNumDecks(1);
     } else
@@ -50,7 +54,7 @@ function News(props) {
     <div style={props.sectionStyle} id="news">
       <Container>
         <Title title={'News'}/>
-        <SectionToggle onClick={onClickSectionButton} total={newsData.length}/>
+        <SectionToggle onClick={onClickToggle} total={newsData.length}/>
         {renderDecks()}
       </Container>
     </div>

@@ -22,3 +22,4 @@ If the script fails with an authentication error, the simplest workaround is to 
 
   * Move TR Library into this repo.
   * Implement permalinks for projects and TR lib selections.
+  * Convert to TypeScript.

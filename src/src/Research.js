@@ -7,6 +7,11 @@ import SectionToggle from './SectionToggle';
 import getResearchData from './data/ResearchData';
 import ResearchCard from './ResearchCard';
 
+/**
+ * Display the Research section.
+ * Drilling down on a Research item replaces the list by the single Card.
+ * We must remember the Toggle state so it's displayed correctly after a "show less..."
+ */
 function Research(props) {
   const researchData = getResearchData();
   const totalDecks = Math.trunc(researchData.length / 3);

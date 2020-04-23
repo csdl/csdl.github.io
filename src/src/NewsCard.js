@@ -16,6 +16,10 @@ function boxArrowUpRight() {
   );
 }
 
+/**
+ * Display a single News card.
+ * The entire News card is clickable, and sends the viewer to a different site with details about the item.
+ */
 function NewsCard(props) {
   const cardStyle = { border: `1px solid ${greenColorCode}` };
   return (
@@ -25,7 +29,6 @@ function NewsCard(props) {
         <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='100px' src={props.Media}/>
         <Card.Title style={{ color: greenColorCode }}>{props.Headline}</Card.Title>
         <Card.Text>
-
           {props.Text}
         </Card.Text>
       </Card.Body>

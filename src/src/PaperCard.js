@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 import Markdown from 'react-markdown';
 import { greenColorCode } from './Constants';
 
+/*
+ * The following functions take an entry object and format it for a particular type of publication.
+ * If your bibtex file has other types (booklet, manual, etc) then you'll have to add it here.
+ */
 const formatTechReport = entry => `${entry.authors.join(', ')},  **${entry.title}**, Technical Report ${entry.number}, ${entry.month} ${entry.year}, ${entry.institution} ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
 
 const formatPhdThesis = entry => `${entry.authors.join(', ')},  **${entry.title}**, Ph.D. Thesis, ${entry.school}, ${entry.month} ${entry.year}, ${entry.school} ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
@@ -19,6 +23,7 @@ const formatMisc = entry => `${entry.authors.join(', ')},  **${entry.title}**, $
 
 const formatInBook = entry => `${entry.authors.join(', ')},  **${entry.chapter}**, In *${entry.title}*, ${entry.year}, ${entry.publisher} ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
 
+/* Make it easy to get the format function from the document type. */
 const formatMap = {
   techreport: formatTechReport,
   phdthesis: formatPhdThesis,
@@ -29,7 +34,10 @@ const formatMap = {
   inbook: formatInBook,
 };
 
-
+/**
+ * Display a Paper, formatting appropriately for its type.
+ * Clicking or tapping it will display its abstract.
+ */
 function PaperCard(props) {
   const cardStyle = { border: `1px solid ${greenColorCode}`, marginBottom: '10px' };
   return (

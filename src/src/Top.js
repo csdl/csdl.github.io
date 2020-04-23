@@ -4,6 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import { greenColorCode } from './Constants';
 
+/**
+ * Display the "NavBar" at the top of the page.
+ */
 function Top() {
   const navbarStyle = { backgroundColor: greenColorCode, color: 'white', fontWeight: 'bold' };
   return (

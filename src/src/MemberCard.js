@@ -4,6 +4,9 @@ import Image from 'react-bootstrap/Image';
 import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 
+/**
+ * Display a single member as an image with a Bootstrap Popover with details when the image is clicked/tapped.
+ */
 function MemberCard(props) {
   const popover = (name, dates) => (
     <Popover id="popover-basic">

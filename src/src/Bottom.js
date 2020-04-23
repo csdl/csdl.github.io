@@ -4,6 +4,10 @@ import Row from 'react-bootstrap/Row';
 import preval from 'preval.macro';
 import { greenColorCode } from './Constants';
 
+/**
+ * Display the footer.
+ * Uses the preval macro so that the "deployed" version of the site has a Last update timestamp.
+ */
 function Bottom() {
   const bottomStyle = { backgroundColor: greenColorCode, color: 'white', fontWeight: 'bold', paddingTop: '20px', paddingBottom: '20px' };
   return (

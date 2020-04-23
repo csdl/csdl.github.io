@@ -8,6 +8,10 @@ import SectionToggle from './SectionToggle';
 import PaperCard from './PaperCard';
 import PaperForm from './PaperForm';
 
+/**
+ * Display the Papers section.
+ * When toggling to 'All', display a form rather than immediately displaying all of the Papers.
+ */
 function Papers(props) {
   const [display, setDisplay] = useState('recent');
   const techreports = new TechReports();

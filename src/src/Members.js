@@ -8,11 +8,16 @@ import SectionToggle from './SectionToggle';
 import MemberCard from './MemberCard';
 import getMemberData from './data/MemberData';
 
+/**
+ * Display the Member section.
+ * By default, display only those members whose dates field has "current" as the second element.
+ * Click or tap an image to display details about the member.
+ */
 function Members(props) {
   const [display, setDisplay] = useState('recent');
   const memberData = getMemberData();
 
-  const onClickSectionButton = (pushedButton) => {
+  const onClickToggle = (pushedButton) => {
     if (pushedButton === 'recent') {
       setDisplay('recent');
     } else
@@ -44,7 +49,7 @@ function Members(props) {
     <div style={props.sectionStyle} id="members">
       <Container>
         <Title title={'Members'}/>
-        <SectionToggle onClick={onClickSectionButton} total={memberData.length} recentLabel='Current'/>
+        <SectionToggle onClick={onClickToggle} total={memberData.length} recentLabel='Current'/>
         <p style={{ textAlign: 'center' }}>Click (or tap) an image to display (or hide) member details.</p>
         {display === 'recent' ? renderRecent() : renderAll()}
       </Container>

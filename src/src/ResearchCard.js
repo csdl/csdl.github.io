@@ -13,6 +13,9 @@ const cardStyle = { border: `1px solid ${greenColorCode}` };
 const buttonStyle = { backgroundColor: greenColorCode, borderColor: greenColorCode };
 const techReports = new TechReports();
 
+/**
+ * Show only a summary of the Research project.
+ */
 function smallCard(date, media, project, text, showLess, showOneCard) {
   return (
     <Card style={cardStyle}>
@@ -31,6 +34,9 @@ function smallCard(date, media, project, text, showLess, showOneCard) {
   );
 }
 
+/**
+ * If the user selects "Show more", then show them more.
+ */
 function bigCard(date, project, keyword, bigImage, longText, showOneCard, videoId) {
   const paperKeys = techReports.getKeysByKeyword(keyword);
   const entries = (paperKeys) ? techReports.getSortedEntries(_.map(paperKeys, key => techReports.getEntry(key))) : [];

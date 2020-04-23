@@ -14,6 +14,10 @@ import { lightGreenColorCode } from './Constants';
 
 const sectionStyle = { paddingTop: '1em', paddingBottom: '1em' };
 const sectionStyle2 = { ...sectionStyle, backgroundColor: lightGreenColorCode };
+
+/**
+ * The top level layout for the site.
+ */
 ReactDOM.render(
   <React.StrictMode>
     <Top/>
