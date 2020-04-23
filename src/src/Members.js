@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import Container from 'react-bootstrap/Container';
@@ -8,24 +8,21 @@ import SectionToggle from './SectionToggle';
 import MemberCard from './MemberCard';
 import getMemberData from './data/MemberData';
 
-class Members extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { display: 'recent' };
-    this.memberData = getMemberData();
-  }
+function Members(props) {
+  const [display, setDisplay] = useState('recent');
+  const memberData = getMemberData();
 
-  onClickSectionButton = (pushedButton) => {
+  const onClickSectionButton = (pushedButton) => {
     if (pushedButton === 'recent') {
-      this.setState({ display: 'recent' });
+      setDisplay('recent');
     } else
       if (pushedButton === 'all') {
-        this.setState({ display: 'all' });
+        setDisplay('all');
       }
-  }
+  };
 
-  renderRecent = () => {
-    const recentMembers = _.filter(this.memberData, (person) => person.dates[1] === 'present');
+  const renderRecent = () => {
+    const recentMembers = _.filter(memberData, (person) => person.dates[1] === 'present');
     return (
       <Container>
         <Row className="justify-content-center">
@@ -33,23 +30,23 @@ class Members extends React.Component {
         </Row>
       </Container>
     );
-  }
+  };
 
-  renderAll = () => (
+  const renderAll = () => (
     <Container>
       <Row className="justify-content-center">
-        {_.map(this.memberData, (person, idx) => <MemberCard key={idx} person={person}/>)}
+        {_.map(memberData, (person, idx) => <MemberCard key={idx} person={person}/>)}
       </Row>
     </Container>
-  )
+  );
 
-  render = () => (
-    <div style={this.props.sectionStyle} id="members">
+  return (
+    <div style={props.sectionStyle} id="members">
       <Container>
         <Title title={'Members'}/>
-        <SectionToggle onClick={this.onClickSectionButton} total={this.memberData.length} recentLabel='Current'/>
+        <SectionToggle onClick={onClickSectionButton} total={memberData.length} recentLabel='Current'/>
         <p style={{ textAlign: 'center' }}>Click (or tap) an image to display (or hide) member details.</p>
-        {this.state.display === 'recent' ? this.renderRecent() : this.renderAll()}
+        {display === 'recent' ? renderRecent() : renderAll()}
       </Container>
     </div>
   );

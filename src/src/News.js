@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import CardDeck from 'react-bootstrap/CardDeck';
@@ -7,55 +7,51 @@ import getNewsData from './data/NewsData';
 import NewsCard from './NewsCard';
 import SectionToggle from './SectionToggle';
 
-class News extends React.Component {
-  constructor(props) {
-    super(props);
-    this.newsData = getNewsData();
-    this.totalDecks = Math.trunc(this.newsData.length / 3);
-    this.state = { numDecks: 1 };
-  }
+function News(props) {
+  const newsData = getNewsData();
+  const totalDecks = Math.trunc(newsData.length / 3);
+  const [numDecks, setNumDecks] = useState(1);
 
-  onClickSectionButton = (pushedButton) => {
+  const onClickSectionButton = (pushedButton) => {
     if (pushedButton === 'recent') {
-      this.setState({ numDecks: 1 });
+      setNumDecks(1);
     } else
       if (pushedButton === 'all') {
-        this.setState({ numDecks: this.totalDecks });
+        setNumDecks(totalDecks);
       }
-  }
+  };
 
-  renderDecks = () => {
-    const decks = [];
-    for (let i = 0; i < this.state.numDecks; i++) {
-      decks.push(this.renderDeck(i));
-    }
-    return decks;
-  }
+  const renderNewsCard = (data, idx) => (
+    <NewsCard key={idx} Date={data.Date} Headline={data.Headline} Text={data.Text} URL={data.URL} Media={data.Media}/>
+  );
 
-  renderDeck = (deckNum) => {
+  const renderDeck = (deckNum) => {
     const deckStyle = { marginBottom: '1em' };
     return (
       <CardDeck key={deckNum} style={deckStyle}>
         {[
-          this.renderNewsCard(this.newsData[(deckNum * 3)], (deckNum * 3)),
-          this.renderNewsCard(this.newsData[(deckNum * 3) + 1], (deckNum * 3) + 1),
-          this.renderNewsCard(this.newsData[(deckNum * 3) + 2], (deckNum * 3) + 2),
+          renderNewsCard(newsData[(deckNum * 3)], (deckNum * 3)),
+          renderNewsCard(newsData[(deckNum * 3) + 1], (deckNum * 3) + 1),
+          renderNewsCard(newsData[(deckNum * 3) + 2], (deckNum * 3) + 2),
         ]}
       </CardDeck>
     );
-  }
+  };
 
-  renderNewsCard = (data, idx) => (
-    <NewsCard key={idx} Date={data.Date} Headline={data.Headline} Text={data.Text} URL={data.URL} Media={data.Media}/>
-  );
+  const renderDecks = () => {
+    const decks = [];
+    for (let i = 0; i < numDecks; i++) {
+      decks.push(renderDeck(i));
+    }
+    return decks;
+  };
 
-
-  render = () => (
-    <div style={this.props.sectionStyle} id="news">
+  return (
+    <div style={props.sectionStyle} id="news">
       <Container>
         <Title title={'News'}/>
-        <SectionToggle onClick={this.onClickSectionButton} total={this.newsData.length}/>
-        {this.renderDecks()}
+        <SectionToggle onClick={onClickSectionButton} total={newsData.length}/>
+        {renderDecks()}
       </Container>
     </div>
   );
