@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import Container from 'react-bootstrap/Container';
@@ -8,38 +8,35 @@ import SectionToggle from './SectionToggle';
 import PaperCard from './PaperCard';
 import PaperForm from './PaperForm';
 
-class Papers extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { display: 'recent' };
-    this.techreports = new TechReports();
-  }
+function Papers(props) {
+  const [display, setDisplay] = useState('recent');
+  const techreports = new TechReports();
 
-  onClickSectionButton = (pushedButton) => {
+  const onClickSectionButton = (pushedButton) => {
     if (pushedButton === 'recent') {
-      this.setState({ display: 'recent' });
+      setDisplay('recent');
     } else
       if (pushedButton === 'all') {
-        this.setState({ display: 'all' });
+        setDisplay('all');
       }
-  }
+  };
 
-  renderRecent = () => {
-    const keys = this.techreports.getRecentKeys();
+  const renderRecent = () => {
+    const keys = techreports.getRecentKeys();
     return (
       <div>
         <p style={{ textAlign: 'center' }}>Click (or tap) an entry to display (or hide) the abstract.</p>
-        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={this.techreports.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={techreports.getEntry(key)}/>)}
       </div>
     );
-  }
+  };
 
-  render = () => (
-    <div style={this.props.sectionStyle} id="papers">
+  return (
+    <div style={props.sectionStyle} id="papers">
       <Container>
         <Title title={'Papers'}/>
-        <SectionToggle onClick={this.onClickSectionButton} total={this.techreports.total()}/>
-        {this.state.display === 'recent' ? this.renderRecent() : <PaperForm/>}
+        <SectionToggle onClick={onClickSectionButton} total={techreports.total()}/>
+        {display === 'recent' ? renderRecent() : <PaperForm/>}
       </Container>
     </div>
   );
