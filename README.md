@@ -14,9 +14,9 @@ If the script fails with an authentication error, the simplest workaround is to 
 
 ### Next steps
 
-  * Use react hooks and convert classes to functional components.
   * Comment the code.
   * Revise this readme to document site management.
+  * After show more..., returning to show less... puts sectionToggle at always Recent.
 
 ### Post initial deploy
 
