@@ -8,10 +8,10 @@ import getResearchData from './data/ResearchData';
 import ResearchCard from './ResearchCard';
 
 function Research(props) {
-    const researchData = getResearchData();
-    const totalDecks = Math.trunc(researchData.length / 3);
-    const [numDecks, setNumDecks] = useState(1);
-    const [showOneCard, setShowOneCard] = useState(null);
+  const researchData = getResearchData();
+  const totalDecks = Math.trunc(researchData.length / 3);
+  const [numDecks, setNumDecks] = useState(1);
+  const [showOneCard, setShowOneCard] = useState(null);
 
   const showThisCard = (project) => {
     setShowOneCard(project);
