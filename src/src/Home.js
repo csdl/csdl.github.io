@@ -28,7 +28,7 @@ const total = dollar.format(_.reduce(sponsorFundingList, (sum, n) => sum + n, 0)
 
 /* Markdown for Home section text. */
 const homeText = `
-The Collaborative Software Development Laboratory is led by [Philip Johnson](https://philipmjohnson.org"), a Professor in the [Department of Information and Computer Sciences](http://www.ics.hawaii.edu) at the [University of Hawaii](https://www.hawaii.edu).
+The Collaborative Software Development Laboratory is led by [Philip Johnson](https://philipmjohnson.org), a Professor in the [Department of Information and Computer Sciences](http://www.ics.hawaii.edu) at the [University of Hawaii](https://www.hawaii.edu).
 
 Established in 1991, the Collaborative Software Development Laboratory performs research, development, and technology transfer in disciplines including software engineering, sustainability, entrepreneurship, educational technology, renewable energy, and computer-supported cooperative work.
 
