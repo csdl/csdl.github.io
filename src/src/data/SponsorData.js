@@ -27,15 +27,15 @@ CSDL has been supported by six grants from the National Science Foundation.
     {
       date: '2018 - present',
       sponsor: 'University of Hawaii Office of Sustainability',
-      text: 'Support for energy research and development initiatives including the President\'s Green Project Implementation Award and the JCI Fellows Program',
+      text: 'Support for energy research and development initiatives including the President\'s Green Project Implementation Award and the Johnson Controls International (JCI) Fellows Program',
       logo: 'images/uh-office-of-sustainability-logo.png',
-      grants: [10000, 85286, 28269, 28269, 27351],
+      grants: [10000, 64500, 64500, 64500],
       longText: `
 The [University of Hawaii Office of Sustainability](https://www.hawaii.edu/sustainability/) works across UH campuses to complement, support and enhance the existing sustainability work under way, and to provide coordination capacity for campuses to share information and resources with each other to accelerate action to strengthen the environmental, social, cultural and economic health of our islands’ communities.
 
-The President's Green Project Implementation Award funded a pilot deployment of an Open Power Quality network to analyze the UH Manoa micro-grid from 2018-2020.
+The President's Green Project Implementation Award (2018 - 2020) funded a pilot deployment of an Open Power Quality network to analyze the UH Manoa micro-grid.
 
-The JCI Fellows program will fund research assistants at both graduate and undergraduate levels to do energy data research.
+The Johnson Controls International (JCI) Fellows program (2020 - 2023) funds research assistants at both graduate and undergraduate levels to do energy data research.
 `,
     },
     {
