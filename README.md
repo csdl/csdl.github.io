@@ -9,9 +9,9 @@ This repository contains the source files and the rendered HTML for https://csdl
 
 To install the system, first [install NPM](https://www.npmjs.com/get-npm).
 
-Next, fork the entire repository, or else download the files for the "src" branch of the system if you just want to play around.
+Second, fork the entire repository, or else download the files for the "src" branch of the repo if you just want to play around.
 
-Finally, cd into the src/ directory of the "src" branch, and type `npm install` to download the libraries necessary to build and deploy the system:
+Third, cd into the src/ directory of the "src" branch, and type `npm install` to download the libraries necessary to build and deploy the system:
 
 ```
 $ npm install
@@ -146,7 +146,7 @@ Finished build-techreports
 
 It's useful to note that this is not the complete list of authors.  For my site, I want to omit certain collaborators who were not members of CSDL from appearing in the drop-down list of authors in the Paper section.  To do this, you just specify their name in [src/src/data/PaperData.authormap.filterlist.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.authormap.filterlist.json). Of course, the "filtered" author names still appear in the actual citation of a paper; they just can't be searched for using the dropdown. (I did this because the dropdown containing all coauthors would have well over 100 items and that seemed too much.)
 
-In addition to writing out [src/src/data/PaperData.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.json), the script generates two index files which reduces computation in the deployed site. These index files are [src/src/data/PaperData.authormap.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.authormap.json), [src/src/data/PaperData.keywordmap.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.keywordmap.json), and [src/src/data/PaperData.yearmap.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.yearmap.json).
+In addition to writing out [src/src/data/PaperData.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.json), the script generates several index files which reduces computation in the deployed site. These index files are [src/src/data/PaperData.authormap.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.authormap.json), [src/src/data/PaperData.keywordmap.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.keywordmap.json), and [src/src/data/PaperData.yearmap.json](https://github.com/csdl/csdl.github.io/blob/src/src/src/data/PaperData.yearmap.json).
 
 
 ### Members
@@ -227,4 +227,4 @@ Begin with [index.js](https://github.com/csdl/csdl.github.io/blob/src/src/src/in
 
 Then look at each section's React component.  The News section component is [News.js](https://github.com/csdl/csdl.github.io/blob/src/src/src/News.js). Many sections consist of displaying one or more "cards", and these are always their own component. So, for example, the code for the card that displays a single New item is [NewsCard.js](https://github.com/csdl/csdl.github.io/blob/src/src/src/NewsCard.js).
 
-LMK if you have ideas for improving the site. I've listed a few as [Issues](https://github.com/csdl/csdl.github.io/issues).
+LMK if you have ideas for improving the site. I've listed a few of mine as [Issues](https://github.com/csdl/csdl.github.io/issues).
