@@ -228,3 +228,7 @@ Begin with [index.js](https://github.com/csdl/csdl.github.io/blob/src/src/src/in
 Then look at each section's React component.  The News section component is [News.js](https://github.com/csdl/csdl.github.io/blob/src/src/src/News.js). Many sections consist of displaying one or more "cards", and these are always their own component. So, for example, the code for the card that displays a single New item is [NewsCard.js](https://github.com/csdl/csdl.github.io/blob/src/src/src/NewsCard.js).
 
 LMK if you have ideas for improving the site. I've listed a few of mine as [Issues](https://github.com/csdl/csdl.github.io/issues).
+
+## License
+
+MIT.  See [license](LICENSE.md)
