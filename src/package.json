@@ -47,6 +47,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
+    "deploy-noclean": "gh-pages -b master -d build -a",
     "deploy-help": "gh-pages --help",
     "start": "react-scripts start",
     "build": "react-scripts build",
