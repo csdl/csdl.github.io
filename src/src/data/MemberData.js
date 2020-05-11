@@ -41,6 +41,11 @@ export default function getMemberData() {
       dates: ['2012', ''],
     },
     {
+      name: ['Angeli', 'Amascual'],
+      photo: '/images/people/angeli-amascual.png',
+      dates: ['2020', 'present'],
+    },
+    {
       name: ['Anne', 'Disney'],
       photo: '/images/people/anne-disney.jpg',
       dates: ['1996', '1998'],
@@ -51,9 +56,24 @@ export default function getMemberData() {
       dates: ['2013', 'present'],
     },
     {
+      name: ['Arslan', 'Rakhmankulov'],
+      photo: '/images/people/arslan-rakhmankulov.jpg',
+      dates: ['2020', 'present'],
+    },
+    {
+      name: ['Aubrie', 'Usui'],
+      photo: '/images/people/aubrie-usui.jpg',
+      dates: ['2020', 'present'],
+    },
+    {
       name: ['Austin', 'Ito'],
       photo: '/images/people/austen-ito.jpg',
       dates: ['2004', '2005'],
+    },
+    {
+      name: ['Calvan', 'Liang'],
+      photo: '/images/people/calvan-liang.png',
+      dates: ['2020', 'present'],
     },
     {
       name: ['Cam', 'Moore'],
@@ -141,6 +161,11 @@ export default function getMemberData() {
       dates: ['2011', ''],
     },
     {
+      name: ['Hanna', 'Park'],
+      photo: '/images/people/hanna-park.jpg',
+      dates: ['2020', 'present'],
+    },
+    {
       name: ['Hongbing', 'Kou'],
       photo: '/images/people/hongbing-kou.jpg',
       dates: ['2002', '2007'],
@@ -159,6 +184,11 @@ export default function getMemberData() {
       name: ['Jennifer', 'Geis'],
       photo: '/images/people/jennifer-geis.jpg',
       dates: ['1996', '1998'],
+    },
+    {
+      name: ['Jenny', 'Hsu'],
+      photo: '/images/people/jenny-hsu.png',
+      dates: ['2020', 'present'],
     },
     {
       name: ['Jitender', 'Miglani'],
@@ -209,6 +239,11 @@ export default function getMemberData() {
       name: ['Kea', 'Uehara'],
       photo: '/images/people/kea-uehara.jpg',
       dates: ['2016', '2017'],
+    },
+    {
+      name: ['Kelli', 'Tamashiro'],
+      photo: '/images/people/kelli-tamashiro.jpg',
+      dates: ['2020', 'present'],
     },
     {
       name: ['Mercedez', 'Castro'],

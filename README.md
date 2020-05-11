@@ -23,53 +23,8 @@ $ npm install
   CXX(target) Release/obj.target/fse/fsevents.o
   SOLINK_MODULE(target) Release/fse.node
 
-> fsevents@1.2.12 install /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/watchpack/node_modules/fsevents
-> node-gyp rebuild
-
-  SOLINK_MODULE(target) Release/.node
-  CXX(target) Release/obj.target/fse/fsevents.o
-  SOLINK_MODULE(target) Release/fse.node
-
-> fsevents@1.2.12 install /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/webpack-dev-server/node_modules/fsevents
-> node-gyp rebuild
-
-  SOLINK_MODULE(target) Release/.node
-  CXX(target) Release/obj.target/fse/fsevents.o
-  SOLINK_MODULE(target) Release/fse.node
-
-> fibers@5.0.0 install /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/fibers
-> node build.js || nodejs build.js
-
-  CXX(target) Release/obj.target/fibers/src/fibers.o
-  CXX(target) Release/obj.target/fibers/src/coroutine.o
-  CC(target) Release/obj.target/fibers/src/libcoro/coro.o
-  SOLINK_MODULE(target) Release/fibers.node
-Installed in `/Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/fibers/bin/darwin-x64-64/fibers.node`
-
-> node-sass@4.14.0 install /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/node-sass
-> node scripts/install.js
-
-Cached binary found at /Users/philipjohnson/.npm/node-sass/4.14.0/darwin-x64-64_binding.node
-
-> core-js@2.6.11 postinstall /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/babel-runtime/node_modules/core-js
-> node -e "try{require('./postinstall')}catch(e){}"
-
-Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
-
-The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
-> https://opencollective.com/core-js
-> https://www.patreon.com/zloirock
-
-Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
-
-> core-js@3.6.4 postinstall /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/core-js
-> node -e "try{require('./postinstall')}catch(e){}"
-
-> core-js-pure@3.6.4 postinstall /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/core-js-pure
-> node -e "try{require('./postinstall')}catch(e){}"
-
-> node-sass@4.14.0 postinstall /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/node-sass
-> node scripts/build.js
+  :
+  :
 
 Binary found at /Users/philipjohnson/github/csdl/csdl.github.io/src/node_modules/node-sass/vendor/darwin-x64-64/binding.node
 Testing binary
