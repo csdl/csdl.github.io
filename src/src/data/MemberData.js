@@ -246,6 +246,11 @@ export default function getMemberData() {
       dates: ['2020', 'present'],
     },
     {
+      name: ['Max', 'Deyo'],
+      photo: '/images/people/max-deyo.jpg',
+      dates: ['2020', 'present'],
+    },
+    {
       name: ['Mercedez', 'Castro'],
       photo: '/images/people/mercedez-castro.jpg',
       dates: ['2019', ''],
