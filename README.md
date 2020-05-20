@@ -166,7 +166,7 @@ Find out more about deployment here:
 Published
 ```
 
-If the script fails with an authentication error, the simplest solution I've found is to run `git push origin master` on the command line. That will prompt you for your username and password and cache those values for a while so that the script will now succeed.
+If the script fails with an authentication error, the simplest solution I've found is to run `git push origin src` on the command line. That will prompt you for your username and password and cache those values for a while so that the script will now succeed.
 
 **Important Note**: `npm run deploy` only commits and pushes the "master" branch of the repository, which contains the rendered version of the site. It does NOT commit the "src" branch of the repository. So, make sure that you push your changes to the src branch to GitHub as well using your git client of choice.
 

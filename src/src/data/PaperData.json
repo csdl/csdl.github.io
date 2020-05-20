@@ -4581,6 +4581,42 @@
     "sortKey": 201908
   },
   {
+    "key": "csdl2-20-05",
+    "type": "techreport",
+    "title": "Why Don’t Students Use RadGrad? A Qualitative Study of Factors That Inhibit RadGrad Adoption",
+    "year": "2020",
+    "month": "May",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2020/20-05/20-05.pdf",
+    "abstract": "This technical report presents a proposal for qualitative research designed to uncover factors that inhibit students from using RadGrad.",
+    "institution": "University of Hawaii, Honolulu, HI",
+    "number": "CSDL-20-05",
+    "authors": [
+      "Quinne Uchida"
+    ],
+    "keywords": [
+      "RadGrad"
+    ],
+    "sortKey": 202005
+  },
+  {
+    "key": "csdl2-20-04",
+    "type": "techreport",
+    "title": "\"InternBit\" for Automated Discovery of Relevant Internship Opportunities based on RadGrad User Data",
+    "year": "2020",
+    "month": "May",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2020/20-04/20-04.pdf",
+    "abstract": "This technical report presents a proposal for research on a system called InternBit, which will help provide students with high quality recommendations for Internships using their RadGrad profile information.",
+    "institution": "University of Hawaii, Honolulu, HI",
+    "number": "CSDL-20-04",
+    "authors": [
+      "Mirabela Medallon"
+    ],
+    "keywords": [
+      "RadGrad"
+    ],
+    "sortKey": 202005
+  },
+  {
     "key": "csdl2-20-03",
     "type": "techreport",
     "title": "UH Microgrid Pilot Study",
