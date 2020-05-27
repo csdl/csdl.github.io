@@ -4581,6 +4581,24 @@
     "sortKey": 201908
   },
   {
+    "key": "csdl2-20-06",
+    "type": "techreport",
+    "title": "Improved understanding of student interests in Computer Science through Page Tracking Analysis",
+    "year": "2020",
+    "month": "May",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2020/20-06/20-06.pdf",
+    "abstract": "This technical report presents a proposal for quantitative research designed to improve the understanding of RadGrad user behavior.",
+    "institution": "University of Hawaii, Honolulu, HI",
+    "number": "CSDL-20-06",
+    "authors": [
+      "Gian Calica"
+    ],
+    "keywords": [
+      "RadGrad"
+    ],
+    "sortKey": 202005
+  },
+  {
     "key": "csdl2-20-05",
     "type": "techreport",
     "title": "Why Don’t Students Use RadGrad? A Qualitative Study of Factors That Inhibit RadGrad Adoption",
