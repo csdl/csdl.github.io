@@ -294,5 +294,12 @@ export default function getNewsCardsData() {
       URL: 'https://openpowerquality.org/blog/2020/03/10/serge-dissertation.html',
       Media: 'images/serge.jpg',
     },
+    {
+      Date: '6/1/2020',
+      Headline: 'Sergey Negrashov and Anthony Christe organize AlohaMask',
+      Text: 'In response to COVID-19, Sergey and Anthony organized a volunteer network of over 600 people to mass produce PPEs.',
+      URL: 'https://alohamask.org/',
+      Media: 'images/alohamask.svg',
+    },
   ].reverse();
 }
