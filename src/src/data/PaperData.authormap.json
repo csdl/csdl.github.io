@@ -123,7 +123,8 @@
     "csdl2-19-02",
     "csdl2-19-03",
     "csdl2-20-03",
-    "csdl2-19-04"
+    "csdl2-19-04",
+    "csdl2-20-07"
   ],
   "Danu Tjahjono": [
     "csdl-92-02",
@@ -405,14 +406,16 @@
     "csdl2-17-03",
     "csdl2-19-02",
     "csdl2-20-03",
-    "csdl2-20-01"
+    "csdl2-20-01",
+    "csdl2-20-07"
   ],
   "Sergey Negrashov": [
     "csdl2-14-11",
     "csdl2-16-02",
     "csdl2-17-03",
     "csdl2-20-03",
-    "csdl2-20-02"
+    "csdl2-20-02",
+    "csdl2-20-07"
   ],
   "Dylan Nakahodo": [
     "csdl2-17-03"
@@ -422,9 +425,6 @@
   ],
   "David Aghalarpout": [
     "csdl2-17-03"
-  ],
-  "Arnold Boedihardjo": [
-    "csdl2-17-04"
   ],
   "Amy Takayesu": [
     "csdl2-17-05"

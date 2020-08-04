@@ -4487,7 +4487,7 @@
       "Xing Wang",
       "Tim Oates",
       "Sunil Gandhi",
-      "Arnold Boedihardjo",
+      "Arnold P. Boedihardjo",
       "Crystal Chen",
       "Susan Frankenstein"
     ],
@@ -4716,5 +4716,29 @@
       "Thesis-PhD"
     ],
     "sortKey": 202005
+  },
+  {
+    "key": "csdl2-20-07",
+    "type": "article",
+    "title": "Design, Implementation, and Evaluation of Open Power Quality",
+    "year": "2020",
+    "month": "August",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2020/20-07/20-07.pdf",
+    "abstract": "\r\nModern electrical grids are transitioning from a centralized generation architecture to an architecture with significant distributed, intermittent generation. This transition means that the formerly sharp distinction between energy producers (utility companies) and consumers (residences, businesses, etc.) are blurring: end-users both produce and consume energy, making energy management and public policy more complex. The goal of the Open Power Quality (OPQ) project is to design and implement a low cost, distributed power quality sensor network that provides useful new forms of information about modern electrical grids to producers, consumers, researchers, and policy makers. In 2019, we performed a pilot study involving the deployment of an OPQ sensor network at the University of Hawaii microgrid for three months. Results of the pilot study validate the ability of OPQ to collect accurate power quality data in a way that provides useful new insights into electrical grids.\r\n",
+    "journal": "Energies",
+    "volume": 13,
+    "number": 15,
+    "authors": [
+      "Anthony J. Christe",
+      "Sergey Negrashov",
+      "Philip M. Johnson"
+    ],
+    "keywords": [
+      "Pubs-Journal",
+      "Sustainability",
+      "SmartGrid",
+      "PowerQuality"
+    ],
+    "sortKey": 202008
   }
 ]
