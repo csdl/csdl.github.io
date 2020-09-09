@@ -4740,5 +4740,28 @@
       "PowerQuality"
     ],
     "sortKey": 202008
+  },
+  {
+    "key": "csdl2-20-08",
+    "type": "article",
+    "title": "Beyond course work: expanding what's valued in computer science degree programs",
+    "year": "2020",
+    "month": "September",
+    "note": "http://csdl.ics.hawaii.edu/techreports/2020/20-08/20-08.pdf",
+    "abstract": "\r\nAs the field of Computer Science (CS) continues to diversify and expand, the need for undergraduates to explore career possibilities and develop personalized study paths has never been greater. This reality presents a challenge for CS departments. How do the students striving to become competent professionals in an ever-changing field of study? How do they do this efficiently and effectively? This study addresses such questions by introducing RadGrad, an online application combining features of social networks, degree planners and serious games.\r\n",
+    "journal": "Journal of Applied Research in Higher Education",
+    "volume": 12,
+    "number": 4,
+    "authors": [
+      "Seungoh Paek",
+      "Peter Leong",
+      "Philip M. Johnson",
+      "Carleton A. Moore"
+    ],
+    "keywords": [
+      "Pubs-Journal",
+      "RadGrad"
+    ],
+    "sortKey": 202009
   }
 ]
