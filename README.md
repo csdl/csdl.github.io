@@ -110,7 +110,7 @@ To manage Members, edit [src/src/data/MemberData.js](https://github.com/csdl/csd
 
 All of the images should be square and sized to exactly 100x100px. At least I think it looks best that way. Interestingly, you'll notice if an image deviates even by a pixel or two.
 
-If the second entry of the dates field is 'current', then that Member will appear as a current member.
+If the second entry of the dates field is 'present', then that Member will appear as a current member.
 
 Obviously, sunglasses are mandatory.
 

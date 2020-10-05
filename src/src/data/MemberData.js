@@ -36,6 +36,11 @@ export default function getMemberData() {
       dates: ['2016', '2017'],
     },
     {
+      name: ['Andre', 'Ruiz'],
+      photo: '/images/people/andre-ruiz.jpg',
+      dates: ['2012', 'present'],
+    },
+    {
       name: ['Andrea', 'Connell'],
       photo: '/images/people/andrea-connell.jpg',
       dates: ['2012', ''],
@@ -43,7 +48,7 @@ export default function getMemberData() {
     {
       name: ['Angeli', 'Amascual'],
       photo: '/images/people/angeli-amascual.png',
-      dates: ['2020', 'present'],
+      dates: ['2020', ''],
     },
     {
       name: ['Anne', 'Disney'],
@@ -53,17 +58,17 @@ export default function getMemberData() {
     {
       name: ['Anthony', 'Christe'],
       photo: '/images/people/anthony-christe.jpg',
-      dates: ['2013', 'present'],
+      dates: ['2013', '2020'],
     },
     {
       name: ['Arslan', 'Rakhmankulov'],
       photo: '/images/people/arslan-rakhmankulov.jpg',
-      dates: ['2020', 'present'],
+      dates: ['2020', ''],
     },
     {
       name: ['Aubrie', 'Usui'],
       photo: '/images/people/aubrie-usui.jpg',
-      dates: ['2020', 'present'],
+      dates: ['2020', ''],
     },
     {
       name: ['Austin', 'Ito'],
@@ -73,7 +78,7 @@ export default function getMemberData() {
     {
       name: ['Calvan', 'Liang'],
       photo: '/images/people/calvan-liang.png',
-      dates: ['2020', 'present'],
+      dates: ['2020', ''],
     },
     {
       name: ['Cam', 'Moore'],
@@ -143,7 +148,7 @@ export default function getMemberData() {
     {
       name: ['Gian', 'Calica'],
       photo: '/images/people/gian-calica.jpg',
-      dates: ['2019', 'present'],
+      dates: ['2019', '2020'],
     },
     {
       name: ['Glen', 'Barcelo'],
@@ -163,7 +168,7 @@ export default function getMemberData() {
     {
       name: ['Hanna', 'Park'],
       photo: '/images/people/hanna-park.jpg',
-      dates: ['2020', 'present'],
+      dates: ['2020', ''],
     },
     {
       name: ['Hongbing', 'Kou'],
@@ -188,6 +193,11 @@ export default function getMemberData() {
     {
       name: ['Jenny', 'Hsu'],
       photo: '/images/people/jenny-hsu.png',
+      dates: ['2020', 'present'],
+    },
+    {
+      name: ['Jesse', 'McDonald'],
+      photo: '/images/people/jesse-mcdonald.png',
       dates: ['2020', 'present'],
     },
     {
@@ -243,12 +253,12 @@ export default function getMemberData() {
     {
       name: ['Kelli', 'Tamashiro'],
       photo: '/images/people/kelli-tamashiro.jpg',
-      dates: ['2020', 'present'],
+      dates: ['2020', ''],
     },
     {
       name: ['Max', 'Deyo'],
       photo: '/images/people/max-deyo.jpg',
-      dates: ['2020', 'present'],
+      dates: ['2020', ''],
     },
     {
       name: ['Mercedez', 'Castro'],
@@ -278,7 +288,7 @@ export default function getMemberData() {
     {
       name: ['Mirabela', 'Medallon'],
       photo: '/images/people/mirabela-medallon.jpg',
-      dates: ['2019', 'present'],
+      dates: ['2019', '2020'],
     },
     {
       name: ['Monir', 'Hodges'],
@@ -321,6 +331,11 @@ export default function getMemberData() {
       dates: ['2008', '2009'],
     },
     {
+      name: ['Rashmi', 'Ramanatha'],
+      photo: '/images/people/rashmi-ramanatha.jpg',
+      dates: ['2020', 'present'],
+    },
+    {
       name: ['Risa', 'Khamsi'],
       photo: '/images/people/risa-khamsi.jpg',
       dates: ['2011', '2012'],
@@ -343,7 +358,7 @@ export default function getMemberData() {
     {
       name: ['Sergey', 'Negrashov'],
       photo: '/images/people/sergey-negrashov.jpg',
-      dates: ['2013', 'present'],
+      dates: ['2013', '2020'],
     },
     {
       name: ['Seungoh', 'Paek'],
@@ -369,6 +384,11 @@ export default function getMemberData() {
       name: ['Tina', 'Sablan'],
       photo: '/images/people/tina-sablan.jpg',
       dates: ['2013', '2014'],
+    },
+    {
+      name: ['Tina', 'Loos'],
+      photo: '/images/people/tina-loos.png',
+      dates: ['2020', 'present'],
     },
     {
       name: ['Tryggvi', 'Bjorgvinsson'],
