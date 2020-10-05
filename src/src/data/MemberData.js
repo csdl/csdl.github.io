@@ -38,7 +38,7 @@ export default function getMemberData() {
     {
       name: ['Andre', 'Ruiz'],
       photo: '/images/people/andre-ruiz.jpg',
-      dates: ['2012', 'present'],
+      dates: ['2020', 'present'],
     },
     {
       name: ['Andrea', 'Connell'],
