@@ -323,7 +323,7 @@ export default function getMemberData() {
     {
       name: ['Quinne', 'Uchida'],
       photo: '/images/people/quinne-uchida.jpg',
-      dates: ['2019', 'present'],
+      dates: ['2019', '2020'],
     },
     {
       name: ['Randy', 'Cox'],
@@ -388,7 +388,7 @@ export default function getMemberData() {
     {
       name: ['Tina', 'Loos'],
       photo: '/images/people/tina-loos.png',
-      dates: ['2020', 'present'],
+      dates: ['2020', '2020'],
     },
     {
       name: ['Tryggvi', 'Bjorgvinsson'],
