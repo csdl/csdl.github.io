@@ -609,5 +609,20 @@ Modern web application development provides an attractive application area for i
 In this research, we designed, implemented, and evaluated a new pedagogy called “athletic software engineering” which is intended to help students efficiently and effectively acquire competency with a multiple component tech stack as a precursor to a web application development project. So far, we have evaluated the pedagogy over 4 years and six semesters with 286 students and found strong evidence for its effectiveness.
 `,
     },
+    {
+      date: '2020 - present',
+      project: 'UH Department Dashboard',
+      keyword: 'uh-dept-dashboard',
+      text: 'Support for evidence-based academic unit assessment and improvement',
+      media: 'images/uh-dept-dashboard-small.png',
+      bigImage: 'images/uh-dept-dashboard-big.png',
+      longText: `
+The goal of the UH Department Dashboard project is to provide a way for an academic unit to efficiently and effectively improve over time through access to up-to-date measures of teaching, research, service, and resources. Each academic unit can build a custom dashboard that contains the specific measures that they believe will be helpful to them in understanding and improving their unique situation over time.
+
+More specifically, this project will develop a set of tools that an academic unit can use to create a custom static web site with analyses and visualizations. Additional tools will allow the academic unit to populate the dashboard by retrieving data from a variety of sources, such as: STAR, Banner, MyGrants, CES, UHF, Office of Institutional Research, Google Scholar, Academic Analytics, and/or other online sites. When automated collection is not possible for data deemed important by an academic unit, then manual collection can be used.
+
+For more information, please see [https://github.com/uh-dept-dashboard/uh-dept-dashboard.github.io/wiki](https://github.com/uh-dept-dashboard/uh-dept-dashboard.github.io/wiki)
+`,
+    },
   ].reverse();
 }
