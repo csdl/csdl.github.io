@@ -610,6 +610,21 @@ In this research, we designed, implemented, and evaluated a new pedagogy called 
 `,
     },
     {
+      date: '2019 - present',
+      project: 'InternAloha',
+      keyword: 'internaloha',
+      text: 'Providing guidance and recommendations to help UH undergraduates find computer science internships',
+      media: 'images/internaloha-small.png',
+      bigImage: 'images/internaloha-big.png',
+      longText: `
+The goal of the InternAloha project is to develop a system that can lower the overhead for Hawaii students who are seeking an internship in computer science.  
+
+InternAloha is intended to differ from other systems by not only providing access to internship listings, but by also providing the ability to recommend to students the activities and classes that will improve their prospects to obtain an internship in the area of their choice in future. 
+
+For more information, please see [https://internaloha.github.io/documentation/](https://internaloha.github.io/documentation/)
+`,
+    },
+    {
       date: '2020 - present',
       project: 'UH Department Dashboard',
       keyword: 'uh-dept-dashboard',
@@ -621,7 +636,7 @@ The goal of the UH Department Dashboard project is to provide a way for an acade
 
 More specifically, this project will develop a set of tools that an academic unit can use to create a custom static web site with analyses and visualizations. Additional tools will allow the academic unit to populate the dashboard by retrieving data from a variety of sources, such as: STAR, Banner, MyGrants, CES, UHF, Office of Institutional Research, Google Scholar, Academic Analytics, and/or other online sites. When automated collection is not possible for data deemed important by an academic unit, then manual collection can be used.
 
-For more information, please see [https://github.com/uh-dept-dashboard/uh-dept-dashboard.github.io/wiki](https://github.com/uh-dept-dashboard/uh-dept-dashboard.github.io/wiki)
+For more information, please see [https://uh-dept-dashboard.github.io/documentation/](https://uh-dept-dashboard.github.io/documentation/)
 `,
     },
   ].reverse();
