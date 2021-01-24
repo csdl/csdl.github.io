@@ -168,7 +168,7 @@ export default function getMemberData() {
     {
       name: ['Hanna', 'Park'],
       photo: '/images/people/hanna-park.jpg',
-      dates: ['2020', ''],
+      dates: ['2020', 'present'],
     },
     {
       name: ['Hongbing', 'Kou'],
@@ -198,7 +198,7 @@ export default function getMemberData() {
     {
       name: ['Jesse', 'McDonald'],
       photo: '/images/people/jesse-mcdonald.png',
-      dates: ['2020', 'present'],
+      dates: ['2020', ''],
     },
     {
       name: ['Jitender', 'Miglani'],
@@ -234,6 +234,11 @@ export default function getMemberData() {
       name: ['Julio', 'Polo'],
       photo: '/images/people/julio-polo.jpg',
       dates: ['1993', '1994'],
+    },
+    {
+      name: ['Justin', 'Wong'],
+      photo: '/images/people/justin-wong.jpg',
+      dates: ['2021', 'present'],
     },
     {
       name: ['Ka Yee', 'Leung'],
@@ -309,6 +314,11 @@ export default function getMemberData() {
       name: ['Pavel', 'Senin'],
       photo: '/images/people/pavel-senin.jpg',
       dates: ['2006', '2015'],
+    },
+    {
+      name: ['Pauline', 'Wu'],
+      photo: '/images/people/pauline-wu.jpg',
+      dates: ['2021', 'present'],
     },
     {
       name: ['Peter', 'Leong'],

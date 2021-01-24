@@ -1,6 +1,6 @@
 {
-  "name": "src",
-  "version": "0.1.0",
+  "name": "csdl.github.io",
+  "version": "1.0.0",
   "homepage": "https://csdl.github.io",
   "private": true,
   "dependencies": {
