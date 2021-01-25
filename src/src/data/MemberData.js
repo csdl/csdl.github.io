@@ -181,6 +181,11 @@ export default function getMemberData() {
       dates: ['', ''],
     },
     {
+      name: ['Jatin', 'Panya'],
+      photo: '/images/people/jatin-pandya.jpg',
+      dates: ['2021', 'present'],
+    },
+    {
       name: ['Jay', 'Corbett'],
       photo: '/images/people/jay-corbett.jpg',
       dates: ['1997', '2000'],
