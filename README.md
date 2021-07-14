@@ -174,7 +174,7 @@ If the script fails with an authentication error, the simplest solution I've fou
 
 The source code is quite easy to understand as long as you understand [React](https://reactjs.org/) and [Bootstrap](https://getbootstrap.com/). (In reality, this site uses [React-Bootstrap](https://react-bootstrap.github.io/)). If you don't know either React or Bootstrap, this system is simple enough that you might use it as a way of getting familiar with it.
 
-Note that all React components are written as "function components" and use [React Hooks](https://reactjs.org/docs/hooks-intro.html) for managing local component state when needed.
+Note that all React components are written as "functional components" and use [React Hooks](https://reactjs.org/docs/hooks-intro.html) for managing local component state when needed.
 
 Here's some guidance to get you started looking through the code (all files in the src/src/ directory):
 
