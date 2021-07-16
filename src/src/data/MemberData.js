@@ -168,7 +168,7 @@ export default function getMemberData() {
     {
       name: ['Hanna', 'Park'],
       photo: '/images/people/hanna-park.jpg',
-      dates: ['2020', 'present'],
+      dates: ['2020', '2021'],
     },
     {
       name: ['Hongbing', 'Kou'],
@@ -198,7 +198,7 @@ export default function getMemberData() {
     {
       name: ['Jenny', 'Hsu'],
       photo: '/images/people/jenny-hsu.png',
-      dates: ['2020', 'present'],
+      dates: ['2020', '2021'],
     },
     {
       name: ['Jesse', 'McDonald'],
@@ -243,7 +243,7 @@ export default function getMemberData() {
     {
       name: ['Justin', 'Wong'],
       photo: '/images/people/justin-wong.jpg',
-      dates: ['2021', 'present'],
+      dates: ['2021', '2021'],
     },
     {
       name: ['Ka Yee', 'Leung'],
@@ -323,7 +323,7 @@ export default function getMemberData() {
     {
       name: ['Pauline', 'Wu'],
       photo: '/images/people/pauline-wu.jpg',
-      dates: ['2021', 'present'],
+      dates: ['2021', '2021'],
     },
     {
       name: ['Peter', 'Leong'],
@@ -348,7 +348,7 @@ export default function getMemberData() {
     {
       name: ['Rashmi', 'Ramanatha'],
       photo: '/images/people/rashmi-ramanatha.jpg',
-      dates: ['2020', 'present'],
+      dates: ['2020', '2021'],
     },
     {
       name: ['Risa', 'Khamsi'],
@@ -391,14 +391,29 @@ export default function getMemberData() {
       dates: ['', ''],
     },
     {
+      name: ['Shinya', 'Saito'],
+      photo: '/images/people/shinya-saito.jpg',
+      dates: ['2021', 'present'],
+    },
+    {
       name: ['Takuya', 'Yamashita'],
       photo: '/images/people/takuya-yamashita.jpg',
       dates: ['2003', '2005'],
     },
     {
+      name: ['Timothy', 'Huo'],
+      photo: '/images/people/timothy-huo.png',
+      dates: ['2021', 'present'],
+    },
+    {
       name: ['Tina', 'Sablan'],
       photo: '/images/people/tina-sablan.jpg',
       dates: ['2013', '2014'],
+    },
+    {
+      name: ['Trey', 'Sumida'],
+      photo: '/images/people/trey-sumida.jpg',
+      dates: ['2021', 'present'],
     },
     {
       name: ['Tina', 'Loos'],
