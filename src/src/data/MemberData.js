@@ -76,6 +76,11 @@ export default function getMemberData() {
       dates: ['2004', '2005'],
     },
     {
+      name: ['Caliana', 'Fortin'],
+      photo: '/images/people/caliana-fortin.png',
+      dates: ['2021', 'present'],
+    },
+    {
       name: ['Calvan', 'Liang'],
       photo: '/images/people/calvan-liang.png',
       dates: ['2020', ''],
