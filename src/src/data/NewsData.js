@@ -301,5 +301,19 @@ export default function getNewsCardsData() {
       URL: 'https://alohamask.org/',
       Media: 'images/alohamask.svg',
     },
+    {
+      Date: '7/31/2021',
+      Headline: 'Undergrads complete Summer 2021 NSF REU program',
+      Text: 'Five undergraduates completed their summer research experience and presented their results at the UH SURE Symposium',
+      URL: 'https://www.radgrad.org/blog/2021/08/01/summer-reu',
+      Media: 'images/nsf-logo.jpg',
+    },
+    {
+      Date: '8/1/2021',
+      Headline: 'Morea Framework Version 3 released',
+      Text: 'Philip finished updating the Morea Framework and released Version 3 with bug fixes and new features.',
+      URL: 'https://morea-framework.github.io/blog/2021/08/01/morea-version-3',
+      Media: 'images/morea-module.png',
+    },
   ].reverse();
 }
