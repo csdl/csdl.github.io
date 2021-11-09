@@ -498,7 +498,7 @@ Kukui Cup challenges are typically designed with the following goals for its par
   * Build community, through awareness of local and national sustainability organizations and initiatives;
   * Create commitment, from minor (turn off the lights when not in use) to major (pursue a profession related to sustainability).
 
-We created short video “micro-documentaries” for the various events in the 2012 Kukui at UH, which provide an interesting perspective on the game.   See this [playlist](https://www.youtube.com/playlist?list=PLIZngQWBOqMxmgWisbcIOMq8vKHmrBcZy&feature=view_all). 
+We created short video “micro-documentaries” for the various events in the 2012 Kukui at UH, which provide an interesting perspective on the game.   See this [playlist](https://www.youtube.com/playlist?list=PLIZngQWBOqMxmgWisbcIOMq8vKHmrBcZy&feature=view_all).  [This other playlist](https://www.youtube.com/playlist?list=PLC8E65D5067E2053B) provides over 30 additional videos related to the Kukui Cup. 
 
 For more information, please see [https://kukuicup.org/](https://kukuicup.org/).
 `,
