@@ -4808,5 +4808,59 @@
       "RadGrad"
     ],
     "sortKey": 202107
+  },
+  {
+    "key": "csdl2-21-02",
+    "type": "techreport",
+    "title": "Pulling The Trigger With Internaloha: The New Opportunities For Internship",
+    "year": "2021",
+    "month": "December",
+    "note": "https://csdl.ics.hawaii.edu/techreports/2021/21-02/21-02.pdf",
+    "abstract": "\r\n  In the last few decades, the importance of internships for a career development has grown. However, the difficulty to search through possible internships has not decreased. Undergraduate students are forced to spend long hours and use multiple job searching websites for internships. Furthermore, these websites do not provide them with internships that they fully qualify for. Thus, the Internaloha project provides an alternative ”shortcut” for students seeking internships. The approach of Internaloha is creating a scraper to extract Computer Science internships from the different job websites and have them integrated into RadGrad’s internship explorer page. The goal for Internaloha Version 2 is to recreate them using TypeScript and clean it up to look more efficient.\r\n",
+    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
+    "number": "CSDL-21-02",
+    "authors": [
+      "Shinya Saito"
+    ],
+    "keywords": [
+      "RadGrad"
+    ],
+    "sortKey": 202112
+  },
+  {
+    "key": "csdl2-21-03",
+    "type": "techreport",
+    "title": "InternAloha: Revamping Scrapers",
+    "year": "2021",
+    "month": "December",
+    "note": "https://csdl.ics.hawaii.edu/techreports/2021/21-03/21-03.pdf",
+    "abstract": "\r\n  In this report, we take a look at the service InternAloha which is a scraper that scrapes different job sites for internships. In the report, I will go over the basics of InternAloha and scraping, the design of InternAloha, and the technical aspects that go into InternAloha.\r\n",
+    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
+    "number": "CSDL-21-03",
+    "authors": [
+      "Jatin Pandya"
+    ],
+    "keywords": [
+      "RadGrad"
+    ],
+    "sortKey": 202112
+  },
+  {
+    "key": "csdl2-21-04",
+    "type": "techreport",
+    "title": "Scraping for Students' futures: An Indepth look at the InternAloha Revamping Process",
+    "year": "2021",
+    "month": "July",
+    "note": "https://csdl.ics.hawaii.edu/techreports/2021/21-04/21-04.pdf",
+    "abstract": "\r\n  InternAloha was made to remedy the internship problem that Radgrad had. Through web scraping InternAloha was able to help Radgrad increase the amount of internships students had available to them. This paper looks at how the InternAloha web application was implemented and details the revamping process of the structure, and goals of the original InternAloha system.\r\n",
+    "institution": "Department of Information and Computer Sciences,\r\n  University of Hawaii, Honolulu, Hawaii 96822",
+    "number": "CSDL-21-04",
+    "authors": [
+      "Caliana Fortin"
+    ],
+    "keywords": [
+      "RadGrad"
+    ],
+    "sortKey": 202107
   }
 ]
