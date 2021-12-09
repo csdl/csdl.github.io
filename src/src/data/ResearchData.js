@@ -621,7 +621,7 @@ The goal of the InternAloha project is to develop a system that can lower the ov
 
 InternAloha is intended to differ from other systems by not only providing access to internship listings, but by also providing the ability to recommend to students the activities and classes that will improve their prospects to obtain an internship in the area of their choice in future. 
 
-For more information, please see [https://internaloha.github.io/documentation/](https://internaloha.github.io/documentation/)
+For more information, please see [https://internaloha.github.io/](https://internaloha.github.io/)
 `,
     },
     {

@@ -315,5 +315,12 @@ export default function getNewsCardsData() {
       URL: 'https://morea-framework.github.io/blog/2021/08/01/morea-version-3',
       Media: 'images/morea-module.png',
     },
+    {
+      Date: '12/9/2021',
+      Headline: 'InternAloha Version 2 Development',
+      Text: 'Three undergraduates helped design and implement a new major release of InternAloha as part of their capstone experience.',
+      URL: 'https://www.radgrad.org/blog/2021/12/09/internaloha',
+      Media: 'images/internaloha-small.png',
+    },
   ].reverse();
 }
