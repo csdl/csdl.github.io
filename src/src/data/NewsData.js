@@ -322,5 +322,12 @@ export default function getNewsCardsData() {
       URL: 'https://www.radgrad.org/blog/2021/12/09/internaloha',
       Media: 'images/internaloha-small.png',
     },
+    {
+      Date: '5/18/2022',
+      Headline: 'Johnson and Moore participate in EPSCOR award',
+      Text: 'Philip Johnson is a co-PI, and Cam Moore is a senior personnel on the $20M Change(HI) NSF award.',
+      URL: 'https://www.hawaii.edu/news/2022/05/16/20m-tclimate-resilience-through-data-science/',
+      Media: 'images/nsf-logo.jpg',
+    },
   ].reverse();
 }

@@ -9,7 +9,7 @@ export default function getSponsorData() {
       longText: `
 The [National Science Foundation](http://nsf.gov/) is an independent U.S. government agency responsible for promoting science and engineering through programs that invest over $3 billion per year in almost 20,000 research and education projects in science and engineering.
 
-CSDL has been supported by six grants from the National Science Foundation.
+CSDL has been directly supported by six grants from the National Science Foundation.
 
   1. Support for Structural Evolution in Software Development from 1991-1994, supported research in software structure representation and evolution. Award 9110861, $54,810. 
 
@@ -22,6 +22,8 @@ CSDL has been supported by six grants from the National Science Foundation.
   5. HCC:Small:Human Centered Information Integration for the Smart Grid () from 2010-2013, supported research on the smart grid through WattDepot,  Makahiki, and the Kukui Cup. Award 1017126, $413,467.
 
   6. DEP/RadGrad: Enhancing individualized learning plans and communities of practice to improve engagement, retention and diversity in undergraduate computer science education from 2018-2021, supporting research on RadGrad.  Awards 1829542, 2025112, $331,208.
+  
+In addition, Philip Johnson is a co-PI and Cam Moore is a senior personnel on the EPSCOR Track 1 Award: Change Hawaii: Harnessing the Data Revolution for Island Resilience. Award 2149133, 2022-2027, $20,000,000.
 `,
     },
     {
