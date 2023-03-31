@@ -38,7 +38,7 @@ export default function getMemberData() {
     {
       name: ['Andre', 'Ruiz'],
       photo: '/images/people/andre-ruiz.jpg',
-      dates: ['2020', 'present'],
+      dates: ['2020', '2022'],
     },
     {
       name: ['Andrea', 'Connell'],
@@ -78,7 +78,7 @@ export default function getMemberData() {
     {
       name: ['Caliana', 'Fortin'],
       photo: '/images/people/caliana-fortin.png',
-      dates: ['2021', 'present'],
+      dates: ['2021', '2022'],
     },
     {
       name: ['Calvan', 'Liang'],
@@ -188,7 +188,7 @@ export default function getMemberData() {
     {
       name: ['Jatin', 'Panya'],
       photo: '/images/people/jatin-pandya.jpg',
-      dates: ['2021', 'present'],
+      dates: ['2021', '2022'],
     },
     {
       name: ['Jay', 'Corbett'],
@@ -398,7 +398,7 @@ export default function getMemberData() {
     {
       name: ['Shinya', 'Saito'],
       photo: '/images/people/shinya-saito.jpg',
-      dates: ['2021', 'present'],
+      dates: ['2021', '2022'],
     },
     {
       name: ['Takuya', 'Yamashita'],
@@ -408,7 +408,7 @@ export default function getMemberData() {
     {
       name: ['Timothy', 'Huo'],
       photo: '/images/people/timothy-huo.png',
-      dates: ['2021', 'present'],
+      dates: ['2021', '2022'],
     },
     {
       name: ['Tina', 'Sablan'],
@@ -418,7 +418,7 @@ export default function getMemberData() {
     {
       name: ['Trey', 'Sumida'],
       photo: '/images/people/trey-sumida.jpg',
-      dates: ['2021', 'present'],
+      dates: ['2021', '2022'],
     },
     {
       name: ['Tina', 'Loos'],

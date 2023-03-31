@@ -639,5 +639,20 @@ To establish the first class status of extracurricular activities, the Degree Ex
 
 For more information, see [https://radgrad.org](https://radgrad.org)`,
     },
+    {
+      date: '2022 - present',
+      project: 'Geo Garden Club',
+      keyword: 'GeoGardenClub',
+      text: 'Growing better gardens, gardeners, and communities, one plant at a time',
+      media: 'images/geogardenclub.png',
+      longText: `
+Food insecurity is an important problem in the U.S. and globally.
+
+Home gardens are an important, underutilized resource for addressing food insecurity.
+
+Geo Garden Club is designing and implementing collaborative technologies to improve the efficiency and effectiveness of home gardeners.
+
+For more information, see <https://geogardenclub.com>`,
+    },
   ].reverse();
 }
