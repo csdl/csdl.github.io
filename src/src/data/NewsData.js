@@ -325,8 +325,15 @@ export default function getNewsCardsData() {
     {
       Date: '5/18/2022',
       Headline: 'Johnson and Moore participate in EPSCOR award',
-      Text: 'Philip Johnson is a co-PI, and Cam Moore is a senior personnel on the $20M Change(HI) NSF award.',
+      Text: 'Philip Johnson is a co-PI, and Cam Moore is a senior personnel on the NSF-sponsored "Change Hawaii: Harnessing the Data Revolution for Island Resilience" project.',
       URL: 'https://www.hawaii.edu/news/2022/05/16/20m-tclimate-resilience-through-data-science/',
+      Media: 'images/nsf-logo.jpg',
+    },
+    {
+      Date: '9/18/2023',
+      Headline: 'Johnson participates in NRT award',
+      Text: 'Philip Johnson is a co-PI on the NSF-sponsored "Data in Engineering and Society: Converging Applications, Research, and Training Enhancements for Students" project.',
+      URL: 'https://new.nsf.gov/funding/initiatives/nrt/nsf-invests-63-million-stem-research-traineeships',
       Media: 'images/nsf-logo.jpg',
     },
   ].reverse();
